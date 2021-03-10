@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaaDek</title>
+    <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+        font-family: 'Alef';
+        color: white;
+        scroll-behavior: smooth;
+        cursor: pointer;;
+    }
+    ::selection{
+        color:black;
+        background:#E52F50;
+    }
+    body::-webkit-scrollbar {
+  display: none;
+}
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+    .main{
+        height: 100vh;
+        width: 100%;
+        background-image: url(bg1.png);
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+     .nav{position: fixed;
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        width: 100%;
+        opacity: 0.90; 
+        color:#E52F50;
+        background-color: black;
+         /*background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%); */
+        
+    }
+    .nav > div{
+        margin-top: 20px;
+        width: 100px;
+        margin-left: 0%;
+        margin-right: 0%;
+        color:#E52F50;
+        font-size:20px;
+    }
+    #navl{width: 25%;
+       text-align: left;
+       margin-left: 25px;
+       color:#E52F50;
+    }
+    #logo{
+        height: 50px;
+        width: 135px;
+    }
+    #navm{width: 55%;
+        text-align: center;
+       
+    }
+    #navm li{
+        list-style: none;
+        display: inline;
+        text-align: center;
+        margin: 35px;
+        color:#E52F50;
+       
+    }
+    #navm li:hover{
+      
+        color:#A3278F;
+    }
+    #navr{width: 25%;
+        display: none;
+       text-align: right;
+       margin-right: 10px;
+    }
+    #nav-mob-contents{
+        display: none;
+        
+    }
+    .main-content{
+        margin-top:50px ;
+        
+        display: flex;
+       
+        height: 100vh;
+        width: 100%;
+    }
+    .main-content h1{ margin-top:70px;
+        margin-left: 30px;
+        font-size: 100px;
+    }
+    
+      .main-content >div{
+        height:350px;
+        width:50%;
+       
+      
+      
+        border-radius: 12px;
+      }
+      #qlq img{
+         
+        height:550px;
+        width: 520px;
+       
+        margin-top:5px;
+    
+      }
+
+    .part1{
+         height: 100vh;
+         width: 100%;
+         background-image:url(bg2.png);
+         background-position: center;
+        background-size: cover;
+         }
+         @media only screen and (max-width:1276px) {
+  /* For mobile phones: */
+      #navm{
+          display: none;
+      }
+      #navl{
+          width:75% ;
+          font-weight: bold;
+      }
+      #navr  {
+          width: 25%;
+            float: right;
+            display: block;
+      }
+      #nav-mob-contents{
+        text-decoration: none;
+        display: none;
+        height:100vh;width:100%;background-color:black;
+        overflow-y: hidden;
+        position: fixed;
+        list-style:none ;
+        text-align: center;
+    }
+   
+      .main-content{
+        margin-top:50px ;
+        flex-direction: row;}
+    
+    
+        .main-content h1{
+            font-size: 40px;
+        }
+     
+      
+}
+
+@media only screen and (max-width:800px){
+    .main-content{
+        margin-top:50px ;
+        flex-direction: column;}
+    
+    #qlq img{
+        height:250px;
+        width: 250px;
+        margin-left: 35px;
+        margin-top:5px;
+        }
+
+}
+</style>
+<body>
+    <div id="nav-mob-contents">
+        <br><br><br><br>
+        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #E52F50;">clear</i><br><br>
+        <li>Home</li><br><br><br>
+        <li>About</li><br><br><br>
+        <li>Services</li><br><br><br>
+        <li>Contact</li><br><br><br>
+        <li>Social</li><br><br>
+        
+    </div>
+    <div class="main">
+      <div id="nav" class="nav">
+        <div id="navl" style="font-weight: bold;color: #E52F50;" >KaaDek.com</div>
+        <div id="navm">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Social</li>
+        </div>
+        <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;">dehaze</i>
+        </div>
+      </div>
+      
+      <br>
+      
+           <div class="main-content">
+         <br>
+          <div>
+            <h1>Design,<span style="color: #cd07ff;"> Create</span>
+                <span style="color: #E52F50;"> &</span> Develop  <br> with <span style="color: #cd07ff;"> Us</span> </h1>
+             
+        </div>
+        <div id="qlq">
+           <img src="pic1.png" alt="" >
+        </div>
+      </div> 
+    
+       
+
+      
+    </div>
+    <div class="part1"></div>
+
+
+
+    <script>
+        document.getElementById("ck").onclick = function() {myFunction()};
+        document.getElementById("close").onclick = function() {Function1()};
+        
+        function myFunction() {
+          document.getElementById("nav-mob-contents").style = "display:block;";
+          document.getElementById("ck").style = "display:none;";
+          
+        }
+        function Function1(){
+            document.getElementById("nav-mob-contents").style = "display:none;";
+            document.getElementById("ck").style = "display:block;";
+        }
+
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("nav").style.background = "#050001";
+    document.getElementById("nav").style.opacity ="1.0";
+    
+  
+  } else {
+    document.getElementById("nav").style.backgroundColor = "black";
+    document.getElementById("nav").style.opacity ="0.90";
+   
+  }
+}
+        </script>
+</body>
+
+    
+</html>
