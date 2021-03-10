@@ -6,6 +6,8 @@
     <title>KaaDek</title>
     <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <style>
     *{
@@ -27,6 +29,9 @@ body{
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   background-color: black;
+}
+a{
+  text-decoration: none;
 }
     .main{
         height: 100vh;
@@ -68,6 +73,9 @@ body{
     #navm{width: 55%;
         text-align: center;
        
+    }
+    #navm a{
+      color:#E52F50;
     }
     #navm li{
         list-style: none;
@@ -144,18 +152,19 @@ body{
     .services >div{
       background-color: #0e0e0e;
       margin: 10px;;
-      height: 450px;
+      height: 400px;
       width:25.3% ;
       border-radius: 7px;
       border: 1px solid rgb(0, 0, 0);
   
- 
+      font-size: larger;
       text-align: center;
      
     
     }
     .services :hover{
-      box-shadow: 5px 10px 18px #cd07ff;
+      
+     box-shadow: 3px 7px 12px #cd07ff;
     }
 
 
@@ -206,6 +215,7 @@ body{
         .services >div{
           height: 300px;
           width: 80%;
+          font-size: medium;
         }
      
       
@@ -240,9 +250,9 @@ body{
     <div id="nav-mob-contents">
         <br><br><br><br>
         <i class="material-icons" id="close" style="font-size:30px;float: right;color: #E52F50;">clear</i><br><br>
-        <li>Home</li><br><br><br>
+        <li><a href="#main-content">Home</a></li><br><br><br>
+        <li><a href="#part1"> Services</a><br><br><br>
         <li>About</li><br><br><br>
-        <li>Services</li><br><br><br>
         <li>Contact</li><br><br><br>
         <li>Social</li><br><br>
         
@@ -251,9 +261,9 @@ body{
       <div id="nav" class="nav">
         <div id="navl" style="font-weight: bold;color: #E52F50;" >KaaDek.com</div>
         <div id="navm">
-            <li>Home</li>
+            <li><a href="#main-content">Home</a> </li>
+            <li><a href="#part1"> Services</a></li>
             <li>About</li>
-            <li>Services</li>
             <li>Contact</li>
             <li>Social</li>
         </div>
@@ -263,7 +273,7 @@ body{
       
       <br>
       
-           <div class="main-content">
+           <div id="main-content" class="main-content">
          <br>
           <div>
             <h1>Design,<span style="color: #cd07ff;"> Create</span><br>
@@ -277,14 +287,28 @@ body{
     
  
     </div>
-    <div class="part1">
+    <div id="part1" class="part1">
      <h2>What We Do For <span style="color: #E52F50;"> You</span> </h2>
      <br>
-    <div class="services">
+    <div id="services" class="services">
       
-      <div>hello</div>
-      <div>hI</div> 
-      <div>CFGS</div>
+      <div><br>
+        <i class="material-icons" style="font-size:48px;color:#E52F50">web</i>
+        <h3> Web Development</h3><br>
+        <p>Design & Develop Websites to promote your Buisnes and Showcase your online Footprint With our team of Professionals</p><br><br>
+        <a href="" style="text-decoration: none;background-color: #cd07ff;padding: 10px;border-radius: 7px;">Learn More</a>
+        
+      </div>
+      <div><br>
+        <i class="material-icons" style="font-size:48px;color:#E52F50">style</i>
+        <h3>Branding</h3><br>
+        <p>Design & Create Logos,Cards,Brochure for your Buisnes,Events and Enhance  Digitally With our team of Professionals</p><br><br>
+        <a href="" style="text-decoration: none;background-color: #cd07ff;padding: 10px;border-radius: 7px;">Learn More</a></div> 
+      <div><br>
+        <i class="fas fa-ad" style="font-size:48px;color:#E52F50"></i>
+        <h3>Digital Marketing</h3><br>
+        <p>Design & Develop Websites to promote your Buisness and Showcase your online Footprint With our team of Professionals</p><br><br>
+        <a href="" style="text-decoration: none;background-color: #cd07ff;padding: 10px;border-radius: 7px;">Learn More</a> </div>
     </div>
    <br>
 
@@ -321,6 +345,7 @@ function scrollFunction() {
    
   }
 }
+
         </script>
 </body>
 
