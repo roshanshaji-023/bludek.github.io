@@ -85,7 +85,7 @@ a{
         color:#E52F50;
        
     }
-    #navm li:hover{
+    #navm li a:hover{
       
         color:#A3278F;
     }
@@ -93,6 +93,7 @@ a{
         display: none;
        text-align: right;
        margin-right: 10px;
+       
     }
     #nav-mob-contents{
         display: none;
@@ -251,10 +252,10 @@ a{
         <br><br><br><br>
         <i class="material-icons" id="close" style="font-size:30px;float: right;color: #E52F50;">clear</i><br><br>
         <li><a href="#main-content">Home</a></li><br><br><br>
-        <li><a href="#part1"> Services</a><br><br><br>
-        <li>About</li><br><br><br>
-        <li>Contact</li><br><br><br>
-        <li>Social</li><br><br>
+        <li><a href="#part1"> Services</a></li><br><br><br>
+        <li><a href="#about"> About</a></li><br><br><br>
+        <li><a href="#contact"> Contact</a></li><br><br><br>
+        <li><a href="#social"> Social</a></li><br><br>
         
     </div>
     <div class="main">
@@ -263,9 +264,9 @@ a{
         <div id="navm">
             <li><a href="#main-content">Home</a> </li>
             <li><a href="#part1"> Services</a></li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Social</li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#contact"> Contact</a></li>
+            <li><a href="#social"> Social</a></li>
         </div>
         <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;">dehaze</i>
         </div>
@@ -323,6 +324,7 @@ a{
         
         function myFunction() {
           document.getElementById("nav-mob-contents").style = "display:block;";
+         
           document.getElementById("ck").style = "display:none;";
           
         }
