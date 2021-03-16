@@ -198,19 +198,38 @@ a{
 
     .social{
       height:50vh;
-      background-color:rgb(255, 249, 249);
+      background-color:#E52F50;
       
     }
     .social h2{
       font-size: 60px;
           text-align: center;
-          color: rgb(0, 0, 0);
+          color: rgb(255, 255, 255);
     }
 #whatsapp{
   width: 250px;height:50px;margin-left: 40%;position: relative;background-color: #01e675;color: #0e0e0e;text-align: center;border-radius: 10px;
 }
 #call{
-  width: 250px;height:50px;margin-left: 40%;position: relative;background-color: #E52F50;color: #0e0e0e;text-align: center;border-radius: 10px;
+  width: 250px;height:50px;margin-left: 40%;position: relative;background-color: #ffffff;color: #0e0e0e;text-align: center;border-radius: 10px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #E52F50; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 
 /* For mobile phones: */
@@ -233,6 +252,7 @@ a{
         text-decoration: none;
         display: none;
         height:100vh;width:100%;background-color:rgb(255, 255, 255);
+        transition: 0.3s;
         color: #0e0e0e;
         overflow-y: hidden;
         position: fixed;
@@ -278,8 +298,7 @@ a{
           font-size: 30px;
         }
      #call, #whatsapp{
-       margin-left:65px;
-       margin-right: 65px;
+      margin: 0 auto;
      }
       
 }
@@ -315,11 +334,11 @@ a{
     <div id="nav-mob-contents">
         <br><br><br><br>
         <i class="material-icons" id="close" style="font-size:30px;float: right;color: #E52F50;">clear</i><br><br>
-        <li><a href="#main-content">Home</a></li><br><br><br>
-        <li><a href="#service_title"> Services</a></li><br><br><br>
-        <li><a href="#about"> About</a></li><br><br><br>
-        <li><a href="#projects"> Projects</a></li><br><br><br>
-        <li><a href="#social"> Social</a></li><br><br>
+        <li><a id="close" href="#main-content">Home</a></li><br><br><br>
+        <li><a id="close" href="#service_title"> Services</a></li><br><br><br>
+        <li><a id="close" href="#about"> About</a></li><br><br><br>
+        <li><a id="close" href="#projects"> Projects</a></li><br><br><br>
+        <li><a id="close" href="#social"> Social</a></li><br><br>
         
     </div>
     
@@ -351,6 +370,7 @@ a{
            <img src="pic2.svg" alt="" >
         </div>
       </div> 
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" style="font-size:48px;color:#ffffff"></i></button>
      
     <div id="service_title">
       <h2 >What We Do For <span style="color: #E52F50;"> You</span> </h2>
@@ -392,14 +412,14 @@ a{
    <br>
    
    <div id="social" class="social">
-    <h2>Get In <span style="color: #E52F50;">Touch </span> With Us</h2>
+    <h2>Get In <span style="color: #000000;">Touch </span> With Us</h2>
 
-    <hr style="background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);height:5px;border-width:0;width: 50% ;text-align: center;margin-left: 25%;">
+    <hr style="background-image:linear-gradient(-90deg, #ffffff 0%, #f02e51 100%);height:5px;border-width:0;width: 50% ;text-align: center;margin-left: 25%;">
     <br><br><div id="whatsapp">
          <a  href="https://wa.me/917561019633?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> Chat With Us on   &nbsp<i class="fab fa-whatsapp" aria-hidden="true" style="font-size:36px;color:rgb(255, 255, 255);"></i></a>
    </div><br><br>
    <div id="call">
-     <a href="tel:917561019633">Call Us &nbsp  <i class="fa fa-phone" aria-hidden="true" style="font-size:30px;color:rgb(255, 255, 255);"></i></a>
+     <a href="tel:917561019633" style="color: #000000;">Call Us &nbsp  <i class="fa fa-phone" aria-hidden="true" style="font-size:30px;color:rgb(3, 26, 88);"></i></a>
    </div>
    
   </div>
@@ -433,6 +453,25 @@ function scrollFunction() {
     document.getElementById("nav").style.opacity ="0.90";
    
   }
+}
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
         </script>
