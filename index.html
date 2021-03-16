@@ -28,7 +28,8 @@
 body{
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+ 
 }
 a{
   text-decoration: none;
@@ -36,24 +37,28 @@ a{
     .main{
         height: 100vh;
         width: 100%;
-        background-image: url(bg1.png);
+        background-color: aliceblue;
+        /*background-image: url(bg1.png);*/
         background-position: center;
         background-size: cover;
         
     }
 
-     .nav{position: fixed;
+     .nav{ 
+        background-color: rgb(255, 255, 255);
+        position: fixed;
         display: flex;
         flex-direction: row;
         height: 70px;
         width: 100%;
         opacity: 0.90; 
         color:#E52F50;
-        background-color: black;
+      
          /*background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%); */
         
     }
     .nav > div{
+      background-color: rgb(255, 255, 255);
         margin-top: 20px;
         width: 100px;
         margin-left: 0%;
@@ -101,7 +106,7 @@ a{
     }
     .main-content{
         margin-top:50px ;
-        
+        color:black;
         display: flex;
        
         height: 100vh;
@@ -110,6 +115,7 @@ a{
     .main-content h1{ margin-top:70px;
         margin-left: 30px;
         font-size: 100px;
+        color: #0e0e0e;
     }
     
       .main-content >div{
@@ -135,37 +141,45 @@ a{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-     
+      color:black;
       justify-content: center;
      
      
      
     }
+    h3{
+      color:black;
+    }
      h2{
       font-size: 60px;
           text-align: center;
+          color:black;
     }
     .services >div{
-      background-color: #0e0e0e;
+      background-color: #ffffff;
+      color:black;
       margin: 10px;;
       height: 400px;
       width:25.3% ;
       border-radius: 7px;
-      border: 1px solid rgb(0, 0, 0);
-  
+      border: 1px solid rgb(255, 255, 255);
+      
       font-size: larger;
       text-align: center;
      
     
     }
+     .services p{
+      color:black;
+    }
     .services :hover{
       
-     box-shadow: 3px 7px 12px #cd07ff;
+     box-shadow: 3px 7px 12px #bebebe;
     }
     
     .about{margin-top:30px;
           height:100vh;
-          background-image: url(bg2.png);
+          background-color: rgb(255, 255, 255);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -183,11 +197,14 @@ a{
           }
 
     .social{
-      height:80vh;
+      height:50vh;
+      background-color:rgb(238, 238, 238);
+      
     }
     .social h2{
       font-size: 60px;
           text-align: center;
+          color: rgb(0, 0, 0);
     }
 
 
@@ -210,11 +227,15 @@ a{
       #nav-mob-contents{
         text-decoration: none;
         display: none;
-        height:100vh;width:100%;background-color:black;
+        height:100vh;width:100%;background-color:rgb(255, 255, 255);
+        color: #0e0e0e;
         overflow-y: hidden;
         position: fixed;
         list-style:none ;
         text-align: center;
+    }
+    #nav-mob-contents li a{
+      color: #0e0e0e;
     }
    
       .main-content{
@@ -237,7 +258,7 @@ a{
         }
         .about{ 
           height:80vh;
-          background-image: url(bg2.png);
+          
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -249,7 +270,7 @@ a{
           font-size: 40px;
         }
         .social h2{
-          font-size: 40px;
+          font-size: 30px;
         }
      
       
@@ -296,14 +317,14 @@ a{
     <div class="main">
       <div id="nav" class="nav">
         <div id="navl" style="font-weight: bold;color: #E52F50;" >KaaDek.com</div>
-        <div id="navm">
+        <div id="navm" style="color: #0e0e0e;">
             <li><a href="#main-content">Home</a> </li>
             <li><a href="#service_title"> Services</a></li>
             <li><a href="#about"> About</a></li>
             <li><a href="#projects"> Projects</a></li>
             <li><a href="#social"> Social</a></li>
         </div>
-        <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;">dehaze</i>
+        <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;color: #E52F50;">dehaze</i>
         </div>
       </div>
       
@@ -385,12 +406,12 @@ a{
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("nav").style.background = "#050001";
+    document.getElementById("nav").style.background = " white";
     document.getElementById("nav").style.opacity ="1.0";
     
   
   } else {
-    document.getElementById("nav").style.backgroundColor = "black";
+    document.getElementById("nav").style.backgroundColor = " white";
     document.getElementById("nav").style.opacity ="0.90";
    
   }
