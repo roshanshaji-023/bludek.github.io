@@ -277,7 +277,8 @@ a{
       
         .services{
           flex-direction: row;
-          height: 100vh;
+          height: max-content;
+          z-index: 99;
         }
         .services >div{
           height: 300px;
@@ -285,16 +286,14 @@ a{
           font-size: medium;
         }
         .about{ 
-          height:80vh;
-          
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
+         
+          z-index: 99;
+         
         }
         .about h2{
           font-size: 40px;
         }
-
+        .projects{ z-index: 99;}
         .projects h2{
           font-size: 40px;
         }
@@ -338,11 +337,11 @@ a{
     <div id="nav-mob-contents">
         <br><br><br><br>
         <i class="material-icons" id="close" style="font-size:30px;float: right;color: #E52F50;">clear</i><br><br>
-        <li><a id="close" href="#main-content">Home</a></li><br><br><br>
-        <li><a id="close" href="#service_title"> Services</a></li><br><br><br>
-        <li><a id="close" href="#about"> About</a></li><br><br><br>
-        <li><a id="close" href="#projects"> Projects</a></li><br><br><br>
-        <li><a id="close" href="#social"> Social</a></li><br><br>
+        <li onclick="Function1()"><a id="close" href="#main-content">Home</a></li><br><br><br>
+        <li onclick="Function1()"><a id="close" href="#service_title"> Services</a></li><br><br><br>
+        <li onclick="Function1()"><a id="close" href="#about"> About</a></li><br><br><br>
+        <li onclick="Function1()"><a id="close" href="#projects"> Projects</a></li><br><br><br>
+        <li onclick="Function1()"><a id="close" href="#social"> Social</a></li><br><br>
         
     </div>
     
