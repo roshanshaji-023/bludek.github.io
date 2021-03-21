@@ -6,7 +6,7 @@
     <title>KaaDek</title>
     <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link  href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -18,6 +18,7 @@
         color: white;
         scroll-behavior: smooth;
         cursor: pointer;
+        
     }
     ::selection{
         color:black;
@@ -29,7 +30,7 @@
 body{
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  background-color: rgb(255, 255, 255);
+  background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);
  
 }
 a{
@@ -39,7 +40,7 @@ a{
         height: 100vh;
         width: 100%;
         background-color: rgb(255, 249, 249);
-        /*background-image: url(bg1.png);*/
+        z-index: 99;
         background-position: center;
         background-size: cover;
         
@@ -137,9 +138,10 @@ a{
         margin-top:5px;
     
       }
-
+      #service_title{ background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);}
+      #service_title h2{color: #ffffff;}
     .services{
-      height: 70vh;
+      height: 85vh;
          width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -147,7 +149,7 @@ a{
       color:black;
       justify-content: center;
      
-     
+      background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);
      
     }
     h3{
@@ -195,6 +197,7 @@ a{
     .projects{
       height:70vh;
       color: #000000;
+      background-color: #ffffff;
     }
     .projects h2{font-size: 60px;
           text-align: center;
@@ -202,13 +205,13 @@ a{
 
     .social{
       height:50vh;
-      background-color:rgb(255, 249, 249);
+      background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);
       
     }
     .social h2{
       font-size: 60px;
           text-align: center;
-          color: black;
+          color: rgb(0, 0, 0);
     }
 #whatsapp{
   width: 250px;height:50px;margin-left: 40%;position: relative;background-color: #01e675;color: #0e0e0e;text-align: center;border-radius: 10px;
@@ -220,12 +223,12 @@ a{
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  right: 20px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #E52F50; /* Set a background color */
-  color: white; /* Text color */
+  background-color: #ffffff; /* Set a background color */
+  color: #E52F50; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -233,7 +236,7 @@ a{
 }
 
 #myBtn:hover {
-  background-color: #cd07ff; /* Add a dark-grey background on hover */
+  background-color: #e0e0e0; /* Add a dark-grey background on hover */
 }
 
 /* For mobile phones: */
@@ -271,8 +274,11 @@ a{
    
       .main-content{
         margin-top:50px ;
-        flex-direction: row;}
-    
+        flex-direction: row;
+        height: max-content;
+        background-color:rgb(255, 249, 249)
+        }
+        
     
         .main-content h1{
           font-size: 40px;
@@ -374,16 +380,18 @@ a{
         </div>
         <div class="w3-content w3-section" id="qlq" >
          
-           <img  class="mySlides w3-animate-fading" src="pic2.svg" >
+        
+          
+          <img  class="mySlides w3-animate-fading" src="pic2.svg" >
           <img  class="mySlides w3-animate-fading" src="pic1.svg" >
-           <img  class="mySlides w3-animate-fading" src="pic3.svg" >
+          <img  class="mySlides w3-animate-fading" src="pic3.svg" >
          
         </div>
       </div> 
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" style="color:#ffffff;font-size: 30px;"></i></button>
+      
      
     <div id="service_title">
-      <h2 >What We Do For <span style="color: #E52F50;"> You</span> </h2>
+      <h2 >What We Do For <span style="color: #ffffff;"> You</span> </h2>
       <br><br>
     </div>
     <div id="services" class="services">
@@ -406,8 +414,6 @@ a{
         <p>Promote & sell products and services  online with social media marketing, search marketing,etc with our Team  </p><br><br>
         <a href="" style="text-decoration: none;background-color: #cd07ff;padding: 10px;border-radius: 7px;">Learn More</a></div>
     </div>
-   <br>
-  <br>
 
    <div id="about" class="about">
      <h2><span style="color: #E52F50;"> Our</span> Story</h2>
@@ -415,7 +421,7 @@ a{
 
 
    </div>
-<br><br>
+
    <div id="projects" class="projects">
     <h2>Our <span style="color: #E52F50;">Best </span> Projects</h2>
     iynfclsiguhwihgp;ituhrgnli;uhgui
@@ -425,10 +431,10 @@ a{
 
 
    </div>
-   <br>
+  
    
    <div id="social" class="social">
-    <h2>Get In <span style="color: #E52F50;">Touch </span> With Us</h2>
+    <h2>Get In <span style="color: #ffffff;">Touch </span> With Us</h2>
 
     
     <br><br><div id="whatsapp">
@@ -439,7 +445,7 @@ a{
    </div>
    
   </div>
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" style="color:#E52F50;font-size: 30px;"></i></button>
 
     <script>
 
@@ -470,7 +476,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  setTimeout(carousel, 5000);    
 }
 
        
