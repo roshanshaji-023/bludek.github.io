@@ -141,19 +141,19 @@ a{
       #service_title{ background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);}
       #service_title h2{color: #ffffff;}
     .services{
-      height: 85vh;
+      height: 80vh;
          width: 100%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       color:black;
       justify-content: center;
-     
+   
       background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);
      
     }
     h3{
-      color:black;
+      color:rgb(255, 255, 255);
     }
      h2{
       font-size: 60px;
@@ -161,21 +161,21 @@ a{
           color:black;
     }
     .services >div{
-      background-color: #ffffff;
-      color:black;
+      
+      color:rgb(255, 255, 255);
       margin: 10px;
       height: 400px;
       width:25.3% ;
       border-radius: 7px;
-      border: 1px solid rgb(255, 255, 255);
+      
       
       font-size: larger;
       text-align: center;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     
     }
      .services p{
-      color:black;
+      color:rgb(255, 255, 255);
     }
     .services a:hover{
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -290,10 +290,10 @@ a{
           z-index: 99; 
         }
         .services >div{
-          height: 300px;
+          height: max-content;
           width: 80%;
           font-size: medium;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          
         }
         .about{ 
          
@@ -394,25 +394,26 @@ a{
       <h2 >What We Do For <span style="color: #ffffff;"> You</span> </h2>
       <br><br>
     </div>
+    <br><br>
     <div id="services" class="services">
      
       <div><br>
-        <i class="material-icons" style="font-size:48px;color:#E52F50">web</i>
+        <img src="web.svg" alt="" style="height: 150px;"><br>
         <h3> Web Development</h3><br>
         <p>Design & Develop Websites to promote your Buisness and Showcase your online Footprint With our Team </p><br><br>
-        <a href="" style="text-decoration: none;background-color: #cd07ff;padding: 10px;border-radius: 7px;">Learn More</a>
+        
         
       </div>
       <div><br>
-        <i class="material-icons" style="font-size:48px;color:#E52F50">style</i>
+        <img src="brand.svg" alt="" style="height: 150px;"><br>
         <h3>Branding</h3><br>
         <p>Design & Create Logos,Cards,Brochure for your Buisness,Events and Enhance  Digitally With our team of Professionals</p><br><br>
-        <a href="" style="text-decoration: none;background-color: #cd07ff;padding: 10px;border-radius: 7px;">Learn More</a></div> 
+        </div> 
       <div><br>
-        <i class="fas fa-ad" style="font-size:48px;color:#E52F50">     </i>
+        <img src="digital.svg" alt="" style="height: 150px;"><br>
         <h3>Digital Marketing</h3><br>
         <p>Promote & sell products and services  online with social media marketing, search marketing,etc with our Team  </p><br><br>
-        <a href="" style="text-decoration: none;background-color: #cd07ff;padding: 10px;border-radius: 7px;">Learn More</a></div>
+        </div>
     </div>
 
    <div id="about" class="about">
@@ -476,7 +477,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5000);    
+  setTimeout(carousel, 4000);    
 }
 
        
