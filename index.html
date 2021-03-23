@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KaaDek</title>
-    <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+    <meta name="description" content="Download free ringtones, HD wallpapers, backgrounds, icons and games to personalize your cell phone or mobile device using the Zedge app for Android and iPhone.">
+    
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+   
     <link href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -14,7 +20,8 @@
     *{
         padding: 0%;
         margin: 0%;
-        font-family: 'Alef';
+       
+        font-family: 'Montserrat', sans-serif;
         color: white;
         scroll-behavior: smooth;
         cursor: pointer;
@@ -30,7 +37,7 @@
 body{
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  background-color: rgb(255, 249, 249);
+
  
 }
 a{
@@ -39,15 +46,14 @@ a{
     .main{
         height: 100vh;
         width: 100%;
-        background-color: rgb(255, 249, 249);
+        background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
         z-index: 99;
         background-position: center;
         background-size: cover;
         
     }
 
-     .nav{ 
-        background-color: rgb(255, 255, 255);
+     .nav{  background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
         position: fixed;
         top: 0;
         transition: top 0.3s;
@@ -56,47 +62,47 @@ a{
         height: 70px;
         width: 100%;
         
-        color:#E52F50;
+        color:#ffffff;
       
          /*background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%); */
         
     }
     .nav > div{
-      background-color: rgb(255, 255, 255);
+      
         margin-top: 20px;
         width: 100px;
         margin-left: 0%;
         margin-right: 0%;
-        color:#E52F50;
+        color:#ffffff;
         font-size:20px;
     }
     #navl{width: 25%;
        text-align: left;
-       margin-left: 25px;
-       color:#E52F50;
+       margin-left: 70px;
+       color:#ffffff;
     }
     #logo{
         height: 50px;
         width: 135px;
     }
-    #navm{width: 55%;
-        text-align: center;
+    #navm{width: 75%;
+        text-align:right;
        
     }
     #navm a{
-      color:#E52F50;
+      color:#ffffff;
     }
     #navm li{
         list-style: none;
         display: inline;
         text-align: center;
         margin: 35px;
-        color:#E52F50;
+        color:#ffffff;
        
     }
     #navm li a:hover{
       
-        color:#A3278F;
+        color:#ffffff;
     }
     #navr{width: 25%;
         display: none;
@@ -117,17 +123,15 @@ a{
         width: 100%;
     }
     .main-content h1{ margin-top:70px;
-        margin-left: 30px;
-        font-size: 100px;
-        color: #0e0e0e;
+      margin-left: 70px;
+        font-size: 80px;
+        color:rgb(255, 255, 255);
     }
     
       .main-content >div{
         height:350px;
         width:50%;
-       
-      
-      
+
         border-radius: 12px;
       }
        #qlq img{
@@ -143,19 +147,19 @@ a{
  }
       #service_title h2{color: #000000;}
     .services{
-      height: 60vh;
+      height: 70vh;
          width: 100%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      color:black;
+     
       justify-content: center;
       background-color: rgb(255, 255, 255);;
       /*background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);*/
-     
+  
     }
     h3{
-      color:#E52F50;
+      color:#9643eb;
     }
      h2{
       font-size: 60px;
@@ -169,7 +173,7 @@ a{
       height: 400px;
       width:25.3% ;
       border-radius: 7px;
-      
+      box-shadow: 5px 10px 18px #888888;
       
       font-size: larger;
       text-align: center;
@@ -186,7 +190,7 @@ a{
     
     .about{margin-top:30px;
           height:100vh;
-          background-color: rgb(255, 249, 249);
+          background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -207,7 +211,7 @@ a{
 
     .social{
       height:80vh;
-      background:linear-gradient(138.36deg,#E52F50 ,#8642dd);
+      background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
       
     }
     .social h2{
@@ -256,6 +260,7 @@ a{
       #navl{
           width:75% ;
           font-weight: bold;
+          margin-left: 30px;
       }
       #navr  {
           width: 25%;
@@ -265,7 +270,7 @@ a{
       #nav-mob-contents{
         text-decoration: none;
         display: none;
-        height:70vh;width:100%;background-color:rgb(255, 249, 249);
+        height:70vh;width:100%;
         transition: 0.3s;
         color:#E52F50;
         overflow-y: hidden;
@@ -281,14 +286,20 @@ a{
    
       .main-content{
         margin-top:50px ;
+       
         flex-direction: row;
         height: max-content;
-        background-color:rgb(255, 249, 249)
+        background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
         }
         
     
         .main-content h1{
           font-size: 40px;
+          margin-left: 30px;
+        }
+        .main-content h3{
+          margin-right: 30px;
+         text-align: left;
         }
         #service_title h2{
           margin-top: 20px;
@@ -355,7 +366,7 @@ a{
 <body>
     <div id="nav-mob-contents">
         <br><br><br><br>
-        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #E52F50;">clear</i><br><br>
+        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #ffffff;">clear</i><br><br>
         <li onclick="Function1()"><a id="close" href="#main-content">Home</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#service_title"> Services</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#about"> About</a></li><br><br><br>
@@ -366,15 +377,15 @@ a{
     
     <div class="main">
       <div id="nav" class="nav">
-        <div id="navl" style="font-weight: bold;color: #E52F50;" >KaaDek.com</div>
-        <div id="navm" style="color: #0e0e0e; font-weight: bold;">
+        <div id="navl" style="font-weight: bold;color: #ffffff;" >Bluehun</div>
+        <div id="navm" style="color: #0e0e0e;">
             <li><a href="#main-content">Home</a> </li>
             <li><a href="#service_title"> Services</a></li>
             <li><a href="#about"> About</a></li>
             <li><a href="#projects"> Projects</a></li>
             <li><a href="#social"> Social</a></li>
         </div>
-        <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;color: #E52F50;">dehaze</i>
+        <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;color: #ffffff;">dehaze</i>
         </div>
       </div>
       
@@ -383,16 +394,14 @@ a{
            <div id="main-content" class="main-content">
          <br>
           <div>
-            <h1>Design,<span style="color: #E52F50;"> Create</span><br>
-                <span style="color: #E52F50;"> &</span> Develop  <br> with <span style="color: #E52F50;"> Us</span> </h1>
+            <h1>Go <span style="color: #ffffff;"> Digital </span> <br>
+                <span style="color: #ffffff;"> with</span> Bluehun   </h1><br><br>
+                <h3 style="margin-left: 70px; color: #ffffff;">Bluehun is the # 1 Digital Creator  in the world  <br> and helps you make sure your <br> Buisness reflects you.</h3>
              
         </div>
         <div class="w3-content w3-section" id="qlq" >
          
         
-          
-          <img  class="mySlides w3-animate-fading" src="pic2.svg" >
-          <img  class="mySlides w3-animate-fading" src="pic1.svg" >
           <img  class="mySlides w3-animate-fading" src="pic3.svg" >
          
         </div>
@@ -400,7 +409,7 @@ a{
       
      
     <div id="service_title"><br>
-      <h2 >What We Do For <span style="color: #E52F50;"> You</span> </h2>
+      <h2 >What We Do For <span style="color: #605ef3;"> You</span> </h2>
       <br><br>
     </div>
     
@@ -427,14 +436,14 @@ a{
     </div>
   
    <div id="about" class="about">
-     <h2><span style="color: #E52F50;"> Our</span> Story</h2>
+     <h2><span style="color: #ffffff;"> Our</span> Story</h2>
      <hr style="background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);height:5px;border-width:0;width: 50% ;text-align: center;margin-left: 25%;border-radius: 15px;">
 
 
    </div>
 
    <div id="projects" class="projects">
-    <h2>Our <span style="color: #E52F50;">Best </span> Projects</h2>
+    <h2>Our <span style="color: #605ef3;">Best </span> Projects</h2>
     
     
 
