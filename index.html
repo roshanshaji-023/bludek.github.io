@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin" rel="stylesheet">
    
    
     <link href="https://www.w3schools.com/w3css/4/w3.css">
@@ -147,7 +148,7 @@ a{
  }
       #service_title h2{color: #000000;}
     .services{
-      height: 70vh;
+      height: 80vh;
          width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -189,12 +190,31 @@ a{
     }
     
     .about{margin-top:30px;
-          height:100vh;
-          background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+      height: 80vh;
+         width: 100%;
+         background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-        
+          font-family: 'Pangolin', cursive;
+    }
+    .about1{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      font-family: 'Pangolin', cursive;
+      justify-content: center;
+    }
+    .about1 >div{
+      
+      color:rgb(0, 0, 0);
+
+      width:50% ;
+
+    
+    }
+    .about1 h2{
+      color: #000000;font-family: 'Pangolin', cursive; 
     }
     .about h2{
       font-size: 60px;
@@ -249,7 +269,28 @@ a{
 #myBtn:hover {
   background-color: #e0e0e0; /* Add a dark-grey background on hover */
 }
+div.polaroid {
+  width: 320px;height: 320px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 5px 10px 18px #888888;
+  z-index: 99;
+}
 
+div.rotate_right {
+  float: left;height: 400px;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Safari */
+  transform: rotate(7deg);
+}
+
+div.rotate_left {
+  float: left;height: 400px;
+  -ms-transform: rotate(-8deg); /* IE 9 */
+  -webkit-transform: rotate(-8deg); /* Safari */
+  transform: rotate(-8deg);
+}
 /* For mobile phones: */
          @media only screen and (max-width:1276px) {
      .nav{ position: fixed;}
@@ -272,15 +313,16 @@ a{
         display: none;
         height:70vh;width:100%;
         transition: 0.3s;
-        color:#E52F50;
+        color:#9643eb;
         overflow-y: hidden;
         position: fixed;
         list-style:none ;
         z-index: 99;
         text-align: center;
+        background-color: #ffffff;
     }
     #nav-mob-contents li a{
-      color:#E52F50;
+      color:#9643eb;
       font-weight: bold;
     }
    
@@ -318,11 +360,30 @@ a{
         .about{ 
          
           z-index: 99;
-         
+          background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );
         }
         .about h2{
-          font-size: 30px;
+          font-size: 30px;color: #ffffff;
         }
+        .about1{
+          display: flex;
+          flex-direction: column;
+          height: max-content;
+         
+        }
+        .about1>div{
+          height: max-content;
+          width: 100%;
+        
+          
+        
+        }
+        
+        div.polaroid {
+  display: none;
+ 
+}
+
         .projects{ z-index: 99;}
         .projects h2{
           font-size: 30px;
@@ -366,7 +427,7 @@ a{
 <body>
     <div id="nav-mob-contents">
         <br><br><br><br>
-        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #ffffff;">clear</i><br><br>
+        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #000000;">clear</i><br><br>
         <li onclick="Function1()"><a id="close" href="#main-content">Home</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#service_title"> Services</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#about"> About</a></li><br><br><br>
@@ -434,12 +495,27 @@ a{
         </div>
      
     </div>
-  
+    
    <div id="about" class="about">
-     <h2><span style="color: #ffffff;"> Our</span> Story</h2>
-     <hr style="background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);height:5px;border-width:0;width: 50% ;text-align: center;margin-left: 25%;border-radius: 15px;">
-
-
+    <h2><span style="color:#9643eb;text-align: center;"> Our</span> Story</h2>
+    <br><br><br>
+    
+    <div class="about1">
+   
+      <div>
+    
+       <h2 style="font-size: 30px;  margin-left: 40px;margin-top: 50px;"> We are a group of youngsters who are in deep love with building  Digital Content, here for you to bring on your Ideas,and Buisness Online in this Digital Era. <br></h2>
+      </div>
+      <div><div class="polaroid rotate_right">
+        <img src="Go Digital.png" alt="Pulpit rock" width="320" height="350">
+        
+      </div>
+      
+      <div class="polaroid rotate_left">
+        <img src="market.png" alt="Monterosso al Mare" width="320" height="350">
+       
+      </div></div>
+    </div>
    </div>
 
    <div id="projects" class="projects">
@@ -479,7 +555,7 @@ a{
         }
         function Function1(){
             document.getElementById("nav-mob-contents").style = "display:none;";
-            document.getElementById("ck").style = "display:block;color:#E52F50;";
+            document.getElementById("ck").style = "display:block;color:white;";
         }
         //image slideshow//
         var myIndex = 0;
