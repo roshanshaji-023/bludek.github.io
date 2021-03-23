@@ -256,14 +256,34 @@ a{
           }
 
     .social{
-      height:50vh;
+      height:35vh;
       background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,52,89,1) 0%, rgba(0,168,232,1) 90% );
-      
+      display: flex;
+      flex-direction: row;
+            justify-content: center;
+    }
+    .social>div{
+      margin-top: 25px;
+      width: 22%;
+      text-align: center;
+         list-style: none;
+         text-decoration: none;
+        
     }
     .social h2{
       font-size: 60px;
           text-align: center;
           color: rgb(0, 0, 0);
+    }
+    .social h4{
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+    .social >div li a{
+      list-style: none;
+      color: #000;
+      text-decoration: none;
     }
 #whatsapp{
   width: 50px;height:50px;color: #0e0e0e;text-align: center; transition: width 2s;margin-left: 10px;border-radius: 5px;margin-left: 50px;
@@ -317,6 +337,7 @@ div.rotate_left {
   -webkit-transform: rotate(-8deg); /* Safari */
   transform: rotate(-8deg);
 }
+
 /* For mobile phones: */
          @media only screen and (max-width:1276px) {
      .nav{ position: fixed;}
@@ -422,7 +443,7 @@ div.rotate_left {
           margin: 0 auto;
         }
         .show-off >div{
-          height: max-content;
+          height: 50vh;
           width: 100%;
           font-size: medium;
           margin: 0 auto;
@@ -432,8 +453,22 @@ div.rotate_left {
          width:200px;
         }
         .social h2{
-          font-size: 30px;
+          font-size: 30px;margin-top: 10px;
         }
+        .social{height: 70vh;
+          flex-direction: column;
+          
+        }
+        .social>div{
+          width: 100%;
+          text-align: center;
+          margin-top: 10px;
+        }
+        .social li a{
+         list-style: none;
+         text-decoration: none;
+        }
+
      /*#call, #whatsapp{
       margin: 0 auto;
      }*/
@@ -580,12 +615,31 @@ div.rotate_left {
   </div>
    
    <div id="social" class="social"><br><br>
-    <h2><span style="color: #ffffff;">Bludek  </span>is Social </h2>
-    
-    
+   <div><h4>Bludek</h4></div>
+   <div><h4>Social</h4><br>
+    <li><a href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F">Whatsapp</a></li><br>
+    <li><a href="mailto:bludek.co@gmail.com">Mail Us</a></li><br>
+    <li><a href="">Instagram</a></li><br>
+    <li><a href="tel:918547691061">Call Us</a></li>
+  </div>
+  
+   <div><h4>Solutions</h4><br>
+    <li><a href="">Marketing</a></li></div>
+   <div><h4>Resources</h4><br>
+  <li><a href="">Terms of Services</a></li><br>
+  <li><a href="">Privacy Policy</a></li><br>
+  <li><a href="">Terms & Conditions</a></li><br>
+
+</div>
     
    
+  
   </div>
+ 
+ 
+
+  </div>
+ 
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" style="color:#9643eb;font-size: 30px;"></i></button>
 
     <script>
