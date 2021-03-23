@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin" rel="stylesheet">
+    
    
    
     <link href="https://www.w3schools.com/w3css/4/w3.css">
@@ -62,7 +62,7 @@ a{
         flex-direction: row;
         height: 70px;
         width: 100%;
-        
+        z-index: 99;
         color:#ffffff;
       
          /*background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%); */
@@ -190,19 +190,18 @@ a{
     }
     
     .about{margin-top:30px;
-      height: 80vh;
-         width: 100%;
-         background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+      height: 100vh;
+      background-color: #ffffff;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-          font-family: 'Pangolin', cursive;
+         
     }
     .about1{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      font-family: 'Pangolin', cursive;
+     
       justify-content: center;
     }
     .about1 >div{
@@ -214,30 +213,34 @@ a{
     
     }
     .about1 h2{
-      color: #000000;font-family: 'Pangolin', cursive; 
-    }
-    .about h2{
-      font-size: 60px;
-          text-align: center;
-    }
-    .projects{
-      height:70vh;
+      margin-top: 50px;
+      margin-left: 30px;
       color: #000000;
-      background-color: #ffffff;
+      font-size: 30px;
+      text-align: left;
+    }
+    
+    .projects{
+      height:120vh;
+      color: #ffffff;
+      background-image: url(bg1.png);background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
     }
     .projects h2{font-size: 60px;
           text-align: center;
+          color: rgb(255, 255, 255);
           }
 
     .social{
       height:80vh;
-      background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+     background-color: #ffffff;
       
     }
     .social h2{
       font-size: 60px;
           text-align: center;
-          color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
     }
 #whatsapp{
   width: 50px;height:50px;color: #0e0e0e;text-align: center; transition: width 2s;margin-left: 10px;border-radius: 5px;
@@ -270,7 +273,7 @@ a{
   background-color: #e0e0e0; /* Add a dark-grey background on hover */
 }
 div.polaroid {
-  width: 320px;height: 320px;
+  width: 300px;height: 320px;
   padding: 10px 10px 20px 10px;
   border: 1px solid #BFBFBF;
   background-color: white;
@@ -330,7 +333,7 @@ div.rotate_left {
         margin-top:50px ;
        
         flex-direction: row;
-        height: max-content;
+        height: 100vh;
         background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
         }
         
@@ -358,7 +361,7 @@ div.rotate_left {
           
         }
         .about{ 
-         
+         height: 70vh;
           z-index: 99;
           background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );
         }
@@ -367,16 +370,18 @@ div.rotate_left {
         }
         .about1{
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           height: max-content;
          
         }
         .about1>div{
-          height: max-content;
-          width: 100%;
-        
-          
-        
+          height:max-content;
+          width:90% ;
+
+        }
+        .about1 h2{
+          font-size: 20px;
+          text-align: right;
         }
         
         div.polaroid {
@@ -497,6 +502,7 @@ div.rotate_left {
     </div>
     
    <div id="about" class="about">
+     <br><br>
     <h2><span style="color:#9643eb;text-align: center;"> Our</span> Story</h2>
     <br><br><br>
     
@@ -504,22 +510,22 @@ div.rotate_left {
    
       <div>
     
-       <h2 style="font-size: 30px;  margin-left: 40px;margin-top: 50px;"> We are a group of youngsters who are in deep love with building  Digital Content, here for you to bring on your Ideas,and Buisness Online in this Digital Era. <br></h2>
+       <h2 > We are a group of youngsters who are in deep love with building  Digital Content, here for you to bring on your Ideas,and Buisness Online in this Digital Era. <br></h2>
       </div>
       <div><div class="polaroid rotate_right">
-        <img src="Go Digital.png" alt="Pulpit rock" width="320" height="350">
+        <img src="Go Digital.png" alt="Pulpit rock" width="300" height="350">
         
       </div>
       
       <div class="polaroid rotate_left">
-        <img src="market.png" alt="Monterosso al Mare" width="320" height="350">
+        <img src="market.png" alt="Monterosso al Mare" width="300" height="350">
        
       </div></div>
     </div>
    </div>
 
-   <div id="projects" class="projects">
-    <h2>Our <span style="color: #605ef3;">Best </span> Projects</h2>
+   <div id="projects" class="projects"><br><br>
+    <h2>Dive <span style="color: #ffffff;">into </span> our  Designs</h2>
     
     
 
@@ -528,7 +534,7 @@ div.rotate_left {
   
    
    <div id="social" class="social">
-    <h2>Let's <span style="color: #ffffff;">Talk</span> </h2>
+    <h2>Let's <span style="color: #000000;">Talk</span> </h2>
     <hr style="background-image:linear-gradient(-90deg, #ffffff 0%, #ffffff 100%);height:5px;border-width:0;width: 50% ;text-align: center;margin-left: 25%;border-radius: 15px;">
     
     <br><br><div id="whatsapp">
