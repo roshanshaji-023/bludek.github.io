@@ -242,12 +242,20 @@ a{
           background-repeat: no-repeat;
           background-size: cover;
     }
-    .projects h2{font-size: 40px;
+    .projects h2{font-size: 60px;
           text-align: right;margin-right: 70px;
           color: #5a5a5a;
           
           }
-
+    .designs{
+      display: flex;flex-wrap: wrap;flex-shrink: inherit;flex-direction: row;
+    }
+    .designs >div{
+      width:auto;
+    }
+    #coroselimg{
+      margin-left: 70px;
+    }
           .show-off{
             height: 70vh;
             display: flex;
@@ -438,6 +446,19 @@ a{
         .projects h2{
           font-size: 25px;margin-right: 10px;
         }
+        .designs{
+          flex-direction: row;
+        }
+        .designs>div{
+          width:100%;
+        }
+        .designs >div img{
+          width: 350px;
+          margin: 0 auto;
+        }
+        #coroselimg{
+      margin-left: 0px;
+    }
         .show-off{
           flex-direction: column;
           height: max-content;
@@ -471,6 +492,8 @@ a{
         }
         #team{
           display: none;
+        } #social-media{
+          display: none;
         }
      /*#call, #whatsapp{
       margin: 0 auto;
@@ -503,6 +526,9 @@ a{
           height:auto;
         }
         #social-media{
+          display: none;
+        }
+        #design_text{
           display: none;
         }
         
@@ -551,7 +577,7 @@ a{
         <div class="w3-content w3-section" id="qlq" >
          
         
-          <img  class="mySlides w3-animate-fading" src="pic3.svg" >
+          <img   src="pic3.svg" >
          
         </div>
       </div> 
@@ -607,10 +633,21 @@ a{
    </div>
 
    <div id="projects" class="projects"><br><br>
-    <h2>Dive <span style="color: #ffffff;">into </span> our  Designs</h2>
-    
-    
+    <h2>Dive <span style="color: #ffffff;">into </span> our  Designs</h2><br>
+    <div class="designs">
+      <div id="coroselimg">
+      <img class="mySlides w3-animate-fading" src="design1.svg" style="height: 300px;" alt="">
+      <img class="mySlides w3-animate-fading" src="design2.svg" style="height: 300px;" alt="">
+      <img class="mySlides w3-animate-fading" src="design3.svg" style="height: 300px;" alt="">
+      <img class="mySlides w3-animate-fading" src="design4.svg" style="height: 300px;" alt="">
+      </div>
+      <div id="design_text" style="text-align: right;" >
+       <h1 style="text-align: right;margin-left: 150px;margin-top: 50px; color: #747474;">Designed with Love & Passion <br> From our Team</h1>
+       <br><br><br>
+      <a href="" style="padding: 10px;border: 3px solid white;color: white;">Learn More</a>
+        </div>
 
+    </div>
 
    </div>
   <div class="show-off">
@@ -678,7 +715,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  setTimeout(carousel, 3000);    
 }
 
        
