@@ -54,14 +54,16 @@ a{
     .main{
         height: 100vh;
         width: 100%;
-        background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+        /*background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );*/
+        background-color: #000;
         z-index: 99;
         background-position: center;
         background-size: cover;
         
     }
 
-     .nav{  background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+     .nav{  /*background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );*/
+     background-color: #000;
         position: fixed;
         top: 0;
         transition: top 0.3s;
@@ -168,7 +170,7 @@ a{
   
     }
     h3{
-      color:#9643eb;
+      color:#550d9c;
     }
      h2{
       font-size: 60px;
@@ -196,11 +198,15 @@ a{
     
     .about{margin-top:30px;
       height: 100vh;
-      background-color: #ffffff;
+      background-color: #000;
+      /*background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);*/
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
          
+    }
+    .about h2{
+      color: rgb(49, 49, 49);
     }
     .about1{
       display: flex;
@@ -220,22 +226,24 @@ a{
     .about1 h2{
       margin-top: 50px;
       margin-left: 30px;
-      color: #000000;
+      color: #363636;
       font-size: 45px;
       font-family: 'Montserrat', sans-serif;font-weight: 200;
       text-align:left;
     }
     
     .projects{
-      height:60vh;
+      height:70vh;
       color: #ffffff;
-      background-image: url(bg1.png);background-position: center;
+      background-color: #000;
+      /*background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);*/
+      background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
     }
     .projects h2{font-size: 40px;
           text-align: right;margin-right: 70px;
-          color: rgb(0, 0, 0);
+          color: rgb(49, 49, 49);
           
           }
 
@@ -263,7 +271,9 @@ a{
 
     .social{
       height:35vh;
-      background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,52,89,1) 0%, rgba(0,168,232,1) 90% );
+      /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,52,89,1) 0%, rgba(0,168,232,1) 90% );*/
+      background-color: #000;
+      color: #ebedee;
       display: flex;
       flex-direction: row;
             justify-content: center;
@@ -288,7 +298,7 @@ a{
     }
     .social >div li a{
       list-style: none;
-      color: #000;
+      color: #ebedee;
       text-decoration: none;
     }
 #whatsapp{
@@ -321,28 +331,7 @@ a{
 #myBtn:hover {
   background-color: #ffffff; /* Add a dark-grey background on hover */
 }
-div.polaroid {
-  width: 300px;height: 320px;
-  padding: 10px 10px 20px 10px;
-  border: 1px solid #BFBFBF;
-  background-color: white;
-  box-shadow: 5px 10px 18px #888888;
-  z-index: 99;
-}
 
-div.rotate_right {
-  float: left;height: 400px;
-  -ms-transform: rotate(7deg); /* IE 9 */
-  -webkit-transform: rotate(7deg); /* Safari */
-  transform: rotate(7deg);
-}
-
-div.rotate_left {
-  float: left;height: 400px;
-  -ms-transform: rotate(-8deg); /* IE 9 */
-  -webkit-transform: rotate(-8deg); /* Safari */
-  transform: rotate(-8deg);
-}
 
 /* For mobile phones: */
          @media only screen and (max-width:1276px) {
@@ -372,7 +361,7 @@ div.rotate_left {
         list-style:none ;
         z-index: 99;
         text-align: center;
-        background-color: #ffffff;
+        background-color: #000000;
     }
     #nav-mob-contents li a{
       color:#9643eb;
@@ -384,7 +373,8 @@ div.rotate_left {
       
         flex-direction: row;
         height: max-content;
-        background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+        /*background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );*/
+        background-color: #000;
         }
         
     
@@ -518,7 +508,7 @@ div.rotate_left {
 <body>
     <div id="nav-mob-contents">
         <br><br><br><br>
-        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #000000;">clear</i><br><br>
+        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #ffffff;">clear</i><br><br>
         <li onclick="Function1()"><a id="close" href="#main-content">Home</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#service_title"> Services</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#about"> About</a></li><br><br><br>
@@ -564,7 +554,7 @@ div.rotate_left {
       
      
     <div id="service_title"><br>
-      <h2 >Our <span style="color: #605ef3;"> Services</span> </h2>
+      <h2 >Our <span style="color: #000000;"> Services</span> </h2>
       <br><br>
     </div>
     
@@ -592,7 +582,7 @@ div.rotate_left {
     
    <div id="about" class="about">
      <br><br>
-    <h2><span style="color:#000000;text-align: center;"> Team</span> Bludek </h2>
+    <h2><span style="color:#ffffff;text-align: center;"> Team</span> Bludek </h2>
     <br><br><br>
     
     <div class="about1">
@@ -603,15 +593,7 @@ div.rotate_left {
         <br></h2>
        <img src="team.svg" id="team" style="height: 200px;margin-left: 150px;margin-top: 50px;" alt="">
       </div>
-      <div><div class="polaroid rotate_right">
-        <img src="Go Digital.png" alt="Pulpit rock" width="300" height="350">
-        
-      </div>
       
-      <div class="polaroid rotate_left">
-        <img src="market.png" alt="Monterosso al Mare" width="300" height="350">
-       
-      </div></div>
     </div>
    </div>
 
