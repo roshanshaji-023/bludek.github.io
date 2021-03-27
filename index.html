@@ -57,16 +57,17 @@ a{
         height: 100vh;
         width: 100%;
         /*background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );*/
-        background-color:#020202;
+        /*background-color:#020202;*/
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
         z-index: 99;
         background-position: center;
         background-size: cover;
-        
+        color: #000;
     }
 
      .nav{  /*background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );*/
-     background-color: #000;
-        position: fixed;
+     
+       
         top: 0;
         transition: top 0.3s;
         display: flex;
@@ -74,8 +75,8 @@ a{
         height: 70px;
         width: 100%;
         z-index: 99;
-        color:#ffffff;
-      
+        color:#000000;
+    
          /*background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%); */
         
     }
@@ -85,13 +86,13 @@ a{
         width: 100px;
         margin-left: 0%;
         margin-right: 0%;
-        color:#ffffff;
+        color:#000000;
         font-size:20px;
     }
     #navl{width: 25%;
        text-align: left;
        margin-left: 70px;
-       color:#ffffff;
+       color:#000000;
     }
     #logo{
         height: 50px;
@@ -102,7 +103,7 @@ a{
        margin-right:70px ;
     }
     #navm a{
-      color:#ffffff;
+      color:#000000;
     }
     #navm li{
         list-style: none;
@@ -114,7 +115,7 @@ a{
     }
     #navm li a:hover{
       
-        color:#ffffff;
+        color:#464646;
     }
     #navr{width: 25%;
         display: none;
@@ -137,7 +138,7 @@ a{
     .main-content h1{ margin-top:70px;
       margin-left: 70px;
         font-size: 80px;
-        color:rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
     }
     
       .main-content >div{
@@ -345,7 +346,8 @@ a{
 
 /* For mobile phones: */
          @media only screen and (max-width:1276px) {
-     .nav{ position: fixed;}
+     .nav{ position: fixed;  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+     }
       
       #navm{
           display: none;
@@ -365,16 +367,17 @@ a{
         display: none;
         height:70vh;width:100%;
         transition: 0.3s;
-        color:#9643eb;
+        color:#000000;
         overflow-y: hidden;
         position: fixed;
         list-style:none ;
         z-index: 99;
         text-align: center;
-        background-color:#020202;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+     
     }
     #nav-mob-contents li a{
-      color:#9643eb;
+      color:#000000;
       font-weight: bold;
     }
    
@@ -383,8 +386,8 @@ a{
       
         flex-direction: row;
         height: max-content;
-        /*background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );*/
-        background-color:#020202;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      
         }
         
     
@@ -543,7 +546,7 @@ a{
 <body>
     <div id="nav-mob-contents">
         <br><br><br><br>
-        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #ffffff;">clear</i><br><br>
+        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #000000;">clear</i><br><br>
         <li onclick="Function1()"><a id="close" href="#main-content">Home</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#service_title"> Services</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#about"> About</a></li><br><br><br>
@@ -554,15 +557,15 @@ a{
     
     <div class="main">
       <div id="nav" class="nav">
-        <div id="navl" style="font-weight: bold;color: #ffffff;" >Bludek</div>
-        <div id="navm" style="color: #0e0e0e;">
+        <div id="navl" style="font-weight: bolder;color: #000000;" >Bludek</div>
+        <div id="navm" style="color: #0e0e0e; font-weight: bold;">
             
             <li><a href="#service_title"> Services</a></li>
             <li><a href="#about"> About</a></li>
             <li><a href="#projects"> Designs</a></li>
             <li><a href="#social"> Social</a></li>
         </div>
-        <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;color: #ffffff;">dehaze</i>
+        <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;color: #000000;">dehaze</i>
         </div>
       </div>
       
@@ -571,12 +574,12 @@ a{
            <div id="main-content" class="main-content">
          <br>
           <div>
-            <h1>Go <span style="color: #ffffff;"> Digital </span> <br>
-                <span style="color: #ffffff;"> with</span> Bludek   </h1><br><br>
-                <h3 style="margin-left: 70px; color: #ffffff;">Bludek  is the # 1 Digital Creator  in the world  <br> and helps you make sure your <br> Buisness reflects you.</h3>
+            <h1>Go <span style="color: #000000;"> Digital </span> <br>
+                <span style="color: #000000;"> with</span> Bludek   </h1><br><br>
+                <h3 style="margin-left: 70px; color: #000000;">Bludek  is  # 1 Digital Creator  helps you make sure your <br> Buisness reflects you.</h3>
              <br><br>
-             <div class="con" style="margin-left: 70px;height: 50px;width: 180px;color: rgb(255, 255, 255);display:inline-block ;border-radius: 5px;border-style: solid;border-color: #ffffff;">
-              <a  href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:30px;color: #ffffff;margin-top: 10px;margin-left: 7px;"></i><p  style="text-align: center; color: rgb(255, 255, 255);margin-top: -25px;"> Chat With Us</p></a>
+             <div class="con" style="margin-left: 70px;height: 50px;width: 180px;color: rgb(255, 255, 255);display:inline-block ;border-radius: 5px;border-style: solid;border-color: #9e9e9e;">
+              <a  href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:30px;color:rgb(80, 80, 80);margin-top: 10px;margin-left: 7px;"></i><p  style="text-align: center; color: rgb(0, 0, 0);margin-top: -25px;"> &nbsp Chat With Us</p></a>
             </div>
         </div>
         <div class="w3-content w3-section" id="qlq" >
@@ -649,7 +652,7 @@ a{
       <div id="design_text" style="text-align: right;" >
        <h1 style="text-align: right;margin-left: 150px;margin-top: 50px; color: #747474;">Designed with Love & Passion <br> From our Team</h1>
        <br><br><br>
-      <a href="" style="padding: 10px;border: 3px solid white;color: white;">Learn More</a>
+      <a href="" style="padding: 10px;border: 2px solid white;color: white; border-radius: 5px;">Learn More</a>
         </div>
 
     </div>
@@ -689,7 +692,7 @@ a{
 
 
  
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" style="color:#000000;font-size: 30px;"></i></button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" style="color:#000000;font-size: 20px;"></i></button>
 
     <script>
 
@@ -705,7 +708,7 @@ a{
         }
         function Function1(){
             document.getElementById("nav-mob-contents").style = "display:none;";
-            document.getElementById("ck").style = "display:block;color:white;";
+            document.getElementById("ck").style = "display:block;color:black;";
         }
         //image slideshow//
         var myIndex = 0;
@@ -744,10 +747,10 @@ window.onscroll = function(){scrolfunction()};
 function scrolfunction(){
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
+  
     mybutton.style.display = "block";
   } else {
-    document.getElementById("nav").style.top = "-70px";
+    
     mybutton.style.display = "none";
   }
   prevScrollpos = currentScrollPos;
