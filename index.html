@@ -421,6 +421,7 @@ a{
       #nav-mob-contents{
         text-decoration: none;
         display: none;
+      
         height:100vh;width:100%;
         transition: 0.3s;
         color:#000000;
@@ -432,9 +433,14 @@ a{
         background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
      
     }
+    #nav-mob-contents li{
+      margin-top: 30px;
+    }
     #nav-mob-contents li a{
+     
       color:#000000;
       font-weight: bold;
+     
     }
    
       .main-content{
@@ -617,7 +623,7 @@ a{
 <body>
     <div id="nav-mob-contents">
         <br><br><br><br>
-        <i class="material-icons" id="close" style="font-size:30px;float: right;color: #000000;">clear</i><br><br>
+        
         <li onclick="Function1()"><a id="close" href="#main-content">Home</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#service_title"> Services</a></li><br><br><br>
         <li onclick="Function1()"><a id="close" href="#about"> About</a></li><br><br><br>
@@ -638,6 +644,7 @@ a{
             <li><a href="#social"> Social</a></li>
         </div>
         <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;color: #000000;">dehaze</i>
+          <i class="material-icons" id="close1" id="close1" style="font-size:35px;display:none;float: right;color: #000000;">clear</i><br><br>
         </div>
       </div>
       
@@ -792,16 +799,18 @@ a{
 
         document.getElementById("ck").onclick = function() {myFunction()};
         document.getElementById("close").onclick = function() {Function1()};
-        
+        document.getElementById("close1").onclick = function() {Function1()};
+
         function myFunction() {
           document.getElementById("nav-mob-contents").style = "display:block;";
-         
+          document.getElementById("close1").style = "display:block;";
           document.getElementById("ck").style = "display:none;";
           
         }
         function Function1(){
             document.getElementById("nav-mob-contents").style = "display:none;";
             document.getElementById("ck").style = "display:block;color:black;";
+            document.getElementById("close1").style = "display:none;";
         }
         //image slideshow//
         var myIndex = 0;
