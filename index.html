@@ -56,18 +56,18 @@ a{
     .main{
         height: 100vh;
         width: 100%;
-        /*background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );*/
-        /*background-color:#020202;*/
-        /*background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
-        background-image: url(background.svg);
+        
+      
+        background: url('bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);
+       
         z-index: 99;
-        background-position:center;
-     
+        background-position:center center;
+       
         background-size: cover;
         color: #000;
     }
 
-     .nav{  /*background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );*/
+     .nav{  
      
        
         top: 0;
@@ -78,8 +78,8 @@ a{
         width: 100%;
         z-index: 99;
         color:#000000;
-    
-         /*background-image:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%); */
+        position: fixed;
+        
         
     }
     .nav > div{
@@ -106,18 +106,23 @@ a{
     }
     #navm a{
       color:#000000;
+      padding: 10px;
+      border-radius: 5PX;
     }
     #navm li{
         list-style: none;
         display: inline;
         text-align: center;
-        margin: 35px;
+        margin: 15px;
         color:#ffffff;
        
     }
     #navm li a:hover{
       
-        color:#464646;
+        color:#dc2430;
+        background-color:#ffffff ;
+        transition: ease-in-out .5s;
+      
     }
     #navr{width: 25%;
         display: none;
@@ -140,13 +145,13 @@ a{
     .main-content h1{ margin-top:70px;
       margin-left: 70px;
         font-size: 80px;
-        color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
     }
     
       .main-content >div{
         height:450px;
         width:50%;
-
+       color: #ffffff;
         border-radius: 12px;
       }
        #qlq img{
@@ -163,15 +168,18 @@ a{
  }
       #service_title h2{color: #000000; text-align: left;margin-left:70px ;font-weight: bolder;font-size: 50px;}
     .services{
-      height: 70vh;
+      height: max-content;
          width: 100%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
      
       justify-content: center;
-      background-color: rgb(255, 255, 255);;
-      
+      background-image: url(services.svg);
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: scroll;
   
     }
     h3{
@@ -185,11 +193,11 @@ a{
     .services >div{
       
       color:rgb(0, 0, 0);
-      margin: 30px;
+      margin: 20px;
       height: 400px;
-      width:25.3% ;
+      width:70% ;
       border-radius: 7px;
-     
+    margin-left: 50px;
       
       font-size: larger;
       text-align: center;
@@ -198,10 +206,14 @@ a{
     }
      .services p{
       color:rgb(0, 0, 0);
+     
+    }
+    .services img{
+      display: none;
     }
     
     
-    .about{margin-top:30px;
+    .about{
       height: 100vh;
       background-color: #000;
       /*background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);*/
@@ -402,7 +414,7 @@ a{
 
 /* For mobile phones: */
          @media only screen and (max-width:1276px) {
-     .nav{ position: fixed;  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+     .nav{ position: fixed; 
      }
       
       #navm{
@@ -445,10 +457,10 @@ a{
    
       .main-content{
         margin-top:50px ;
-      
+        background: url('bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);
         flex-direction: row;
         height: max-content;
-        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      
       
         }
         
@@ -473,13 +485,23 @@ a{
           flex-direction: row;
           height: max-content;
           z-index: 99;   
+          background-color: #fdfbfb;
+          background-image: none;
         }
         .services >div{
           height: max-content;
           width: 80%;
           margin: 20px;
           font-size: medium;
-          box-shadow: 5px 10px 18px #888888;
+       
+         
+        }
+        .services>div h2 p{
+          text-align: center;
+        }
+        .services img{
+          display: block;
+          margin: 0 auto;
         }
         .about{ 
          height:60vh;
@@ -589,7 +611,8 @@ a{
 @media only screen and (max-width:800px){
     .main-content{
         margin-top:50px ;
-        flex-direction: column;}
+        flex-direction: column;
+        }
         .main-content >div{
           width:100%;
         }
@@ -633,9 +656,10 @@ a{
         
     </div>
     
-    <div class="main">
+    <div class="main"style="background: url('bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);">
+     
       <div id="nav" class="nav">
-        <div id="navl" style="font-weight: bolder;color: #000000;" >Bludek</div>
+        <div id="navl" style="font-weight: bolder;" ><li style="list-style: none;"><a style="color: #000000;" href="#main-content"> Bludek</a></li> </div>
         <div id="navm" style="color: #0e0e0e; font-weight: bold;">
             
             <li><a href="#service_title"> Services</a></li>
@@ -653,12 +677,12 @@ a{
            <div id="main-content" class="main-content">
          <br>
           <div>
-            <h1>Go <span style="color: #000000;"> Digital </span> <br>
-                <span style="color: #000000;"> with</span> Bludek   </h1><br><br>
-                <h3 style="margin-left: 70px; color: #000000;">Bludek  is  # 1 Digital Creator  helps you make sure your <br> Buisness reflects you.</h3>
+            <h1>Go  Digital </span> <br>
+                with<span style="color: #ffffff;">  BLUDEK  </span> </h1><br><br>
+                <h3 style="margin-left: 70px; color: #ffffff;">Bludek  is  # 1 Digital Creator  helps you make sure your <br> Buisness reflects you.</h3>
              <br><br>
-             <div class="con" style="margin-left: 70px;height: 50px;width: 180px;color: rgb(255, 255, 255);display:inline-block ;border-radius: 5px;border-style: solid;border-color: #9e9e9e;">
-              <a  href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:30px;color:rgb(80, 80, 80);margin-top: 10px;margin-left: 7px;"></i><p  style="text-align: center; color: rgb(0, 0, 0);margin-top: -25px;"> &nbsp Chat With Us</p></a>
+             <div class="con" style="margin-left: 70px;height: 50px;width: 180px;color: rgb(255, 255, 255);display:inline-block ;border-radius: 5px;border-style: solid;border-color: #ffffff;">
+              <a  href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:30px;color:rgb(255, 255, 255);margin-top: 10px;margin-left: 7px;"></i><p  style="text-align: center; color: rgb(255, 255, 255);margin-top: -25px;"> &nbsp Chat With Us</p></a>
             </div>
         </div>
         <div class="w3-content w3-section" id="qlq" >
@@ -678,29 +702,29 @@ a{
     
     <div id="services" class="services">
      
-      <div><br>
+      <div style="text-align: left;"><br>
         <img src="web.svg" alt="" style="height: 150px;"><br>
         <h3> Web Development</h3><br>
-        <p>Design & Develop Websites to promote your Buisness and Showcase your online Footprint With our Team </p><br>
+        <p>Design & Develop Websites to promote your Buisness <br> and Showcase your online Footprint With our Team </p><br>
         <a href="" style="text-decoration: none;font-size: 15px;color: #000;">Learn More  &nbsp<i class="fa fa-angle-double-right" aria-hidden="true" style="font-size:20px;color:  #ff4242;;margin-top: 10px;"></i></a>
         <br><br>
 
       </div>
-      <div><br>
+      <div  style="text-align: right;"><br>
         <img src="brand.svg" alt="" style="height: 150px;"><br>
         <h3>Branding</h3><br>
-        <p>Design & Create Logos,Cards,Brochure for your Buisness,Events and Enhance  Digitally With our team of Professionals</p><br>
+        <p style="text-align: right;">Design & Create Logos,Cards,Brochure for your Buisness,Events <br> and Enhance  Digitally With our team of Professionals</p><br>
         <a href="" style="text-decoration: none;font-size: 15px;color: #000;">Learn More &nbsp<i class="fa fa-angle-double-right" aria-hidden="true" style="font-size:20px;color: #ff4242;margin-top: 10px;"></i></a>
         <br><br>
         </div> 
-      <div><br>
+      <div  style="text-align: left;"><br>
         <img src="digital.svg" alt="" style="height: 150px;"><br>
         <h3>Digital Marketing</h3><br>
-        <p>Promote & sell products and services online with Social media Marketing, Search Marketing, etc with our Team  </p><br>
+        <p>Promote & sell products and services online with Social Media <br> Marketing, Search Marketing, etc with our Team  </p><br>
         <a href="" style="text-decoration: none;font-size: 15px;color: #000;">Learn More  &nbsp<i class="fa fa-angle-double-right" aria-hidden="true" style="font-size:20px;color:  #ff4242;;margin-top: 10px;"></i></a>
         <br><br>
         </div>
-     
+      
     </div>
     
    <div id="about" class="about">
@@ -849,11 +873,14 @@ window.onscroll = function(){scrolfunction()};
 function scrolfunction(){
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-  
+    document.getElementById("nav").style.top = "0";
+    document.getElementById("nav").style.backgroundColor= "white";
+    document.getElementById("nav").style.opacity= "0.7";
     mybutton.style.display = "block";
   } else {
-    
+    document.getElementById("nav").style.top = "-70px";
     mybutton.style.display = "none";
+    document.getElementById("nav").style.backgroundColor= 'transparent';
   }
   prevScrollpos = currentScrollPos;
 }
