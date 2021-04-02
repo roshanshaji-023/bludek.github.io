@@ -143,7 +143,7 @@ a{
         width: 100%;
     }
     .main-content h1{ margin-top:100px;
-     
+      text-align: center;
         font-size: 80px;
         color:rgb(255, 255, 255);
     }
@@ -313,7 +313,7 @@ a{
             margin-top: 50px;
             font-size: 40px;
             font-weight:bolder;
-            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
           }
           .show-off>div{
          
@@ -380,6 +380,23 @@ a{
   outline: none; /* Remove outline */
   background-color: #ffffff; /* Set a background color */
   color: #000000; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px;/* Increase font size */
+}
+#mybtn1 {
+  display: block; /* Hidden by default */
+  /* Fixed/sticky position */
+  bottom: 20px;height: 30px; width: 30px;/* Place the button at the bottom of the page */
+  right: 520px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  margin-left:50%; 
+  margin-top: 10vh;
+  margin: 10 auto;
+  color: #ffffff; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -481,12 +498,12 @@ a{
       
         }
         .main-content>div{
-          margin-top: 100px;
+          margin-top: 100px;height: max-content;
         }
     
         .main-content h1{
           margin-top:300px ;
-          font-size: 40px;
+          font-size: 50px;
           margin: 0 auto;
          text-align: center;
         }
@@ -495,7 +512,7 @@ a{
           margin-left: 30px;margin-right: 30px;
          text-align: center;
         }
-        .con{margin-left: 28%;
+        .con{margin-left: 28%;height: max-content;
 
 }
 .con  a{ margin: 0 auto;
@@ -643,7 +660,9 @@ padding: 10px;color: rgb(255, 255, 255);border-radius: 5px;border-style: solid;b
         } #social-media{
           display: none;
         }
-       
+       #byntn1{
+        margin-left:23%;
+       }
         
      /*#call, #whatsapp{
       margin: 0 auto;
@@ -720,15 +739,16 @@ padding: 10px;color: rgb(255, 255, 255);border-radius: 5px;border-style: solid;b
            <div id="main-content" class="main-content">
          <br>
           <div>
-            <h1 style="text-align: center;">Go  Digital </span> 
+            <h1 >Go  Digital </span> 
                 with<span style="color: #ffffff;">  BLUDEK  </span> </h1><br><br>
-                <h3 style="text-align:center;color: #ffffff;">Bludek  is  # 1 Digital Creator  helps you make sure your  Buisness reflects you.</h3>
-             <br><br><br><br><br><br><br>
+                <h3 style="text-align:center;color: #ffffff;">Bludek  is  # 1 Digital Creator  helps you Design , Analize, Code, Build / Re-Build Your Brand</h3>
+             <br><br><br><br><br><br>
              <div class="con" >
               <a  href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> <i class="fab fa-whatsapp" aria-hidden="true" style="font-size: 25px;margin-top: 35px;" ></i> &nbsp Chat With Us</a>
-            </div>
+            </div> <br><br>
+            <a href="#service_title" id="mybtn1"><i class="fas fa-angle-double-down" style="font-size: 30px; "></i></a>
         </div>
-        
+      
       </div> 
       
      
@@ -835,10 +855,10 @@ padding: 10px;color: rgb(255, 255, 255);border-radius: 5px;border-style: solid;b
   
   </div><br>
    <div><h4> Let's Socialize</h4><br>
-    <li><a href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F">DM Us on Whatsapp</a></li><br>
+    <li><a href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> Whatsapp</a></li><br>
     
-    <li><a href="https://www.instagram.com/bludek.co/">Follow us on Instagram</a></li><br>
-    <li><a href="https://www.facebook.com/bludek.co.in">Follow us on facebook</a></li><br>
+    <li><a href="https://www.instagram.com/bludek.co/">Instagram</a></li><br>
+    <li><a href="https://www.facebook.com/bludek.co.in">facebook</a></li><br>
     
   </div>
   
@@ -924,7 +944,7 @@ var currentScrollPos = window.pageYOffset;
   } else {
     document.getElementById("nav").style.top = "-70px";
     mybutton.style.display = "none";
-    document.getElementById("nav").style.backgroundColor= 'transparent';
+    document.getElementById("nav").style.background= 'none';
   }
   prevScrollpos = currentScrollPos;
 }
