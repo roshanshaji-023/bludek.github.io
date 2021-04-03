@@ -64,17 +64,23 @@ h4{color: rgb(0, 0, 0);
     flex-wrap: wrap;
     height: max-content;
     justify-content: center;
-  
+   
 }
 
-#features-content>div{
-width:400px;
+
+.box{
+    transition: box-shadow .3s;
+    width:400px;
 height:230px;
 text-align: center;
 margin: 15px;
 border: 1px solid rgb(237, 228, 247);
-border-radius: 5px;
+border-radius: 5px; 
 }
+.box:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+ 
 </style>
 <body>
     <main>
@@ -83,18 +89,18 @@ border-radius: 5px;
         <div id="feature"><h3>Features</h3>
         <br>
         <div id="features-content">
-            <div><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">domain_verification</i><h4>Domain Registration & Hosting</h4>
+            <div class="box"><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">domain_verification</i><h4>Domain Registration & Hosting</h4>
             <br>
-        <p>We help you choose the right Domain for your Website & get you done with the Domain Registration & web Hosting.</p></div>
-            <div><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">devices</i><h4>Responsive</h4><br>
+            <p>We help you choose the right Domain for your Website & get you done with the Domain Registration & web Hosting.</p></div>
+            <div class="box"><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">devices</i><h4>Responsive</h4><br>
             <p>Get the perfect UI\UX Design for your Brand and get to build Responsive website,no matter the device is! </p></div>
-            <div><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">manage_search</i><h4>Google Search Indexing</h4><br>
+            <div class="box"><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">manage_search</i><h4>Google Search Indexing</h4><br>
             <p>Get your Website Listed on top of Google Search ,upon the completion of Hosting and get realtime monitoring</p></div>
-            <div><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">public</i><h4>SEO</h4><br>
+            <div class="box"><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">public</i><h4>SEO</h4><br>
             <p>Get the Search Engine Optimisation Done with Suitable Content,Url-linking,Organic Listing etc done on your site.</p></div>
-            <div><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">facebook</i><h4>Social Media Integration</h4><br>
+            <div class="box"><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">facebook</i><h4>Social Media Integration</h4><br>
             <p>Include all your Social Media Pages / accounts,Whatsapp etc.. Linked with your site for better Communication.</p></div>
-            <div><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">savings</i><h4>Budget Friendly</h4><br>
+            <div class="box"><i class="material-icons" style="font-size:30px;color: rgb(255, 230, 0);">savings</i><h4>Budget Friendly</h4><br>
             <p>Build upon your Budget.We are budget friendly makers who are looking at customer satisfaction as a whole.</p></div>
             
         </div>
