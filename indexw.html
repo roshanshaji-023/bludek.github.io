@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bludek | The Web Development And Branding Company</title>
+     <meta name="description" content="Bludek is one of the Best Professional Web Designing, Web Development , Advertising & Digital Marketing Company in India. We offer Website Development, Branding and Digital Marketing Services  All over South India -> Bengaluru,Mumbai, Hyderabad And Kochi.| bludek.co.in">
+    <meta data-react-helmet="true" property="og:title" content="Bludek | The Web Development And Branding Company In India">
+    <meta data-react-helmet="true" property="og:description" content="Bludek is one of the Best Professional Web Designing, Web Development , Advertising & Digital Marketing Company in India. We offer Website Development, Branding and Digital Marketing Services  All over South India -> Bengaluru,Mumbai, Hyderabad And Kochi.| bludek.co.in">
+    <meta data-react-helmet="true" property="og:url" content="https://www.bludek.co.in">
+    <meta data-react-helmet="true" property="og:site_name" content="Bludek">
+    <meta data-react-helmet="true" name="twitter:description" content=" Bludek is one of the Best Professional Web Designing, Web Development , Advertising & Digital Marketing Company in India. We offer Website Development, Branding and Digital Marketing Services  All over South India -> Bengaluru,Mumbai, Hyderabad And Kochi.| bludek.co.in">
+    <meta data-react-helmet="true" name="twitter:title" content="Bludek | The Web Development And Branding Company In India">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="android-chrome-512x512.png">
+  
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+       
+        font-family: 'Montserrat', sans-serif;
+       
+        scroll-behavior: smooth;
+        cursor: pointer;
+       
+    }
+    ::selection{
+        color:black;
+        background:#E52F50;
+    }
+    body::-webkit-scrollbar {
+  display: none;
+}
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+ 
+}
+a{
+  text-decoration: none;
+}
+    .main{
+        height: 100vh;
+        width: 100%;
+
+        background: url(background.svg);
+       
+        z-index: 99;
+        background-position:center center;
+       
+        background-size: cover;
+        color: #000;
+    }
+
+     .nav{  
+     
+       
+        top: 0;
+        transition: top 0.3s;
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        width: 100%;
+        z-index: 99;
+        color:#000000;
+        position: fixed;
+        
+        
+    }
+    .nav > div{
+      
+        margin-top: 20px;
+        width: 100px;
+        margin-left: 0%;
+        margin-right: 0%;
+        color:#000000;
+        font-size:20px;
+    }
+    #navl{width: 25%;
+       text-align: left;
+       margin-left: 70px;
+       color:#000000;
+    }
+    #logo{
+        height: 50px;
+        width: 135px;
+    }
+    #navm{width: 75%;
+        text-align:right;
+       margin-right:70px ;
+    }
+    #navm a{
+      color:#000000;
+      padding: 10px;
+      border-radius: 5PX;
+    }
+    #navm li{
+        list-style: none;
+        display: inline;
+        text-align: center;
+        margin: 15px;
+        color:#ffffff;
+       
+    }
+    #navm li a:hover{
+      
+        color:#dcc024;
+        background-color:#ffffff ;
+        transition: ease-in-out .5s;
+      
+    }
+    #navr{width: 25%;
+        display: none;
+       text-align: right;
+       margin-right: 10px;
+       
+    }
+    #nav-mob-contents{
+        display: none;
+        
+    }
+    .main-content{
+     
+        color:black;
+        display: flex;
+       margin: 0 auto;
+        height: 100vh;
+        width: 100%;
+    }
+    .main-content h1{ margin-top:100px;
+      text-align: left;
+        font-size: 80px;
+        margin-left: 80px;
+        color:rgb(0, 0, 0);
+    }
+    
+      .main-content >div{
+        margin-top: 100px;
+        height:450px;
+        width:100%;
+       color: #000000;
+        border-radius: 12px;
+      }
+      .main-content>div h3{
+        text-align: left;
+        margin-left: 90px;
+        color:#000000;
+      }
+       #qlq img{
+         
+        height:550px;
+        width: 520px;
+       
+        margin-top:5px;
+    
+      }
+      .con{margin-left: 100px;
+
+      }
+      .con  a{ margin: 0 auto;
+      padding: 10px;color: #000000;border-radius: 5px;border-style: solid;border-color: #868686;
+      
+      }
+      
+      .main-content>div p{
+        text-align: center;color: #000;
+      }
+
+      #dpdn{
+        margin-left: -400px;
+      }
+      #service_title{ background-color: rgb(255, 255, 255);
+      color: #000;
+     
+ }
+      #service_title h2{color: #000000; text-align: left;margin-left:70px ;font-weight: bolder;font-size: 50px;}
+    .services{
+      height: max-content;
+         width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+     
+      justify-content: center;
+      background-image: url(services.svg);
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: scroll;
+  
+    }
+    h3{
+      color:#e6c300;
+    }
+     h2{
+      font-size: 60px;
+          text-align: center;
+          color:black;
+    }
+    .services >div{
+      
+      color:rgb(0, 0, 0);
+      margin: 20px;
+      height: 400px;
+      width:70% ;
+      border-radius: 7px;
+    margin-left: 50px;
+      
+      font-size: larger;
+      text-align: center;
+    
+    
+    }
+     .services p{
+      color:rgb(0, 0, 0);
+     
+    }
+    .services img{
+      display: none;
+    }
+    #righttext{
+      text-align: right;
+    }
+    
+    
+    .about{
+      height: 100vh;
+      background-color: #131319 !important;
+      /*background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);*/
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+         
+    }
+    .about h2{
+      color: #ffffff;
+    }
+    .about1{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+     
+      justify-content: center;
+    }
+    .about1 >div{
+      
+      color:rgb(0, 0, 0);
+      margin-left: 10px;
+      width:40% ;
+
+    
+    }
+    .about1 h2{
+      margin-top: 50px;
+      margin-left: 30px;
+      color: #cacaca;
+      font-size: 45px;
+      font-family: 'Montserrat', sans-serif;font-weight: 200;
+      text-align:left;
+    }
+    
+    .projects{
+      height:70vh;
+      color: #ffffff;
+      background-color: #000;
+      /*background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);*/
+      background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+    }
+    .projects h2{font-size: 60px;
+          text-align: right;margin-right: 70px;
+          color: #5a5a5a;
+          
+          }
+    .designs{
+      display: flex;flex-wrap: wrap;flex-shrink: inherit;flex-direction: row;
+    }
+    .designs >div{
+      width:auto;
+    }
+    #coroselimg{
+      margin-left: 70px;
+    }
+    #whybludek{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
+      height: 50vh;
+    }
+    #whybludek>div{
+      width: 20%;
+      margin: 30px;
+      height: 400px;
+      text-align: center;
+      margin-top: 150px;
+    }
+          .show-off{
+            height: 70vh;
+            display: flex;
+            margin:0 auto;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+            font-size: 40px;
+            font-weight:bolder;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+          }
+          .show-off>div{
+         
+            color: #000;
+            text-align: center;
+             margin: 10px;
+      height: 300px;
+      width:30% ;
+      border-radius: 10px;
+     
+      
+          }
+
+    .social{
+      height:35vh;
+      /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,52,89,1) 0%, rgba(0,168,232,1) 90% );*/
+      background-color: #000;
+      color: #ebedee;
+      display: flex;
+      flex-direction: row;
+            justify-content: center;
+    }
+    .social>div{
+      margin-top: 25px;
+      width: 22%;
+      text-align: center;
+         list-style: none;
+         text-decoration: none;
+        
+    }
+    .social h2{
+      font-size: 60px;
+          text-align: center;
+          color: rgb(0, 0, 0);
+    }
+    .social h4{
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+    .social >div li a{
+      list-style: none;
+      color: #ebedee;
+      text-decoration: none;
+    }
+#whatsapp{
+  width: 50px;height:50px;color: #0e0e0e;text-align: center; transition: width 2s;margin-left: 10px;border-radius: 5px;margin-left: 50px;
+}
+#call{
+  width: 50px;height:50px;color: #0e0e0e;text-align: center; transition:  5s;margin-left: 10px;border-radius: 5px;margin-left: 50px;
+}
+.hide{
+  display: none;
+}
+#whatsapp a :hover+.hide{width: 300px;height: 50px;background-color: #ffffff;display:block;margin-top: -37.2px;color: rgb(0, 0, 0);border-radius: 5px; }
+#call a :hover +.hide{width: 300px;height: 50px; background-color: #ffffff;display:block;margin-top: -31.2px;color: rgb(0, 0, 0);border-radius: 5px;}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ffffff; /* Set a background color */
+  color: #000000; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px;/* Increase font size */
+}
+#mybtn1 {
+  display: block; /* Hidden by default */
+  /* Fixed/sticky position */
+  bottom: 20px;height: 30px; width: 30px;/* Place the button at the bottom of the page */
+  right: 520px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  margin-left:50%; 
+  margin-top: 10vh;
+  margin: 10 auto;
+  color: #ffffff; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px;/* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #ffffff; /* Add a dark-grey background on hover */
+}
+
+* {
+    
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* For mobile phones: */
+         @media only screen and (max-width:1276px) {
+     .nav{ position: fixed; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+     }
+      
+      #navm{
+          display: none;
+      }
+      #navl{
+          width:75% ;
+          font-weight: bold;
+          margin-left: 30px;
+      }
+      #navr  {
+          width: 25%;
+            float: right;
+            display: block;
+      }
+      #nav-mob-contents{
+        text-decoration: none;
+        display: none;
+      
+        height:100vh;width:100%;
+        transition: 0.3s;
+        color:#000000;
+        overflow-y: hidden;
+        position: fixed;
+        list-style:none ;
+        z-index: 99;
+        text-align: center;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+     
+    }
+    #nav-mob-contents li{
+      margin-top: 30px;
+    }
+    #nav-mob-contents li a{
+     
+      color:#000000;
+      font-weight: bold;
+     
+    }
+   
+      .main-content{
+       
+     
+      background: none;
+        height: 100vh;
+      
+      
+        }
+        .main-content>div{
+          margin-top: 100px;height: max-content;
+        }
+    
+        .main-content h1{
+          
+          font-size: 40px;
+          margin: 0 auto;
+          margin-left: 50px;
+         text-align:left;
+        }
+        .main-content h3{  margin-top:300px ;
+          margin: 0 auto;
+          margin-left: 30px;margin-right: 30px;
+         text-align: center;
+        }
+        .con{margin-left: 28%;height: max-content;
+
+}
+.con  a{ margin: 0 auto;
+padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #202020;
+
+}
+.con a :hover{
+ background-color: #0e0e0e;
+}
+        #service_title h2{
+          margin-top: 20px;
+          font-size: 35px;
+          text-align: center;
+          margin-left: 20px;
+         
+        }
+       
+        .services{
+          flex-direction: row;
+          height: max-content;
+          z-index: 99;   
+          background-color: #fdfbfb;
+          background-image: none;
+        }
+        .services >div{
+          height: max-content;
+          width: 80%;
+          margin: 20px;
+          font-size: medium;
+          box-shadow: 5px 10px 18px #888888;
+         
+        }
+        .services>div p{
+          text-align: center;
+        }
+        .services img{
+          display: block;
+          margin: 0 auto;
+        }
+        .services h3{
+          
+         text-align: center;
+        }
+        #link{
+          
+         display: none;
+         }
+        #righttext{
+      text-align: center;
+    }
+        .about{ 
+         height:60vh;
+          z-index: 99;
+          background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        }
+        .about h2{
+          font-size: 30px;color: #000000;
+        }
+        .about1{
+          display: flex;
+          flex-direction: row;
+          height: max-content;
+         
+        }
+        .about1>div{
+          height:max-content;
+          width:90% ;
+         
+        }
+        .about1 h2{
+          font-size: 27px;
+          text-align: center;
+          margin: 0 auto;
+        }
+       
+
+        .projects{ z-index: 99;height: 80vh;}
+        .projects h2{
+          font-size: 25px;margin-right: 10px;
+        }
+        .designs{
+          flex-direction: row;
+        }
+        .designs>div{
+          width:100%;
+        }
+        .designs >div img{
+          width: 350px;
+          margin: 0 auto;
+        }
+        #coroselimg{
+      margin-left: 0px;
+    }
+    #whybludek{
+      flex-direction:row;
+      height: max-content;
+      
+    }
+    #whybludek>div{
+      height: 200px;
+      margin: 10px auto;
+     width: 60%;
+    
+    
+     margin-top: 10px;
+    }
+        .show-off{
+          flex-direction: column;
+          height: max-content;
+          margin: 0 auto;
+          background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        }
+        .show-off >div{
+          height: 50vh;
+          width: 100%;
+          font-size: medium;
+          margin: 0 auto;
+        }
+        .show-off img{
+          height: 60px;
+         width:200px;
+        }
+        .social h2{
+          font-size: 30px;margin-top: 10px;text-align: center;
+        }
+        .social{height: max-content;
+          flex-direction: column;
+          
+        }
+        .social>div{
+          width: 100%;
+          text-align: center;
+          margin-top: 10px;
+        }
+        .social li a{
+         list-style: none;
+         text-decoration: none;
+        }
+        #team{
+          display: none;
+        } #social-media{
+          display: none;
+        }
+       #byntn1 {
+        margin-left:20%;
+       }
+        #dpdn{
+      display: none;
+       }
+        
+     /*#call, #whatsapp{
+      margin: 0 auto;
+     }*/
+      
+}
+
+@media only screen and (max-width:800px){
+    .main-content{
+      
+        flex-direction: column;
+        height: max-content;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+        }
+        .main-content >div{
+          width:100%;
+          height: max-content;
+        }
+        #qlq img{
+        height:250px;
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+        margin-top:5px;
+        }
+        h2{
+          font-size: 30px;
+        }
+    
+       
+        .projects{
+          height:60vh;
+        }
+        #social-media{
+          display: none;
+        }
+        #design_text{
+          display: none;
+        }
+        #byntn1{color: #000;
+        margin-left:20%;
+        margin-right: 30%;
+       }
+
+}
+</style>
+<body>
+    <div id="nav-mob-contents">
+        <br><br><br><br>
+        
+        <li onclick="Function1()"><a id="close" href="#main-content">Home</a></li><br><br><br>
+        <li onclick="Function1()"><a id="close" href="#service_title"> Services</a></li><br><br><br>
+        <li onclick="Function1()"><a id="close" href="#about"> About</a></li><br><br><br>
+        <li onclick="Function1()"><a id="close" href="#projects"> Designs</a></li><br><br><br>
+        <li onclick="Function1()"><a id="close" href="#social"> Social</a></li><br>
+       <br><br>
+        
+    </div>
+   
+    <div class="main">
+     
+      <div id="nav" class="nav">
+        <div id="navl" style="font-weight: bolder;" ><li style="list-style: none;"><a style="color: #000000;" href="#main-content"> Bludek</a></li> </div>
+        <div id="navm" style="color: #0e0e0e; font-weight: bold;">
+            
+            <li><a href="#service_title"> Services</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#projects"> Designs</a></li>
+            <li><a href="#social"> Social</a></li>
+        </div>
+        <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;color: #000000;">dehaze</i>
+          <i class="material-icons" id="close1" id="close1" style="font-size:35px;display:none;float: right;color: #000000;">clear</i><br><br>
+        </div>
+      </div>
+      
+      <br>
+      
+           <div id="main-content" class="main-content">
+         <br>
+          <div>
+            <h1 >Go  Digital </span> 
+                with<span style="color: #000000;">  BLUDEK  </span> </h1><br><br>
+                <h3 >Bludek  is  # 1 Digital Creator  helps you Design , Analize, Code, <br> Build / Re-Build Your Brand</h3>
+             <br><br>
+             <div class="con" >
+              <a  href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> <i class="fab fa-whatsapp" aria-hidden="true" style="font-size: 25px;margin-top: 35px;" ></i> &nbsp Chat With Us</a>
+            </div> 
+        </div>
+        <div  id="qlq">
+          <img   src="website.svg" >
+         
+          <a href="#service_title" id="mybtn1"><i id="dpdn" class="fas fa-angle-double-down" style="font-size: 30px;color:#e6c300; "></i></a>
+        </div>
+       
+      </div> 
+      
+     
+    <div id="service_title"><br>
+      <h2 >Our <span style="color: #000000;"> Services</span> </h2>
+      
+      <br><br>
+    </div>
+    
+    <div id="services" class="services">
+     
+      <div style="text-align: left;"><br>
+        <img src="web.svg" alt="" style="height: 150px;"><br>
+        <h3> Web Development</h3><br>
+        <p>Design & Develop Websites to promote your Buisness <br> and Showcase your online Footprint With our Team </p><br>
+        <a id="link"id="link" href="" style="text-decoration: none;font-size: 15px;color: #000;">Learn More  &nbsp<i class="fa fa-angle-double-right" aria-hidden="true" style="font-size:20px;color:  #ff4242;;margin-top: 10px;"></i></a>
+        <br><br>
+
+      </div>
+      <div  style="text-align: right;"><br>
+        <img src="brand.svg" alt="" style="height: 150px;"><br>
+        <h3>Branding</h3><br>
+        <p  id="righttext">Design & Create Logos,Cards,Brochure for your Buisness,Events <br> and Enhance  Digitally With our team of Professionals</p><br>
+        <a id="link" href="" style="text-decoration: none;font-size: 15px;color: #000;">Learn More &nbsp<i class="fa fa-angle-double-right" aria-hidden="true" style="font-size:20px;color: #ff4242;margin-top: 10px;"></i></a>
+        <br><br>
+        </div> 
+      <div  style="text-align: left;"><br>
+        <img src="digital.svg" alt="" style="height: 150px;"><br>
+        <h3>Digital Marketing</h3><br>
+        <p>Promote & sell products and services online with Social Media <br> Marketing, Search Marketing, etc with our Team  </p><br>
+        <a href="" style="text-decoration: none;font-size: 15px;color: #000;" id="link">Learn More  &nbsp<i class="fa fa-angle-double-right" aria-hidden="true" style="font-size:20px;color:  #ff4242;;margin-top: 10px;"></i></a>
+        <br><br>
+        </div>
+      
+    </div>
+    
+   <div id="about" class="about">
+     <br><br>
+    <h2>Team Bludek </h2>
+    <br><br><br>
+    
+    <div class="about1">
+   
+      <div>
+    
+       <h2 >We’re a group of creatives,modders, marketers and strategic thinkers.
+        <br></h2>
+       <img src="team.svg" id="team" style="height: 200px;margin-left: 150px;margin-top: 50px;" alt="">
+      </div>
+      <div style="text-align: right;" id="social-media"><br><br><br>
+        <li><a href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"><i class="fab fa-whatsapp" aria-hidden="true" style="font-size:30px;color: #e6c300;margin-top: 10px;"></i></a></li><br><br><br><br>
+        <li><a href="mailto:bludek.co@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size:30px;color: #e6c300;margin-top: 10px;"></i></a></li><br><br><br><br>
+        <li><a href="https://www.instagram.com/bludek.co/"><i style="font-size:30px;color: #e6c300;" class="fa">&#xf16d;</i></a></li><br><br><br><br>
+        <li><a href="https://www.facebook.com/bludek.co.in"> <i class="fab fa-facebook" style="font-size:30px;color: #e6c300;"></i></a></li> 
+       
+       </div>
+    </div>
+   </div>
+
+   <div id="projects" class="projects"><br><br>
+    <h2>Dive <span style="color: #ffffff;">into </span> our  Designs</h2><br>
+    <div class="designs">
+      <div id="coroselimg">
+      <img class="mySlides w3-animate-fading" src="design1.svg" style="height: 300px;" alt="">
+      <img class="mySlides w3-animate-fading" src="design2.svg" style="height: 300px;" alt="">
+      <img class="mySlides w3-animate-fading" src="design3.svg" style="height: 300px;" alt="">
+      <img class="mySlides w3-animate-fading" src="design4.svg" style="height: 300px;" alt="">
+      
+      </div>
+      <div id="design_text" style="text-align: right;" >
+       <h1 style="text-align: right;margin-left: 150px;margin-top: 50px; color: #747474;">Designed with Love & Passion <br> From our Team</h1>
+       <br><br>
+      <a href="" style="padding: 10px;border: 2px solid white;color: white; border-radius: 5px;">View More</a>
+        </div>
+
+    </div>
+
+   </div>
+ 
+   <h2 style="color: #000000;margin-top: 30px;">Why Bludek ?</h2><br>
+   <div id="whybludek"><br>
+     <br>
+    
+     <div><i class="material-icons" style="font-size:100px;color:#e6c300;">loyalty</i><br> <p  style="text-align: center;">AFFORDABLE</p> </div>
+     <div><i class="material-icons" style="font-size:100px;color:#e6c300">published_with_changes</i><br><p  style="text-align: center;">&nbspDYNAMIC</p> </div>
+     <div><i class="material-icons" style="font-size:100px;color: #e6c300"> settings_backup_restore</i><br><p  style="text-align: center;">&nbspFLEXIBLE</p> </div>
+     <div><i class="material-icons" style="font-size:100px;color:#e6c300">emoji_objects</i><br><p style="text-align: center;margin: 0 auto;">PROACTIVE</p></div>
+     
+   </div>
+  <div class="show-off">
+    <div> <img src="project.svg" alt="" style="height: 200px;"> <br>  10+  <br> Projects Done</div>
+    <div> <img src="customer.svg" alt="" style="height: 200px;"> <br>  5+ <br> Happy Clients</div>
+
+  </div>
+  <div style="height: 50vh; text-align: center;"><br><br>
+    <h3 style="text-align: center;color: #000; font-size: 25px;">Ready to Work With Us?</h3>
+    <br><br><br>
+    <a style="text-align: center;padding: 20px 30px; background-color: #dc2430;color: rgb(255, 255, 255);border-radius: 5px; " href="contact.html">Get Details</a>
+
+  </div>
+   
+   <div id="social" class="social"><br><br>
+   <div><h4><img src="logo.png" alt="" style="height: 25px;"> Bludek</h4><br>
+    <a href="index.html" style="color: rgb(43, 43, 43);">Visit Site</a>
+  
+  </div><br>
+   <div><h4> Let's Socialize</h4><br>
+    <li><a href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> Whatsapp</a></li><br>
+    
+    <li><a href="https://www.instagram.com/bludek.co/">Instagram</a></li><br>
+    <li><a href="https://www.facebook.com/bludek.co.in">facebook</a></li><br>
+    
+  </div>
+  
+   <div><h4>Solutions</h4><br>
+    <li><a href="">Marketing</a></li>
+  </div>
+
+   <div><h4>Resources</h4><br>
+    <li><a href="">Terms of Services</a></li><br>
+    <li><a href="">Privacy Policy</a></li><br>
+
+  </div>
+    
+   
+  
+  </div>
+ 
+ 
+
+
+ 
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" style="color:#000000;font-size: 20px;"></i></button>
+
+    <script>
+
+
+        document.getElementById("ck").onclick = function() {myFunction()};
+        document.getElementById("close").onclick = function() {Function1()};
+        document.getElementById("close1").onclick = function() {Function1()};
+
+        function myFunction() {
+          document.getElementById("nav-mob-contents").style = "display:block;";
+          document.getElementById("close1").style = "display:block;";
+          document.getElementById("ck").style = "display:none;";
+          
+        }
+        function Function1(){
+            document.getElementById("nav-mob-contents").style = "display:none;";
+            document.getElementById("ck").style = "display:block;color:black;";
+            document.getElementById("close1").style = "display:none;";
+        }
+        //image slideshow//
+        var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);    
+}
+
+       
+
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function(){scrolfunction()};
+function scrolfunction(){
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+    document.getElementById("nav").style.backgroundColor= "#ffffff";
+    document.getElementById("nav").style.opacity= "1.0";
+    mybutton.style.display = "block";
+  } else {
+    document.getElementById("nav").style.top = "-70px";
+    mybutton.style.display = "none";
+ 
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+  </script>
+</body>
+
+    
+</html>
