@@ -166,8 +166,8 @@ a{
       .con{margin-left: 45%;
 
       }
-      .con  a{ margin: 0 auto;
-      padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #e6e6e6;
+      .con  a{ margin: 0 auto;justify-content: center;padding: 10px;
+     color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #e6e6e6;
       
       }
       .con  :hover{
@@ -332,6 +332,14 @@ a{
       border-radius: 10px;
      
       
+          }
+          #design_text{
+           margin-top: 50px; color: #747474;
+           text-align: right;
+          margin-left: 250px;
+
+
+
           }
 
     .social{
@@ -523,21 +531,21 @@ a{
         }
 
         #qlq {
-          width: 100%;
-          display: block;
+          width: 0%;
+          display:none;
         }
-        #qlq img{
+        /*#qlq img{
         height:250px;
         width: 250px;
         display: block;
        margin: 0 auto;
         margin-top:-250px;
-        }
-        .con{margin-left: 28%;height: max-content;
+        }*/
+        .con{  justify-content: center;height: max-content;
 
 }
-.con  a{ margin: 0 auto;
-padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #202020;
+.con  a{ justify-content: center;
+color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #202020;
 
 }
 .con a :hover{
@@ -555,106 +563,103 @@ padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-
           flex-direction: row;
           height: max-content;
           z-index: 99;   
-          background-color: #fdfbfb;
-          background-image: none;
+         
         }
         .services >div{
           height: max-content;
           width: 80%;
           margin: 20px;
           font-size: medium;
-          box-shadow: 5px 10px 18px #888888;
+         
          
         }
-        .services>div p{
-          text-align: center;
-        }
-        .services img{
-          display: block;
-          margin: 0 auto;
-        }
-        .services h3{
-          
-         text-align: center;
-        }
-        .services>div {
-          text-align: center;
-        }
         
-        #link1{color: #000;
-          margin-left: 110px;
+        .services img{
+          display:none;
+         
         }
-        #link2{color: #000;
-          margin-right: 100px;
-        }
-        #righttext{
-      text-align: center;
-    }
+       
+        
+        
+       
+       
         .about{ 
-         height:60vh;
+         height:max-content;
           z-index: 99;
-          background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+          
         }
         .about h2{
-          font-size: 30px;color: #000000;
+          font-size: 30px;
         }
         .about1{
           display: flex;
-          flex-direction: row;
+          flex-wrap: wrap;
           height: max-content;
-         
+         z-index: 99;
+         display: inline-flex;
         }
-        .about1>div{
+        #detail{
           height:max-content;
-          width:90% ;
-         
+          width:80% ;
+        
+        
+        }
+        
+        #social-media{
+          width: 10%; margin-left: 80%;margin-top: -400px;
         }
         .about1 h2{
           font-size: 27px;
-          text-align: center;
-          margin: 0 auto;
+         
         }
+        
        
 
-        .projects{ z-index: 99;height: 80vh;}
+        .projects{ z-index: 99;height:55vh}
         .projects h2{
           font-size: 25px;margin-right: 10px;
         }
-        .designs{
-          flex-direction: row;
+        .designs{height: max-content;
+         z-index: 99;flex-direction: column;flex-wrap: wrap;width: 100%;
         }
-        .designs>div{
-          width:100%;
-        }
+       
         .designs >div img{
           width: 350px;
-          margin: 0 auto;
+          
         }
-        #coroselimg{
-      margin-left: 0px;
+        #coroselimg{width: 50%;
+      margin-left: 50px;
     }
+    #design_text{
+           margin-top: -150px; color: #747474;
+          margin-right: 30px;
+
+          }
+         
+
     #whybludek{
       flex-direction:row;
-      height: max-content;
+      height:30vh;
       
     }
     #whybludek>div{
+     
       height: 200px;
       margin: 10px auto;
-     width: 60%;
+     width: 20%;
     
     
-     margin-top: 10px;
+     margin-top: 50px;
     }
         .show-off{
-          flex-direction: column;
-          height: max-content;
+          flex-direction: row;flex-wrap: wrap;
+          height: 40vh;
           margin: 0 auto;
           background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         }
         .show-off >div{
           height: 50vh;
-          width: 100%;
+          width: 50%;
           font-size: medium;
           margin: 0 auto;
         }
@@ -678,11 +683,7 @@ padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-
          list-style: none;
          text-decoration: none;
         }
-        #team{
-          display: none;
-        } #social-media{
-          display: none;
-        }
+        
        #byntn1 {
         margin-left:20%;
        }
@@ -698,16 +699,21 @@ padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-
 }
 
 @media only screen and (max-width:800px){
+  body{
+    background: none;
+  }
+  
     .main-content{
       
         flex-direction: column;
         height: max-content;
-        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+       
         }
         .main-content >div{
           width:100%;
           height: max-content;
-        }#qlq{
+        }#qlq{display: block;
           width: 100%;
         }
         #qlq img{
@@ -720,13 +726,26 @@ padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-
         h2{
           font-size: 30px;
         }
-    
-       
+     .services{
+       background: none;z-index: 99;background-color: #ffffff;
+     }
+     .services>div{
+       z-index: 99;
+     }
+       .about{
+         height: 50vh;
+       }
+       #team{display: none;}
         .projects{
           height:60vh;
         }
         #social-media{
           display: none;
+        }
+        .designs >div img{
+          width: 300px;
+          margin-left: -35px;
+          
         }
         #design_text{
           display: none;
@@ -736,6 +755,30 @@ padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-
         margin-left:20%;
         margin-right: 30%;
        }
+       .con{  justify-content: center;height: max-content; }
+       .con  a{ justify-content: center;text-align: center; margin-left:-30% ;
+color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #202020;
+
+}
+
+   
+    #whybludek{
+      flex-direction:column;
+      height:max-content;
+      
+    }
+    #whybludek>div{
+     
+      height: 200px;
+      margin: 10px auto;
+     width:100%;
+    
+    
+     margin-top: 50px;
+    }
+    .show-off img{
+      width:150px
+    }
 
 }
 </style>
@@ -827,11 +870,11 @@ padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-
    <div id="about" class="about">
      <br><br>
     <h2>Team Bludek </h2>
-    <br><br><br>
+  
     
     <div class="about1">
    
-      <div>
+      <div id="detail">
     
        <h2 >We're a group of creatives,modders, marketers and strategic thinkers.
         <br></h2>
@@ -841,7 +884,7 @@ padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-
         <li><a href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"><i class="fab fa-whatsapp" aria-hidden="true" style="font-size:30px;color: #e6c300;margin-top: 10px;"></i></a></li><br><br><br><br>
         <li><a href="mailto:bludek.co@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size:30px;color: #e6c300;margin-top: 10px;"></i></a></li><br><br><br><br>
         <li><a href="https://www.instagram.com/bludek.co/"><i style="font-size:30px;color: #e6c300;" class="fa">&#xf16d;</i></a></li><br><br><br><br>
-        <li><a href="https://www.facebook.com/bludek.co.in"> <i class="fab fa-facebook" style="font-size:30px;color: #e6c300;"></i></a></li> 
+        <li><a href="https://www.facebook.com/bludek.co.in"> <i class="fab fa-facebook" style="font-size:30px;color: #e6c300;"></i></a></li><br><br><br> 
        
        </div>
     </div>
@@ -857,8 +900,8 @@ padding: 10px;color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-
       <img class="mySlides w3-animate-fading" src="design4.svg" style="height: 300px;" alt="">
       
       </div>
-      <div id="design_text" style="text-align: right;" >
-       <h1 style="text-align: right;margin-left: 150px;margin-top: 50px; color: #747474;">Designed with Love & Passion <br> From our Team</h1>
+      <div id="design_text"  >
+       <h1 >Designed with Love & Passion <br> From our Team</h1>
        <br><br>
       <a href="" style="padding: 10px;border: 2px solid white;color: white; border-radius: 5px;">View More</a>
         </div>
