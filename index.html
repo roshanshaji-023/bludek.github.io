@@ -313,27 +313,32 @@ a{
       margin-top: 150px;
     }
           .show-off{
-            height: 70vh;
+            height: 50vh;
             display: flex;
             margin:0 auto;
             flex-direction: row;
             justify-content: center;
-            margin-top: 50px;
+           
             font-size: 40px;
             font-weight:bolder;
-            background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            /*background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/
+            background:#e6c300 ;
           }
-          .show-off>div{
-         
+          .show-off >div{
+            margin-top: 70px;
             color: #000;
             text-align: center;
-             margin: 10px;
-      height: 300px;
-      width:30% ;
-      border-radius: 10px;
+          
+        
+           width:30% ;
+           border-radius: 10px;
      
       
           }
+          #showi{
+          font-size: 100px;
+          color: #ffffff;
+        }
           #design_text{
            margin-top: 50px; color: #747474;
            text-align: right;
@@ -465,7 +470,10 @@ a{
 
 /* For mobile phones: */
          @media only screen and (max-width:1276px) {
-     .nav{ position: fixed; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+     .nav{ position: fixed; /*background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+     
+   
+
      }
       
       #navm{
@@ -656,13 +664,15 @@ color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #202020
           flex-direction: row;flex-wrap: wrap;
           height: 40vh;
           margin: 0 auto;
-          background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+          /*background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
+          background:#e6c300 ;
         }
         .show-off >div{
           height: 50vh;
           width: 50%;
           font-size: medium;
           margin: 0 auto;
+          margin-top: 50px;
         }
         .show-off img{
           height: 60px;
@@ -703,12 +713,16 @@ color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #202020
   body{
     background: none;
   }
+  .nav{
+    background:#e6c300 ;
+  }
   
     .main-content{
       
         flex-direction: column;
         height: max-content;
-        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+        /*background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
+        background:#e6c300 ;
        
         }
         .main-content >div{
@@ -783,6 +797,16 @@ color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #202020
     .social{height: max-content;
           flex-direction:column;
           
+        }
+        .show-off{
+          
+          background:#e6c300 ;
+        }
+        .show-off>div{
+          margin-top: 50px;
+        }
+        #showi{
+          font-size: 60px;
         }
 }
 </style>
@@ -925,8 +949,9 @@ color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #202020
      
    </div>
   <div class="show-off">
-    <div> <img src="project.svg" alt="" style="height: 200px;"> <br>  10+  <br> Projects Done</div>
-    <div> <img src="customer.svg" alt="" style="height: 200px;"> <br>  5+ <br> Happy Clients</div>
+    <div> <i id="showi" class="fab fa-sketch"></i> <br><br>  10+  <br> Projects Done</div>
+     
+    <div><i id="showi" class="fas fa-user-plus"  ></i><br><br>  5+ <br> Happy Clients</div>
 
   </div>
   <div style="height: 50vh; text-align: center;"><br><br>
