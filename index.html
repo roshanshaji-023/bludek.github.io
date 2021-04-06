@@ -13,6 +13,7 @@
     <meta data-react-helmet="true" name="twitter:title" content="Bludek | The Web Development And Branding Company In India">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://www.w3schools.com/w3css/4/w3.css">
@@ -96,7 +97,13 @@ a{
     #navl{width: 25%;
        text-align: left;
        margin-left: 70px;
-       color:#000000;
+       color:#000000;font-family: 'ABeeZee', sans-serif;
+    }
+    #navl h1{
+      font-family: 'ABeeZee', sans-serif;
+    }
+    #navl li a{
+      color:#000
     }
     #logo{
         height: 50px;
@@ -118,6 +125,9 @@ a{
         margin: 15px;
         color:#ffffff;
        
+    }
+    #navm li a{
+      font-family: 'ABeeZee', sans-serif;
     }
     #navm li a:hover{
       
@@ -144,12 +154,14 @@ a{
         height: 100vh;
         width: 100%;
     }
-    .main-content h1{ margin-top:100px;
+    .main-content h1{ margin-top:100px;font-family: 'ABeeZee', sans-serif;
       text-align: center;
         font-size: 80px;
         color:rgb(0, 0, 0);
     }
-    
+    .main-content h3{
+      text-align: center;
+    }
       .main-content >div{
         margin-top: 100px;
         height:450px;
@@ -182,7 +194,7 @@ a{
       color: #000;
      
  }
-      #service_title h2{color: #000000; text-align: left;margin-left:70px ;font-weight: bolder;font-size: 50px;}
+      #service_title h2{font-family: 'ABeeZee', sans-serif;color: #000000; text-align: left;margin-left:70px ;font-weight: bolder;font-size: 50px;}
     .services{
       height: max-content;
          width: 100%;
@@ -198,7 +210,7 @@ a{
     background-attachment: scroll;
   
     }
-    h3{
+    h3{font-family: 'ABeeZee', sans-serif;
       color:#e6c300;
     }
      h2{
@@ -248,7 +260,7 @@ a{
           background-size: cover;
          
     }
-    .about h2{
+    .about h2{font-family: 'ABeeZee', sans-serif;
       color: #ffffff;
     }
     .about1{
@@ -284,7 +296,7 @@ a{
           background-repeat: no-repeat;
           background-size: cover;
     }
-    .projects h2{font-size: 60px;
+    .projects h2{font-size: 60px;font-family: 'ABeeZee', sans-serif;
           text-align: right;margin-right: 70px;
           color: #5a5a5a;
           
@@ -304,6 +316,7 @@ a{
       justify-content: center;
       flex-direction: row;
       height: 50vh;
+      
     }
     #whybludek>div{
       width: 20%;
@@ -715,10 +728,19 @@ color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #202020
   }
   
   .main-content>div h1{
+    font-family: 'ABeeZee', sans-serif;
 font-size: 40px;
+text-align: left;
+  }
+  .main-content>div h3{
+
+text-align: left;
   }
   .nav{
     background-color: #ffffff;
+  }
+  #navl li a{
+    color:#ffdf39
   }
     .main-content{
       
@@ -753,6 +775,9 @@ font-size: 40px;
        .about{
          height: 50vh;
        }
+       .about h2{
+        font-family: 'ABeeZee', sans-serif;text-align: center;
+       }
        #team{display: none;}
         .projects{
           height:60vh;
@@ -773,9 +798,9 @@ font-size: 40px;
         margin-left:20%;
         margin-right: 30%;
        }
-       .con{  justify-content: center;height: max-content; }
+       .con{  justify-content: center;height: max-content;}
        .con  a{ justify-content: center;text-align: center; margin-left:-30% ;
-color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;;
+color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;
 
 }
 
@@ -829,7 +854,7 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;;
     <div class="main">
      
       <div id="nav" class="nav">
-        <div id="navl" style="font-weight: bolder;" ><li style="list-style: none;"><a style="color: #e6c300;" href="#main-content"> Bludek</a></li> </div>
+        <div id="navl" style="font-weight: bolder;font-family: 'ABeeZee', sans-serif;" ><li style="list-style: none;"><a style="font-family: 'ABeeZee', sans-serif;" href="#main-content"> Bludek</a></li> </div>
         <div id="navm" style="color: #0e0e0e; font-weight: bold;">
             
             <li><a href="#service_title"> Services</a></li>
@@ -838,7 +863,7 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;;
             <li><a href="#social"> Social</a></li>
         </div>
         <div id="navr" ><i class="material-icons" id="ck" style="font-size:25px;float: inline-end;color: #e6c300;">dehaze</i>
-          <i class="material-icons" id="close1" id="close1" style="font-size:35px;display:none;float: right;color: #e6c300;">clear</i><br><br>
+          <i class="material-icons" id="close1"  style="font-size:35px;display:none;float: right;color: #e6c300;">clear</i><br><br>
         </div>
       </div>
       
@@ -848,8 +873,8 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;;
          <br>
           <div>
             <h1 >Go  Digital </span> 
-                with<span style="color: #000000;">  BLUDEK  </span> </h1><br><br>
-                <h3 style="text-align:center;color: #000000;">Bludek  is  # 1 Digital Creator  helps you Design , Analize, Code, Build / Re-Build Your Brand</h3>
+                with BLUDEK   </h1><br><br>
+                <h3 style="color: #000000;">Bludek  is  # 1 Digital Creator  helps you Design , Analize, Code, Build / Re-Build Your Brand</h3>
              <br><br><br><br><br><br>
              <div class="con" >
               <a  href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> <i class="fab fa-whatsapp" aria-hidden="true" style="font-size: 25px;margin-top: 35px;" ></i> &nbsp Chat With Us</a>
@@ -867,7 +892,7 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;;
       
      
     <div id="service_title"><br>
-      <h2 >Our <span style="color: #000000;"> Services</span> </h2>
+      <h2 >Our  Services </h2>
       
       <br><br>
     </div>
@@ -942,7 +967,7 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;;
 
    </div>
  
-   <h2 style="color: #000000;margin-top: 30px;">Why Bludek ?</h2><br>
+   <h2 style="color: #000000;margin-top: 30px;font-family: 'ABeeZee', sans-serif;">Why Bludek ?</h2><br>
    <div id="whybludek"><br>
      <br>
     
@@ -959,7 +984,7 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;;
 
   </div>
   <div style="height: 50vh; text-align: center;"><br><br>
-    <h3 style="text-align: center;color: #000; font-size: 25px;">Ready to Work With Us?</h3>
+    <h3 style="text-align: center;color: #000; font-size: 35px;font-family: 'ABeeZee', sans-serif;">Ready to Work With Us?</h3>
     <br><br><br>
     <a style="text-align: center;padding: 20px 30px; background-color: #dc2430;color: rgb(255, 255, 255);border-radius: 5px; " href="contact.html">Get Details</a>
 
@@ -1009,14 +1034,14 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;;
 
         function myFunction() {
           document.getElementById("nav-mob-contents").style = "display:block;";
-          document.getElementById("close1").style = "display:block;";
+          document.getElementById("close1").style = "display:block;color:#e6c300";
           document.getElementById("ck").style = "display:none;";
           
         }
         function Function1(){
             document.getElementById("nav-mob-contents").style = "display:none;";
-            document.getElementById("ck").style = "display:block;color:black;";
-            document.getElementById("close1").style = "display:none;";
+            document.getElementById("ck").style = "display:block;color:#e6c300;";
+            document.getElementById("close1").style = "display:none;color:#e6c300";
         }
         //image slideshow//
         var myIndex = 0;
