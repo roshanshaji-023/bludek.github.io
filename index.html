@@ -44,9 +44,17 @@
         color:black;
         background:#E52F50;
     }
+    
     body::-webkit-scrollbar {
-  display: none;
+ width: 3px;
 }
+::-webkit-scrollbar-thumb {
+  background: #dcc024; 
+}
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+
 body{
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -359,9 +367,80 @@ a{
            text-align: right;
           margin-left: 250px;
 
-
-
           }
+
+          .parallax {
+  /* The image used */
+  background-image: url('bg1.png');
+
+  /* Full height */
+  height: 40%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*.parallax h1{
+  font-family: 'ABeeZee', sans-serif;
+  text-align: center;color:#008165;font-size: 80px;font-weight: bolder;background-color: rgb(0, 0, 0);opacity: .95; margin-left:100px ; margin-right:100px ;
+}*/
+
+.wrapper{
+  margin-left: 50px;
+  display: flex;
+  height: 30vh;
+  background: #343F4F;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
 
     .social{
       height:35vh;
@@ -849,6 +928,12 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;
         #showi{
           font-size: 60px;
         }
+        .parallax h1{
+  text-align: center;color:#008165;font-size: 40px;font-weight: bolder;background-color: #000; margin-left:50px ; margin-right:50px ;
+}
+        .wrapper{
+          display: none;
+        }
 }
 </style>
 <body>
@@ -906,6 +991,7 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;
       
      
     <div id="service_title"><br>
+      
       <h2 >Our  Services </h2>
       
       <br><br>
@@ -937,7 +1023,7 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;
         </div>
       
     </div>
-    
+   
    <div id="about" class="about">
      <br><br>
     <h2>Team Bludek </h2>
@@ -960,7 +1046,7 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;
        </div>
     </div>
    </div>
-
+   
    <div id="projects" class="projects"><br><br>
     <h2>Dive <span style="color: #ffffff;">into </span> our  Designs</h2><br>
     <div class="designs">
@@ -997,13 +1083,25 @@ color:#222222;border-radius: 5px;border-style: solid;border-color: #ffdf39;
     <div><i id="showi" class="fas fa-user-plus"  ></i><br><br>  5+ <br> Happy Clients</div>
 
   </div>
-  <div style="height: 50vh; text-align: center;"><br><br>
-    <h3 style="text-align: center;color: #000; font-size: 30px;font-family: 'ABeeZee', sans-serif;">Ready to Work With Us?</h3>
-    <br><br><br>
-    <a style="text-align: center;padding: 20px 30px; background-color: #dc2430;color: rgb(255, 255, 255);border-radius: 5px; " href="contact.html">Get Details</a>
-
+  <div class="parallax"></div>
+  <div style="height: 60vh; text-align: center; background: #343F4F;"><br><br>
+    <h3 style="text-align: center;color: rgb(255, 255, 255); font-size: 30px;font-family: 'ABeeZee', sans-serif;">Ready to Work With Us?</h3>
+    <br><br><br><br><br><br>
+    <a style="text-align: center;padding: 20px 30px; background-color: #FC6D6D;color: rgb(255, 255, 255);border-radius: 5px; " href="contact.html">Get Details</a>
+<br><br>
+<div class="wrapper">
+  <div class="static-txt">We are </div>
+  <ul class="dynamic-txts">
+    <li><span>Creatives</span></li>
+    <li><span>Designers</span></li>
+    <li><span>Developers</span></li>
+    <li><span>Freelancers</span></li>
+  </ul>
+</div>
   </div>
-   
+  <div class="parallax"></div> 
+
+
    <div id="social" class="social"><br><br>
    <div><h4><img src="logo.png" alt="" style="height: 25px;"> Bludek</h4>
    
