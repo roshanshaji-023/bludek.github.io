@@ -208,8 +208,10 @@ a{
       color: #000;
      
  }
-      #service_title h2{font-family: 'ABeeZee', sans-serif;color: #000000; text-align: left;margin-left:70px ;font-weight: bolder;font-size: 50px;}
-    .services{
+      #service_title h2{font-family: 'ABeeZee', sans-serif;color: #000000; text-align: left;margin-left:70px ;font-weight: bolder;font-size: 50px;
+     
+      }
+    .services{ 
       height: max-content;
          width: 100%;
       display: flex;
@@ -224,12 +226,12 @@ a{
     background-attachment: scroll;
   
     }
-    @keyframes movedown{
+    @keyframes moveright{
       0%{
-        transform: translateY(-100px);
+        transform: translate(-100px);
       }
       100%{
-        transform: translateY(0);
+        transform: translate(0);
       }
     }
     h3{font-family: 'ABeeZee', sans-serif;
@@ -242,29 +244,20 @@ a{
           color:black;
     }
     .services >div{
-      animation: movedown 1s linear 1;
-      animation-duration: 8s;
-      animation-delay: inherit;
+    
       color:rgb(0, 0, 0);
       margin: 20px;
       height: 400px;
       width:70% ;
       border-radius: 7px;
     margin-left: 50px;
-      
+    animation: moveright 1s linear 1;
       font-size: larger;
       text-align: center;
     
     
     }
-    @keyframes movedown{
-      0%{
-        transform: translateY(-100px);
-      }
-      100%{
-        transform: translateY(0);
-      }
-    }
+   
      .services p{
       color:rgb(0, 0, 0);
      
@@ -323,18 +316,10 @@ a{
       font-family: 'Montserrat', sans-serif;font-weight: 200;
       text-align:left;
       animation: moveright 1s linear 1;
-      animation-duration: 3s;
-      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-      animation-delay: inherit;
+     
     }
-    @keyframes moveright{
-      0%{
-        transform: translate(-100px);
-      }
-      100%{
-        transform: translate(0);
-      }
-    }
+    
+    
     
     .projects{
       height:70vh;
