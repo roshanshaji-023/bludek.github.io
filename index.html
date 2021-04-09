@@ -168,9 +168,12 @@ a{
       text-align: center;
         font-size: 80px;
         color:rgb(0, 0, 0);
+        animation: moveright 1s linear 1;
     }
+    
     .main-content h3{
       text-align: center;
+      animation: moveright 1s linear 1;
     }
       .main-content >div{
         margin-top: 100px;
@@ -178,6 +181,7 @@ a{
         width:100%;
        color: #000000;
         border-radius: 12px;
+       
       }
      #qlq{display: none;
        width: 0;
@@ -187,7 +191,7 @@ a{
      }
        
       .con{margin-left: 45%;
-
+        animation: moveright 1s linear 1;
       }
       .con  a{ margin: 0 auto;justify-content: center;padding: 10px;
      color: rgb(0, 0, 0);border-radius: 5px;border-style: solid;border-color: #e6c300;
@@ -220,16 +224,27 @@ a{
     background-attachment: scroll;
   
     }
+    @keyframes movedown{
+      0%{
+        transform: translateY(-100px);
+      }
+      100%{
+        transform: translateY(0);
+      }
+    }
     h3{font-family: 'ABeeZee', sans-serif;
       color:#e6c300;
     }
-     h2{
+     h2{ 
+      
       font-size: 60px;
           text-align: center;
           color:black;
     }
     .services >div{
-      
+      animation: movedown 1s linear 1;
+      animation-duration: 8s;
+      animation-delay: inherit;
       color:rgb(0, 0, 0);
       margin: 20px;
       height: 400px;
@@ -241,6 +256,14 @@ a{
       text-align: center;
     
     
+    }
+    @keyframes movedown{
+      0%{
+        transform: translateY(-100px);
+      }
+      100%{
+        transform: translateY(0);
+      }
     }
      .services p{
       color:rgb(0, 0, 0);
@@ -299,6 +322,18 @@ a{
       font-size: 45px;
       font-family: 'Montserrat', sans-serif;font-weight: 200;
       text-align:left;
+      animation: moveright 1s linear 1;
+      animation-duration: 3s;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation-delay: inherit;
+    }
+    @keyframes moveright{
+      0%{
+        transform: translate(-100px);
+      }
+      100%{
+        transform: translate(0);
+      }
     }
     
     .projects{
