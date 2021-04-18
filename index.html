@@ -837,6 +837,9 @@ color: rgb(0, 0, 0);border-radius: 3px;border-style: solid;border-color: #ffffff
 }
 
 @media only screen and (max-width:800px){
+ .nav{
+   background: #0b0909;
+ }
   .main{
     height:100vh;
   }
@@ -1226,7 +1229,7 @@ var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav").style.top = "0";
     document.getElementById("nav").style.backgroundColor= "#0b0909";
-    document.getElementById("nav").style.opacity= "1.0";
+
     mybutton.style.display = "block";
   } else {
     document.getElementById("nav").style.top = "-70px";
