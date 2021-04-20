@@ -75,7 +75,7 @@ a{
         
       
        
-        background: url(studio.svg);
+        background: url(studio.png);
        
         z-index: 99;
         background-position:center center;
@@ -365,7 +365,7 @@ a{
       margin-left: 70px;
     }
     .industries{
-      height:50vh;
+      height:60vh;
      
       background-color: #ffffff !important;
 
@@ -375,6 +375,17 @@ a{
       color:  linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);;font-size: 50px;
       font-family: 'ABeeZee', sans-serif;
     }
+    .industries ul{
+      margin:0 auto;
+    text-align: center;
+    }
+
+    .industries ul li{
+    list-style: none;display: inline-block;
+    margin: 70px;
+   
+    }
+
     #whybludek{
       display: flex;
       flex-wrap: wrap;
@@ -792,18 +803,20 @@ color: rgb(0, 0, 0);border-radius: 3px;border-style: solid;border-color: #ffffff
           font-size: 25px;margin-right: 10px;
         }
         .designs{height: max-content;
-         z-index: 99;flex-direction: column;flex-wrap: wrap;width: 100%;
+         z-index: 99;flex-direction: row;flex-wrap: wrap;width: 100%;
         }
-       
+       .designs >div{
+         width: 45%;
+       }
         .designs >div img{
           width: 350px;
           
         }
-        #coroselimg{width: 50%;
+        #coroselimg{width: 45%;
      
     }
     #design_text{
-           margin-top: -150px; color: #747474;
+            color: #747474;
           margin-right: 30px;
 
           }
@@ -877,7 +890,7 @@ color: rgb(0, 0, 0);border-radius: 3px;border-style: solid;border-color: #ffffff
 
 @media only screen and (max-width:800px){
  .nav{
-   background: #0b0909;
+   background: none;
  }
   .main{
     height:100vh;
@@ -984,9 +997,15 @@ color:#000000;border-radius: 5px;border-style: solid;border-color: #ffffff;
     
      margin-top: 50px;
     }
+    .industries{
+      height:max-content;
+    }
     .industries h2{
       font-size: 30px;
 
+    }
+    .industries ul li{
+      margin: 40px;
     }
     #iconwhy{
       margin-top: 70px;
@@ -1180,6 +1199,15 @@ color:#000000;border-radius: 5px;border-style: solid;border-color: #ffffff;
    </div><br>
    <div class="industries"><br>
      <h2>Industries We Work With</h2>
+      <br>
+      <ul>
+        <li><i class="fas fa-utensils" style="font-size: 50px;color: #FC6D6D;"></i></li>
+        <li><i class="fas fa-utensils" style="font-size: 50px;color: #840dc9;"></i></li>
+        <li><i class="fas fa-utensils" style="font-size: 50px;color: #840dc9;"></i></li>
+        <li><i class="fas fa-utensils" style="font-size: 50px;color: #840dc9;"></i></li>
+        <li><i class="fas fa-utensils" style="font-size: 50px;color: #840dc9;"></i></li>
+        <li><i class="fas fa-utensils" style="font-size: 50px;color: #840dc9;"></i></li>
+      </ul>
 
 
    </div>
@@ -1301,7 +1329,7 @@ function scrolfunction(){
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav").style.top = "0";
-    document.getElementById("nav").style.background= "#0b0909";
+    document.getElementById("nav").style.background= "#141414";
 
     mybutton.style.display = "block";
   } else {
