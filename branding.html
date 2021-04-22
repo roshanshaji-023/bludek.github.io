@@ -96,13 +96,48 @@ border-radius: 5px;
 .box:hover{
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
- 
+.social{
+      height:35vh;
+      /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,52,89,1) 0%, rgba(0,168,232,1) 90% );*/
+      background-color: #000;
+      color: #ebedee;
+      display: flex;
+      flex-direction: row;
+            justify-content: center;
+    }
+    .social>div{
+      margin-top: 25px;
+      width: 22%;
+      text-align: center;
+         list-style: none;
+         text-decoration: none;
+        
+    }
+    .social h2{
+      font-size: 60px;
+          text-align: center;
+          color: rgb(0, 0, 0);
+    }
+    .social h4{
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+    .social >div li a{
+      list-style: none;
+      color: #ebedee;
+      text-decoration: none;
+    }
 @media only screen and (max-width:800px){
 
     #def p{
 font-size: 16px;
 text-align:justify;
 }
+.social{height: max-content;
+          flex-direction:column;
+          
+        }
 
 }
 
@@ -144,6 +179,32 @@ text-align:justify;
             </div>
             
         </div>
+        <div id="social" class="social"><br><br>
+            <div><h4><img src="logo.png" alt="" style="height: 25px;"><a href="index.html" style="text-decoration: none;color: #fff;">Bludek</a></h4>
+            
+           
+           </div><br>
+            <div><h4> Let's Socialize</h4><br>
+             <li><a href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"> Whatsapp</a></li><br>
+             
+             <li><a href="https://www.instagram.com/bludek.co/">Instagram</a></li><br>
+             <li><a href="https://www.facebook.com/bludek.co.in">facebook</a></li><br>
+             <li><a href="https://www.youtube.com/channel/UCjeoIsOiIXyGSag4-fRl1qA">Youtube</a></li><br>
+             
+           </div>
+           
+            <div><h4>Solutions</h4><br>
+             <li><a href="">Marketing</a></li><br>
+             <li><a href="https://www.youtube.com/channel/UCjeoIsOiIXyGSag4-fRl1qA">Tutorials</a></li><br>
+           </div>
+         
+            <div><h4>Resources</h4><br>
+             <li><a href="">Terms of Services</a></li><br>
+             <li><a href="">Privacy Policy</a></li><br>
+         
+           </div>
+         
+           </div>
     </main>
 </body>
 </html>
