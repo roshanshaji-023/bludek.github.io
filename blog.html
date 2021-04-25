@@ -35,10 +35,12 @@
 </head>
 <style>
     *{
-        margin: 0;padding: 0;
+        margin: 0%;padding: 0%;
         font-family: 'Roboto', sans-serif;
+        scroll-behavior: smooth;
     }
        
+
     body::-webkit-scrollbar {
  width: 3px;
 }
@@ -47,6 +49,12 @@
 }
 ::-webkit-scrollbar-track {
   background: #000000; 
+}
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+ 
 }
     header{
         display: flex;
@@ -81,18 +89,20 @@
         width: 0px; height: 0;
     }
     .featured{
+        margin: 0%;
+        padding: 0%;
         height: max-content;
         margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-  
+  width: 100%;
 
     }
-    .featured h2{font-size: 24px;
+    .featured h3{font-size: 24px;
         margin-top: 420px;color: #ffffff;text-align: left;
-        line-height: 30px;
+        line-height: 30px;margin-left: 10px;
     }
     .featured >div{
     color: rgb(0, 0, 0);
@@ -119,7 +129,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
     }
-    #featured-second h2{
+    #featured-second h3{
         color: rgb(255, 255, 255);
       
     }
@@ -131,7 +141,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
     }
-    #featured-third h2{
+    #featured-third h3{
         color: rgb(0, 0, 0);
     }
 
@@ -156,7 +166,7 @@
         border-radius: 10px;
        
     }
-    #heading-latest h2{
+    #heading-latest h3{
         height: 50px;margin-left: 70px;margin-top: 5px;font-size: 50px;
     }
     .latest-right{
@@ -175,8 +185,8 @@
 
 /* for tab devices*/
 @media only screen and (max-width:1276px){
-    .featured h2{
-        margin-top: 400px;
+    .featured h3{
+        margin-top: 400px;font-size: 24px;
     }
     .featured >div {
        
@@ -249,7 +259,7 @@
     #ck1{display: none;
         font-size:30px;float: inline-end;color:#ffffff;}  
 
-   .featured h2{
+   .featured h3{margin-left: 5px;
         margin-top: 200px;
         font-size: 24px;
         color: #ffffff;text-align: left;
@@ -258,8 +268,7 @@
     .featured>div{
         height: 45vh;
     width: 100%;
-    
-    font-size: medium;
+
     }
     #featured-first{   width: 100%;
       background-color: #000000;
@@ -269,7 +278,7 @@
      background-color: #000000;
     }
 
-    #featured-second h2{
+    #featured-second h3{
         color: rgb(255, 255, 255);
     }
     #featured-third{   width: 100%;
@@ -321,9 +330,9 @@
           <h4 style="text-align: center;text-decoration: none;"><a style="text-decoration: none;color: #000;" href="index.html">Bludek Innovations</a></h4>
     </div>
    <div class="featured">
-        <div id="featured-first"><h2>Apple’s New 12.9-inch iPad Pro Launches with M1 Chip , mini-LED Display & 5G Support</h2></div>
-        <div id="featured-second"><h2>Say hello to the new Apple iMac . by the M1 chip .Stands out in any space, Thinner Build ,5G Connectivity</h2></div>
-        <div id="featured-third"><h2>Redmi Note 10S The 64MP 118° ultra-wide angle  6.43” AMOLED | 33W fast charging</h2></div>
+        <div id="featured-first"><h3>Apple’s New 12.9-inch iPad Pro Launches with M1 Chip , mini-LED Display &amp; & 5G Support</h3></div>
+        <div id="featured-second"><h3><h3 class="banner-title">Apple iMac Redesigned with a Thinner Build, M1 Chip &amp; Vibrant Colors</h3></h3></div>
+        <div id="featured-third"><h3>Redmi Note 10S The 64MP 118° ultra-wide angle  6.43” AMOLED | 33W fast charging</h3></div>
    </div>
    <div id="heading-latest"><br><h2>Latest News</h2><br></div>
    <div class="latest"><br><br><br><br>
