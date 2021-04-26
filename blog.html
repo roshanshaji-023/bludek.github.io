@@ -22,6 +22,7 @@
    <link rel="dns-prefetch" href="//bludek.co.in/blog">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -167,8 +168,12 @@ body{
         border-radius: 10px;
        
     }
+    #heading-latest{
+        height: max-content;
+    }
     #heading-latest h2{
-        height: 50px;margin-left: 70px;margin-top: 5px;font-size: 50px;
+        height: max-content;margin-top: 5px;font-size: 50px;font-family: 'ABeeZee', sans-serif;
+        text-align: left;margin-left: 70px;
     }
     .latest-right{
         width: 30%;  margin-left: 70px;
@@ -219,7 +224,7 @@ body{
     #featured-third{   width: 33.3%;
      background-color: rgb(0, 0, 0);
     }
-    .latest-right{
+    /*.latest-right{
         width: 26%; 
       text-align: right;
     }
@@ -231,6 +236,13 @@ body{
         text-align:right;
         border-radius: 10px;
        
+    }*/
+    .latest-left{
+        width: 90%;  margin: 0 auto;
+      text-align: center;background: #ffffff;
+    }
+    .latest-right{
+        display: none;
     }
 
 }
@@ -304,9 +316,11 @@ body{
     #featured-third h3{
         color: rgb(255, 255, 255);
     }
+  
     #heading-latest h2{
-        font-size: 35px;margin-left: 15px;
-    }
+        height: max-content;margin-top: 5px;font-size: 25px;font-family: 'ABeeZee', sans-serif;
+        text-align: center;margin-left: 0px;
+        }
     .latest-left{
         width: 100%;  margin-left: 0px;
       text-align: center;background: #ffffff;
@@ -325,7 +339,7 @@ body{
             <i class="material-icons" id="ck1"  >dehaze</i></div>
         <div id="nav-menu">
             <ul>
-                <li>News</li>
+                <li><a style="text-decoration: none;color: rgb(255, 255, 255);"  href="#heading-latest"> News</a></li></li>
                 <li>Reviews</li>
                 <li>How To</li>
                 <li>More</li>
@@ -336,10 +350,11 @@ body{
     <div id="nav-sidebar">
         <ul>
            
-            <li>News</li><hr>
-            <li>Reviews</li><hr>
-            <li>How To</li><hr>
-            <li>More</li><hr>
+            <li><a style="text-decoration: none;color: #000;" id="linkclick" href="#heading-latest"> News</a></li><hr>
+            <li><a style="text-decoration: none;color: #000;" id="linkclick1" href="#one"> Reviews</a></li><hr>
+            <li><a style="text-decoration: none;color: #000;" id="linkclick2" href="#two"> How To</a></li><hr>
+            <li><a style="text-decoration: none;color: #000;" id="linkclick3" href="#three"> More</a></li><hr>
+           
         </ul>
         <br><br>
         <div style="text-align: center;">  <a href="https://www.instagram.com/bludek.co/"><i style="font-size:30px;color: #00BFA6;" class="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
@@ -354,9 +369,9 @@ body{
         <div id="featured-second"> <div style="background-image: linear-gradient(180deg,hsla(0,0%,93.3%,0),rgba(33,33,33,.9) 75%,#000);height: 70px; margin-top: 35vh;"><h3><h3 >Apple iMac Redesigned with a Thinner Build, M1 Chip  Vibrant Colors ,5G Connecivity</h3></h3></div></div>
         <div id="featured-third"><div style="background-image: linear-gradient(180deg,hsla(0,0%,93.3%,0),rgba(33,33,33,.9) 75%,#000);height: 70px; margin-top: 35vh;"><h3>Redmi Note 10 S The 64MP 118° ultra-wide angle  6.43” AMOLED | 33W fast charging</h3></div></div>
    </div><br>
-   <div id="heading-latest"><br><h2>Latest News</h2><br></div>
-   <div class="latest"><br><br><br><br>
-    <div class="latest-left"><br><br><br>
+   <div id="heading-latest"><br><h2>LATEST IN TECHNOLOGY </h2><br></div>
+   <div class="latest" id="latest"><br><br><br><br>
+    <div class="latest-left" ><br><br><br>
     <div>dfgvrhtrrehe</div><br>
   <div>bthderu</div><br>
   <div>butreb</div><br>
@@ -368,13 +383,33 @@ body{
   <div>bueyikokn7e6</div><br>
 </div>
 <div class="latest-right"><br><br><br><br>
+    <h2>Popular</h2> <br>
   <div>fdvch</div><br>
   <div>vth</div><br>
   <div>vht</div><br>
   <div>vht</div>
 </div>
    </div>
+    <div id="one" style="height: 70vh;background-color: #131313;">
+    jet;ru,jebv08uje
 
+    </div>
+    <div id="two" style="height: 30vh;background-color: #131414;">
+        jet;ru,jebv08uje
+    
+    </div>
+    <div id="three" style="height: 30vh;background-color: #1b1b1b;">
+        jet;ru,jebv08uje
+    
+    </div>
+    <div style="height: 30vh;background-color: #2c2c2c;">
+        jet;ru,jebv08uje
+    
+    </div>
+    <div style="height: 30vh;background-color: #4b4b4b;">
+        jet;ru,jebv08uje
+    
+    </div>
 
 
 
@@ -383,6 +418,10 @@ body{
     <script>
        document.getElementById("ck").onclick=function(){ myFunction()};
        document.getElementById("ck1").onclick=function(){ myFunction1()};
+       document.getElementById("linkclick").onclick=function(){ myFunction1()};
+       document.getElementById("linkclick1").onclick=function(){ myFunction1()};
+       document.getElementById("linkclick2").onclick=function(){ myFunction1()};
+       document.getElementById("linkclick3").onclick=function(){ myFunction1()};
 
 
        function myFunction() {
@@ -397,6 +436,7 @@ body{
           document.getElementById("ck1").style = "display:none;";
           
         }
+       
     </script>
 </body>
 </html>
