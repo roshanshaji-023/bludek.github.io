@@ -451,7 +451,7 @@ a{
           font-size: 100px;
           color: #ffffff;
         }
-        #work{height: 60vh;
+        #work{height: max-content;
           background:#343F4F;
         }
           #design_text{
@@ -532,6 +532,15 @@ a{
   100%{
     left: 0;
   }
+}
+.contactdetails{
+ 
+  height: max-content;
+}
+.contactdetails h5{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
 }
 
     .social{
@@ -1069,6 +1078,9 @@ border-radius: 25px;border-style:solid;border-color: #00BFA6;
         .wrapper{
           display: none;
         }
+        .contactdetails{
+          display: none;
+        }
 }
 </style>
 <body>
@@ -1079,7 +1091,7 @@ border-radius: 25px;border-style:solid;border-color: #00BFA6;
         <li onclick="Function1()"><a id="close" href="#main-content">Home</a></li><br><hr>
         <li onclick="Function1()"><a id="close" href="#service_title"> Services</a></li><br><hr>
         <li onclick="Function1()"><a id="close" href="#about"> About</a></li><br><hr>
-        <li onclick="Function1()"><a id="close" href="#projects"> Designs</a></li><br><hr>
+        <li onclick="Function1()"><a id="close" href="contact.html"> Contact</a></li><br><hr>
         <li onclick="Function1()"><a id="close" href="blog.html"> Blog</a></li><br><hr>
        <br><br>
        <br><br>
@@ -1098,7 +1110,7 @@ border-radius: 25px;border-style:solid;border-color: #00BFA6;
             
             <li><a href="#service_title"> Services</a></li>
             <li><a href="#about"> About</a></li>
-            <li><a href="#projects"> Designs</a></li>
+            <li><a href="contact.html"> Contact</a></li>
             <li><a href="blog.html"> Blog</a></li>
         </div>
         <div id="navr" ><i class="material-icons" id="ck" style="font-size:30px;float: inline-end;color:#00BFA6;">dehaze</i>
@@ -1257,18 +1269,25 @@ border-radius: 25px;border-style:solid;border-color: #00BFA6;
   <div id="work" style=" text-align: center;  "><br><br>
     <h3 style="text-align: center;color: rgb(255, 255, 255); font-size: 30px;font-family: 'ABeeZee', sans-serif;">Ready to Work With Us?</h3>
     <br><br><br><br>
-    <a style="text-align: center;padding: 20px 30px; background-color: #FC6D6D;color: rgb(255, 255, 255);border-radius: 5px; " href="contact.html">Get Details</a>
-<br><br><br><br>
-<div class="wrapper">
+    <a  style="text-align: center;padding: 20px 30px; background-color: #FC6D6D;color: rgb(255, 255, 255);border-radius: 5px;    box-shadow: 0 0 11px #FC6D6D " href="contact.html">Contact Us</a>
+ <br><br><br><br>
+ <div class="wrapper">
   <div class="static-txt">We are </div>
   <ul class="dynamic-txts">
     <li><span>Creatives</span></li>
     <li><span>Designers</span></li>
     <li><span>Developers</span></li>
-    <li><span>Freelancers</span></li>
+    <li><span>Consultants</span></li>
   </ul>
+ </div>
+
+<div class="contactdetails">
+  <br>
+  <h5><i  style="font-size: 20px; color: #fff;" class="fas fa-envelope"></i> &nbsp;bludek.co@gmail.com</h5> 
+ 
+<br><br>
 </div>
-  </div>
+</div>
   <div class="parallax"></div> 
 
 
