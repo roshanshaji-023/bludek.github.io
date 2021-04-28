@@ -50,7 +50,7 @@ body{
        color: white;
        position: fixed;
        width: 100%;
-      
+       margin-top: -70px;
       
     }
     #logo {
@@ -75,7 +75,21 @@ body{
     #nav-sidebar{ display: none;
         width: 0px; height: 0;
     }
-    
+    .content{
+        margin: 0 auto;
+        height: 100vh;
+    }
+    .content h2{
+        margin-top: 70px;
+        color: #000;
+        text-align: center;
+        color: #00BFA6;
+        font-size:40px ;
+    }
+    .content h4{
+        text-align: start;
+        margin-left: 100px;
+    }
     @media only screen and (max-width:800px){ 
     #logo {
     width: 70%;
@@ -98,7 +112,7 @@ body{
       line-height: 50px;
      width: 100%;
      float: right;
-     margin-top: 70px;
+     margin-top: 0px;
      background: #ffffff;
     }
     #nav-sidebar ul li{
@@ -112,6 +126,11 @@ body{
     
     #ck1{display: none;
         font-size:30px;float: inline-end;color:#ffffff;}  
+
+        .content h2{
+      
+        font-size:24px ;
+    }
     }
 
 </style>
@@ -122,7 +141,7 @@ body{
             <i class="material-icons" id="ck1"  >dehaze</i></div>
         <div id="nav-menu">
             <ul>
-                <li><a style="text-decoration: none;color: rgb(255, 255, 255);"  href="#heading-latest"> News</a></li></li>
+                <li><a style="text-decoration: none;color: rgb(255, 255, 255);"  href="../blog.html"> News</a></li></li>
                 <li>Reviews</li>
                 <li>How To</li>
                 <li>More</li>
@@ -133,7 +152,7 @@ body{
     <div id="nav-sidebar">
         <ul>
            
-            <li><a style="text-decoration: none;color: #000;" id="linkclick" href="#heading-latest"> News</a></li><hr>
+            <li><a style="text-decoration: none;color: #000;" id="linkclick" href="../blog.html"> News</a></li><hr>
             <li><a style="text-decoration: none;color: #000;" id="linkclick1" href="#one"> Reviews</a></li><hr>
             <li><a style="text-decoration: none;color: #000;" id="linkclick2" href="#two"> How To</a></li><hr>
             <li><a style="text-decoration: none;color: #000;" id="linkclick3" href="#three"> More</a></li><hr>
@@ -147,7 +166,11 @@ body{
           <br><br>
           <h4 style="text-align: center;text-decoration: none;"><a style="text-decoration: none;color: #000;" href="index.html">Bludek Innovations</a></h4>
     </div>
-
+   <div class="content">
+      <h2><br> YouTube mobile app gets new video resolution setting</h2><br>
+      <hr style="background-color: #00BFA6; margin:0 auto ;width: 70%;height: 2px;">
+      <br><h4>by Jeril Jose</h4>
+   </div>
 
 
     <script>
