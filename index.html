@@ -670,8 +670,8 @@ a{
     }
 }
 
-/* For mobile phones: */
-         @media only screen and (max-width:1276px) {
+/* For tab: */
+@media (min-width:768px) and (max-width: 1366px) {
      .nav{ position: fixed; /*background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
      
    
@@ -758,6 +758,11 @@ a{
      border: 2px solid #ffffff;
      box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
+#detailslist{
+  width:100%;
+  display:block;
+  margin-left: 70px;
+}
 
         #service_title h2{
           margin-top: 20px;
@@ -823,7 +828,7 @@ a{
          z-index: 99;flex-direction: row;flex-wrap: wrap;width: 100%;
         }
        .designs >div{
-         width: 45%;
+         width: 40%;
        }
         .designs >div img{
           width: 350px;
@@ -911,10 +916,44 @@ a{
       
 }
 
-@media only screen and (max-width:800px){
+@media (min-width:280px) and (max-width: 767px){
  .nav{
    background: none;
  }
+ #navl{
+   width: 70%;
+   margin-left: 20px;
+ }
+ #navm{
+   display: none;
+ }
+ #navr{
+   display: block;
+ }
+ #nav-mob-contents{
+        text-decoration: none;
+        display: none;
+      
+        height:100vh;width:100%;
+        transition: 0.3s;
+        color:#000000;
+        overflow-y: hidden;
+        position: fixed;
+        list-style:none ;
+        z-index: 99;
+        text-align: center;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+     
+    }
+    #nav-mob-contents li{
+      margin-top: 30px;
+    }
+    #nav-mob-contents li a{
+     
+      color:#000000;
+      font-weight: bold;
+     
+    }
   .main{
     height:100vh;
   }
@@ -935,20 +974,22 @@ a{
        
         }
         .main-content >div{
+          margin-top: -2vh;
           width:100%;
           height: max-content;
          
         }
   .main-content>div h1{
       font-family: 'ABeeZee', sans-serif;
+      width: 85%;
       font-size: 30px;
-      text-align: left;
-      margin-left: 30px;
+      text-align:center;
+      margin-left:32px;
   }
   .main-content>div h3{
     font-size: 12px;
-    margin-left: 32px;
-          text-align: left;
+    margin-left:2px;
+          text-align: center;
          color: #000000;
   }
        
@@ -966,6 +1007,9 @@ a{
           font-size: medium;
          
          
+        }
+        #service_title h2{
+          font-size: 30px;
         }
      #servicesimg{
        display: block;
@@ -994,9 +1038,17 @@ a{
        .about h3{
         font-family: 'ABeeZee', sans-serif;text-align: justify;font-size: 20px;
        }
+       #detail{
+         width: 80%;
+       }
        #team{display: none;}
         .projects{
           height:max-content;
+        }
+        .projects h2
+        { width: 100%;
+          text-align: center;
+          font-size: 30px;
         }
         #social-media{
           display: none;
@@ -1052,12 +1104,24 @@ border-radius: 25px;border-style:solid;border-color: #00BFA6;
     #iconwhy{
       margin-top: 70px;
     }
+    .show-off{
+      width: 100%;
+    }
+    .show-off >div{
+      width: 45%;
+      font-size: medium;
+    }
     .show-off img{
       width:150px
     }
     .social{height: max-content;
           flex-direction:column;
+          justify-content: center;
           background-color: #1a1a1a;
+          width: 100%;
+        }
+        .social>div{
+          width: 100%;
         }
         .show-off{
           
@@ -1066,6 +1130,7 @@ border-radius: 25px;border-style:solid;border-color: #00BFA6;
         .show-off>div{
           margin-top: 85px;
           height: 40vh;
+          width: 100%;
         }
         #showi{
           font-size: 60px;
@@ -1140,8 +1205,7 @@ border-radius: 25px;border-style:solid;border-color: #00BFA6;
               <li>Digital Marketing</li>
               <li>SEO</li>
               <li>Branding</li>
-              <li></li>
-              <li></li>
+              
             </ul>
          
             <a href="#service_title" id="mybtn1"><i class="fas fa-angle-down" id="dpdn"  style="font-size: 40px; "></i></a>
@@ -1313,9 +1377,11 @@ border-radius: 25px;border-style:solid;border-color: #00BFA6;
   </div>
   
    <div><h4>Solutions</h4><br>
+    <li><a href="#">Our Works</a></li><br>
     <li><a href="https://vaccine.bludek.co.in/">Vaccination Helpdesk</a></li><br>
     <li><a href="https://www.youtube.com/channel/UCjeoIsOiIXyGSag4-fRl1qA">Tutorials</a></li><br>
     <li><a href="https://bludek.co.in/events/events.html">Events</a></li><br>
+    
   </div>
 
    <div><h4>Resources</h4><br>
