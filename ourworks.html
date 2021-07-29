@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -53,15 +54,54 @@ body::-webkit-scrollbar {
     
 }
 .logo{
-    width: 70%;
+    width: 30%;
     color: white;
     margin-left: 100px;
     margin-top: 4vh;
     font-family: 'Otomanopee One', sans-serif;
 }
-.min{
-    height: 30%;
+.nav-contents{
+        width: 55%;
+        text-align: right;
+        margin-right:50px;
 }
+.nav-contents-item li{
+        font-family: 'Otomanopee One', sans-serif;
+        color: white;
+       display: inline-flex;
+      padding: 10px 20px;
+      margin-top: 4vh;
+      font-size: 20px;
+     
+}
+.nav-contents-item li a{
+        text-decoration: none;
+        color: white;
+}
+.min{
+   
+        width: 0%;
+        display: none;
+   
+}
+.navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 80vh;
+        margin-right: -47%;
+        right: 50%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    .navigation-div-items{
+      display: none;
+      
+    }
 
 .header-main{
     height: 50vh;
@@ -102,9 +142,34 @@ body::-webkit-scrollbar {
 
  /*for tab devices*/
 @media (min-width:768px) and (max-width: 1366px) {
-    .header-main{
+.logo{
+    width: 35%;
+    color: white;
+    margin-left: 100px;
+    margin-top: 4vh;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.nav-contents{
+        width: 45%;
+        text-align: right;
+        margin-right:0px;
+}
+.nav-contents-item li{
+    font-family: 'Otomanopee One', sans-serif;
+    color: white;
+    display: inline-flex;
+    padding: 7px 10px;
+    
+    font-size: 18px;
+     
+}
+.min{ display: none;
+        width: 0%;
+    
+}
+.header-main{
     height: 50vh;
-    width: 55%;
+    width: 60%;
     margin-top: 10vh;
     float:left;
     box-shadow: 0 0 11px rgba(0, 0, 0, 0.2); 
@@ -129,6 +194,10 @@ body::-webkit-scrollbar {
     color: white;
     font-family: 'Otomanopee One', sans-serif;
 }
+.min{ display:none;
+        width: 0%;
+      
+}
 
 }
 
@@ -143,15 +212,54 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
 }
 .logo{
-    width: 70%;
+    width: 60%;
     color: white;
     margin-left: 30px;
     margin-top: 4vh;
     font-size: 12px;
     font-family: 'Otomanopee One', sans-serif;
 }
-.min{
-    height: 30%;
+.nav-contents{
+    width: 0%;display: none;
+}
+.min{ 
+   
+    width: 30%;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+#segment{
+        margin-top: 4vh;
+        margin-right: 20px;
+        font-size: 35px;
+}
+#segment1{display: none;
+        margin-top: 4vh;
+        margin-right: 20px;
+        font-size: 35px;
+}
+#navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 80vh;
+        margin-right: -50%;
+        right: 50%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: fixed;
+        background-color: #141414;
+    backdrop-filter: blur(16px) saturate(188%);
+    -webkit-backdrop-filter: blur(16px) saturate(188%);
+    background-color: rgba(38, 39, 41, 0.75);
+        
+}
+.navigation-div-items{
+         font-family: 'Otomanopee One', sans-serif;
+        color: white;
+        display: block;
 }
 .header-main{
     margin-left:5%;
@@ -205,8 +313,31 @@ body::-webkit-scrollbar {
                 <h2>Bludek Design Studio</h2>
            
             </div>
-            <div class="min"></div>
+            <div class="nav-contents">
+                <ul class="nav-contents-item">
+                    <li><a href="#about"> Websites</a></li>
+                    <li><a href="#Tutorial"> Logos</a></li>
+                    <li>Cards</li>
+                    
+                    
+    
+                </ul>
+            </div>
+            <div class="min">
+                <i class="material-icons" id="segment">segment</i>
+                <i class="material-icons" id="segment1">segment</i>
+            </div>
         </div>
+          <!--section for navigation side bar-->
+        <section id="navigation-div">
+            <ul class="navigation-div-items">
+                <br><br>
+                <li><a style="text-decoration: none;color: white;"  href="#about" id="close1">Website Designs</a></li><br><br>
+                <li><a style="text-decoration: none;color: white;"  href="#Tutorial" id="close2">Logo Designs</a></li><br><br>
+                <li><a style="text-decoration: none;color: white;"  href="#Project" id="close3">Cards Designs</a></li><br><br>
+               
+            </ul>
+        </section>
         <div class="header-main">
             <h2>
                 <br>
@@ -223,4 +354,20 @@ body::-webkit-scrollbar {
 
     <section class="main"></section>
 </body>
+<script>
+    document.getElementById("segment").onclick = function() {myFunction()};
+    document.getElementById("segment1").onclick = function() {myFunction1()};
+
+    function myFunction() {
+     document.getElementById("navigation-div").style="width:60%";
+     document.getElementById("segment1").style = "display:block";
+     document.getElementById("segment").style = "display:none;";
+     }
+    function myFunction1() {
+     document.getElementById("navigation-div").style="width:0%";
+     document.getElementById("segment").style = "display:block;";
+     document.getElementById("segment1").style = "display:none;";
+     
+   }
+</script>
 </html>
