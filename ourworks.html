@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bludek - Design Works</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/android-chrome-512x512.png">
+</head>
+
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #202225;
+}
+body::-webkit-scrollbar {
+        width: 3px;
+    } 
+    ::-webkit-scrollbar-thumb {
+    background:  #303534;
+    }
+    ::-webkit-scrollbar-track {
+    background: #000000; 
+    }
+.header{
+    background:url(./images/ourworksbg.png);
+    height: 80vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header .navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.logo{
+    width: 70%;
+    color: white;
+    margin-left: 100px;
+    margin-top: 4vh;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.min{
+    height: 30%;
+}
+
+.header-main{
+    height: 50vh;
+    width: 50%;
+    margin-top: 10vh;
+    float:left;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.2); 
+    margin-left: 80px;
+    border-radius: 25px;
+    background-color: #202225;
+    backdrop-filter: blur(16px) saturate(188%);
+    -webkit-backdrop-filter: blur(16px) saturate(188%);
+    background-color: rgba(38, 39, 41, 0.75);
+}
+.header-main h2{
+    font-size: 55px;
+    text-align: left;
+    color: white;
+    margin-left: 20px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.header-main p{
+    font-size: 30px;
+    text-align:left;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.main{
+    background-color: #202225;
+    height: 100vh;
+}
+
+
+ /*for tab devices*/
+@media (min-width:768px) and (max-width: 1366px) {}
+
+/*for Mobile phones lanscape mode*/
+@media (min-width:280px) and (max-width: 767px) {
+    .header{
+    
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo{
+    width: 70%;
+    color: white;
+    margin-left: 30px;
+    margin-top: 4vh;
+    font-size: 12px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.min{
+    height: 30%;
+}
+.header-main{
+    margin-left:5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.2); 
+    margin-top: 25vh;
+    height: 30vh;
+    width: 90%;
+    justify-content: center;
+    float: none;
+    margin-right:0px;
+    background-color: #141414;
+    backdrop-filter: blur(16px) saturate(188%);
+    -webkit-backdrop-filter: blur(16px) saturate(188%);
+    background-color: rgba(38, 39, 41, 0.75);
+   
+}
+.header-main h2{
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+   
+}
+.header-main p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+   
+}
+
+
+
+
+}
+
+</style>
+
+<body>
+    <section class="header">
+
+        <div class="navbar">
+            <div class="logo">
+
+                <h2>Bludek Design Studio</h2>
+           
+            </div>
+            <div class="min"></div>
+        </div>
+        <div class="header-main">
+            <h2>
+                <br>
+                Dive Into Our <span style="color: #ff3030;">Designs :)</span> 
+            </h2>
+            <p><br> This is What We Create!</p>
+        </div>
+    </section>
+
+    <section class="main"></section>
+</body>
+</html>
