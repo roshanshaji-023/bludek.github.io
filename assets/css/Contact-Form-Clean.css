@@ -1,5 +1,5 @@
 .contact-clean {
-  background: #00BFA6;
+  background: #202225;
   padding: 80px 0;
 }
 
@@ -31,7 +31,7 @@
   font-weight: bold;
   font-size: 28px;
   margin-bottom: 36px;
-  color: inherit;
+  color: black;
 }
 
 .contact-clean .form-group:last-child {
