@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
     margin-top: 3px;
 }
 #logo h2{font-family: 'ABeeZee', sans-serif;
-    color: #00BFA6;margin-left: 15px;font-size: 25px;margin-top: 15px;
+    color: #ffffff;margin-left: 15px;font-size: 25px;margin-top: 15px;
 }
 @media only screen and (max-width:800px) {
     .nav{
@@ -27,6 +27,6 @@ body::-webkit-scrollbar {
         text-align: center;
     }
     #logo h2{font-family: 'ABeeZee', sans-serif;
-        color: #00BFA6;text-align: center;font-size: 25px;margin-top: 15px;
+        color: #ffffff;text-align: center;font-size: 15px;margin-top: 15px;
     }
 }
