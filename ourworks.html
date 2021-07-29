@@ -22,6 +22,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0%;
@@ -134,9 +135,49 @@ body::-webkit-scrollbar {
     margin-top: 60px;
     
 }
-.main{
+.websites{
     background-color: #202225;
-    height: 100vh;
+    height: max-content;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.websites-head{
+    height: 10vh;
+    width: 100%;
+    margin-top: 2vh;
+    text-align: center;
+   
+}
+.websites-head h2{
+    font-size: 40px;
+    color: white;
+}
+.latest-website-example{
+    height:max-content;
+    display: flex;
+    justify-content: center;
+}
+.latest-web{
+    height: 10vh;
+}
+.latest-web h2{
+    color: white;
+    margin-left: 100px;
+}
+.gtrobos{
+    height: 680px;
+    width: 92%;
+    border:.5px solid #ff3030;
+}
+.latest-link{
+    width: 92%;
+    height: 10vh;
+    text-align: right;
+}
+.latest-link a{
+    color: #ffffff;
+    text-decoration: none;
+    
+    
 }
 
 
@@ -211,6 +252,7 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .logo{
     width: 60%;
     color: white;
@@ -296,6 +338,15 @@ body::-webkit-scrollbar {
     margin-top: 20px;
     
 }
+.websites-head h2{
+    font-size: 25px;
+}
+.gtrobos{
+    height: 650px;
+    width: fit-content;
+    border:.5px solid #ff3030;
+}
+
 
 
 
@@ -353,11 +404,34 @@ body::-webkit-scrollbar {
        
     </section>
 
-    <section class="main"></section>
+    <section class="websites" >
+        <div class="websites-head" id="websites">
+            <h2>
+              <span style="color: #ff3030;"> Website </span> Projects
+            </h2>
+            
+           
+        </div>
+        <div class="latest-web">
+            <h2>Latest Project</h2> <br>
+        </div>
+        <div class="latest-website-example">
+          
+            <iframe src="https://www.gtrobos.com" class="gtrobos" name="gtrobos"title="gtrobos"></iframe>
+
+        </div>
+        <div class="latest-link" >
+            <a href="http://gtrobos.com">Visit Site</a>
+        </div>
+
+    </section>
 </body>
 <script>
     document.getElementById("segment").onclick = function() {myFunction()};
     document.getElementById("segment1").onclick = function() {myFunction1()};
+    document.getElementById("close1").onclick = function() {myFunction2()};
+    document.getElementById("close2").onclick = function() {myFunction2()};
+    document.getElementById("close3").onclick = function() {myFunction2()};
 
     function myFunction() {
      document.getElementById("navigation-div").style="width:60%";
@@ -365,6 +439,12 @@ body::-webkit-scrollbar {
      document.getElementById("segment").style = "display:none;";
      }
     function myFunction1() {
+     document.getElementById("navigation-div").style="width:0%";
+     document.getElementById("segment").style = "display:block;";
+     document.getElementById("segment1").style = "display:none;";
+     
+   }
+   function myFunction2() {
      document.getElementById("navigation-div").style="width:0%";
      document.getElementById("segment").style = "display:block;";
      document.getElementById("segment1").style = "display:none;";
