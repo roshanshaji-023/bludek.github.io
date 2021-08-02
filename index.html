@@ -485,6 +485,9 @@ a{
      color: #00BFA6;
      border: 2px solid #ffffff;
     }
+    .design_tex_link{
+      display: none;
+    }
 
     .parallax {
   /* The image used */
@@ -870,6 +873,9 @@ a{
           margin-right: 30px;
 
           }
+    .design_tex_link{
+      display: none;
+    }
          
 
     #whybludek{
@@ -1064,7 +1070,7 @@ a{
       padding: 15px 20px;
       font-size: 13px;
       box-shadow: 0 0 11px rgba(33,33,33,.2); 
-      border-radius: 25px;
+     
     }
     .left h3{
       text-align: center;
@@ -1099,6 +1105,10 @@ a{
         #social-media{
           display: none;
         }
+        .design{
+          height: max-content;
+        
+        }
         .designs >div img{
           width: 300px;
           margin-left: -35px;
@@ -1107,7 +1117,27 @@ a{
         #design_text{
           display: none;
         }
-       
+        .design_tex_link{
+        display: flex;
+        width: 100%;
+        background-color: #141414;
+        justify-content: center;
+        color: #1b97d2;
+        
+        
+        }
+        .design_tex_link1 {
+          background-color: #141414;
+        display: inline-  block;
+        border: .2px solid white;
+        border-radius: 5px;
+        padding:10px 20px;
+        text-align: center;
+        color: #00BFA6;
+        font-size: 17px;
+        
+        }
+      
         #byntn1{color: #000;
         margin-left:20%;
         margin-right: 30%;
@@ -1130,16 +1160,16 @@ a{
     #whybludek{
       flex-direction:column;
       height:max-content;
-      
+      margin-top: -30px;
+    }
+    #whybludekh2{
+      margin-top: 40px;
+      font-size: 35px;
     }
     #whybludek>div{
-     
-   
       margin: 10px auto;
      width:80%;
-     
     
-     margin-top: 50px;
     }
     .industries{
       height:max-content;
@@ -1345,14 +1375,19 @@ a{
       <div  class="design_text" id="design_text"  >
           <h1>Designed with Love & Passion <br> From our Team</h1>
           <br><br>
-          <a  href="/ourworks.html" >View More &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true" style="font-size:20px;color: #00BFA6;margin-top: 10px;"></i></a>
+          <a  href="/ourworks.html" >Explore Designs &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true" style="font-size:20px;color: #00BFA6;margin-top: 10px;"></i></a>
       </div>
-
+  
     </div>
-
-   </div>
+    
+    <div class="design_tex_link">
+      <a class="design_tex_link1" href="/ourworks.html" >Explore Designs &nbsp;<i class="fa fa-angle-double-right" aria-hidden="true" style="font-size:20px;color: #00BFA6;margin-top: 10px;"></i></a>
+    </div>
+   
+  
+  </div>
  
-   <h2 style="height: 12vh;z-index: -99;  background: #141414;color: #ffffff;font-family: 'ABeeZee', sans-serif;">Why Bludek ?</h2>
+   <h2 id="whybludekh2" style="height: 12vh;z-index: -99;  background: #141414;color: #ffffff;font-family: 'ABeeZee', sans-serif;">Why Bludek ?</h2>
    <div id="whybludek"><br>
      <br>
     
