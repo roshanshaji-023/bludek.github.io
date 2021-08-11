@@ -164,21 +164,37 @@ body::-webkit-scrollbar {
     color: white;
     margin-left: 100px;
 }
-.gtrobos{
-    height: 680px;
-    width: 92%;
-    border:.5px solid #ff3030;
+.latest-website-projects{
+    height: 90vh;
+    
 }
-.latest-link{
-    width: 92%;
-    height: 10vh;
+.project1{
+    height: 80vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.project1-left{
+    width: 50%;
+    height: 60vh;
+    background: url(images/designs/gtrobos.png);
+    background-position: center;
+    background-size: cover;
+}
+.project1-right{
+    margin: auto;
+    width: 40%;
+    height:60vh;
     text-align: right;
+    color: white ;
+    background-position: center;
+    background-size: cover;
 }
-.latest-link a{
-    color: #ffffff;
+#link{
     text-decoration: none;
-    
-    
+    color:#ff3030;
+    padding: 10px 15px;
+    border: 1px solid white;
 }
 
 
@@ -240,6 +256,31 @@ body::-webkit-scrollbar {
         width: 0%;
       
 }
+.project1{
+    height: 60vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.project1-left{
+    margin: auto;
+    width: 65%;
+    height:40vh;
+    background: url(images/designs/gtrobos.png);
+    background-position: center;
+    background-size: cover;
+}
+.project1-right{
+    display: block;
+    margin: auto 20px;
+    width: 55%;
+    height:40vh;
+    text-align: right;
+    color: white ;
+    background-position: center;
+    background-size: cover;
+}
+
 
 }
 
@@ -342,16 +383,32 @@ body::-webkit-scrollbar {
 .websites-head h2{
     font-size: 25px;
 }
-.gtrobos{
-    height: 650px;
-    width: fit-content;
-    border:.5px solid #ff3030;
+.project1{
+    height: 60vh;
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    margin: auto;
 }
-.latest-web h2{
-    width: 100%;
-    margin-left: 0px;
-    text-align: center;
+.project1-left{
+    margin: auto;
+    width: 90%;
+    height:40vh;
+    background: url(images/designs/gtrobos.png);
+    background-position: center;
+    background-size: cover;
 }
+.project1-right{
+    display: block;
+    margin:10vh auto ;
+    width: 90%;
+    height:40vh;
+    text-align: left;
+    color: white ;
+    background-position: center;
+    background-size: cover;
+}
+
 
 
 
@@ -421,16 +478,28 @@ body::-webkit-scrollbar {
         <div class="latest-web">
             <h2>Latest Project</h2> <br>
         </div>
-        <div class="latest-website-example">
+        <div class="latest-website-projects">
+          <div class="project1">
+            <div class="project1-left"></div>
+            <div class="project1-right">
+                <h2>GT Robos</h2>   
+                <br>
+                <p> GT Robos is an upcoming startup that provide Tutorials on every Devices And Products that they are up with which are about 
+               electronic gadgets,IOT Devices etc ,They Provide  hand-in-hand Experience on How the Device is made or Project is Done as included with  all those Tutorials on Arduino ,
+                other Microcontrollers and Electronic Gadgets. GTRobos are into Electronics Training Kit design and development , provided across India. </p>
+                <br>
+                <a id="link" href="https://www.gtrobos.com">Visit Site</a>
+            </div>
+
+
+          </div>
           
-            <iframe src="https://www.gtrobos.com" class="gtrobos" name="gtrobos"title="gtrobos"></iframe>
 
         </div>
-        <div class="latest-link" >
-            <a href="http://gtrobos.com">Visit Site</a>
-        </div>
+        
 
     </section>
+  
 </body>
 <script>
     document.getElementById("segment").onclick = function() {myFunction()};
