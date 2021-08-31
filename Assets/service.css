@@ -102,7 +102,7 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: saturation;
-    margin: 12vh auto;
+    margin: 11vh auto;
     background-attachment: fixed;
 }
 .header-text{
@@ -553,8 +553,7 @@ body::-webkit-scrollbar {
   
 @media (min-width: 320px) and (max-width: 480px) {
     .nav{
-        min-height: 12vh;
-        
+        height: 11vh;
         width: 100%;
         display: flex;
         flex-wrap: wrap;      
