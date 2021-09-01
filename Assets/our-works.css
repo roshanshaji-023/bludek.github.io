@@ -97,7 +97,7 @@ body::-webkit-scrollbar {
   
 .header{
     height: 90vh;
-    background:rgba(0, 0, 0, 0.5)url(../images/ou.png);
+    background:rgba(0, 0, 0, 0.5)url(../images/our-works.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
