@@ -31,9 +31,10 @@ body::-webkit-scrollbar {
     background:url(images/cover.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
 }
+
 .nav{
     height: 10vh;
     z-index: 99;
@@ -344,7 +345,7 @@ margin-top: 5vh;
     background-size: cover;
 }
 .nav{
-    height: 12vh;
+    height: 10vh;
     background-color:#ffffff;
     width: 100%;
     display: flex;
@@ -352,7 +353,7 @@ margin-top: 5vh;
       
 }
 .nav>div{
-    margin: 4vh auto;  
+    margin: 3vh auto;  
 
 }
 .logo{
@@ -428,13 +429,14 @@ margin-top: 5vh;
 @media (min-width: 1024px) and (min-height: 1366px) {
     
 .header{
-    
+    min-height: 60vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .nav{
-    height: 12vh;
+    height: 10vh;
     background-color: #ffffff;
     width: 100%;
     display: flex;
@@ -520,7 +522,12 @@ margin-top: 5vh;
    
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
-    /* CSS */
+    .header{
+       
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     
 }
   
