@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bludek - Design Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/android-chrome-512x512.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <meta name="theme-color" content="#ff3030">
+</head>
+
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #202225;
+}
+body::-webkit-scrollbar {
+        width: 3px;
+    } 
+    ::-webkit-scrollbar-thumb {
+    background:  #303534;
+    }
+    ::-webkit-scrollbar-track {
+    background: #000000; 
+    }
+.header{
+    background:url(./images/ourworksbg.png);
+    height: 80vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header .navbar{
+    height: 10vh;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.logo{
+    width: 30%;
+    color: white;
+    margin-left: 100px;
+    margin-top: 4vh;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.nav-contents{
+        width: 55%;
+        text-align: right;
+        margin-right:50px;
+}
+.nav-contents-item li{
+        font-family: 'Otomanopee One', sans-serif;
+        color: white;
+       display: inline-flex;
+      padding: 10px 20px;
+      margin-top: 4vh;
+      font-size: 20px;
+     
+}
+.nav-contents-item li a{
+        text-decoration: none;
+        color: white;
+}
+.min{
+   
+        width: 0%;
+        display: none;
+   
+}
+.navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 80vh;
+        margin-right: -47%;
+        right: 50%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    .navigation-div-items{
+      display: none;
+      
+    }
+
+.header-main{
+    height: 50vh;
+    width: 50%;
+    margin-top: 10vh;
+    float:left;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.2); 
+    margin-left: 80px;
+    border-radius: 25px;
+    background-color: #202225;
+    backdrop-filter: blur(16px) saturate(188%);
+    -webkit-backdrop-filter: blur(16px) saturate(188%);
+    background-color: rgba(38, 39, 41, 0.75);
+}
+.header-main h2{
+    font-size: 55px;
+    text-align: left;
+    color: white;
+    margin-left: 20px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.header-main p{
+    font-size: 30px;
+    text-align:left;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.social-icons{
+    margin-top: 60px;
+    
+}
+.websites{
+    background-color: #202225;
+    height: max-content;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.websites-head{
+    height: 10vh;
+    width: 100%;
+    margin-top: 2vh;
+    text-align: center;
+   
+}
+.websites-head h2{
+    font-size: 40px;
+    color: white;
+}
+.latest-website-example{
+    height:max-content;
+    display: flex;
+    justify-content: center;
+}
+.latest-web{
+    height: 10vh;
+}
+.latest-web h2{
+    color: white;
+    margin-left: 100px;
+}
+.latest-website-projects{
+    height: 90vh;
+    
+}
+.project1{
+    height: 80vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.project1-left{
+    width: 50%;
+    height: 60vh;
+    background: url(images/designs/gtrobos.png);
+    background-position: center;
+    background-size: cover;
+}
+.project1-right{
+    margin: auto;
+    width: 40%;
+    height:60vh;
+    text-align: right;
+    color: white ;
+    background-position: center;
+    background-size: cover;
+}
+#link{
+    text-decoration: none;
+    color:#ff3030;
+    padding: 10px 15px;
+    border: 1px solid white;
+}
+
+
+ /*for tab devices*/
+@media (min-width:768px) and (max-width: 1366px) {
+.logo{
+    width: 35%;
+    color: white;
+    margin-left: 100px;
+    margin-top: 4vh;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.nav-contents{
+        width: 45%;
+        text-align: right;
+        margin-right:0px;
+}
+.nav-contents-item li{
+    font-family: 'Otomanopee One', sans-serif;
+    color: white;
+    display: inline-flex;
+    padding: 7px 10px;
+    
+    font-size: 18px;
+     
+}
+.min{ display: none;
+        width: 0%;
+    
+}
+.header-main{
+    height: 50vh;
+    width: 60%;
+    margin-top: 10vh;
+    float:left;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.2); 
+    margin-left: 80px;
+    border-radius: 25px;
+    background-color: #202225;
+    backdrop-filter: blur(16px) saturate(188%);
+    -webkit-backdrop-filter: blur(16px) saturate(188%);
+    background-color: rgba(38, 39, 41, 0.75);
+}
+.header-main h2{
+    font-size: 55px;
+    text-align: left;
+    color: white;
+    margin-left: 25px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.header-main p{
+    font-size: 30px;
+    text-align:left;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.min{ display:none;
+        width: 0%;
+      
+}
+.project1{
+    height: 60vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.project1-left{
+    margin: auto;
+    width: 65%;
+    height:40vh;
+    background: url(images/designs/gtrobos.png);
+    background-position: center;
+    background-size: cover;
+}
+.project1-right{
+    display: block;
+    margin: auto 20px;
+    width: 55%;
+    height:40vh;
+    text-align: right;
+    color: white ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+}
+
+/*for Mobile phones lanscape mode*/
+@media (min-width:280px) and (max-width: 767px) {
+    .header{
+    
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    width: 60%;
+    color: white;
+    margin-left: 30px;
+    margin-top: 4vh;
+    font-size: 12px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.nav-contents{
+    width: 0%;display: none;
+}
+.min{ 
+   
+    width: 30%;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+#segment{
+        margin-top: 4vh;
+        margin-right: 20px;
+        font-size: 35px;
+}
+#segment1{display: none;
+        margin-top: 4vh;
+        margin-right: 20px;
+        font-size: 35px;
+}
+#navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 80vh;
+        margin-right: -50%;
+        right: 50%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: fixed;
+        background-color: #141414;
+    backdrop-filter: blur(16px) saturate(188%);
+    -webkit-backdrop-filter: blur(16px) saturate(188%);
+    background-color: rgba(38, 39, 41, 0.75);
+        
+}
+.navigation-div-items{
+         font-family: 'Otomanopee One', sans-serif;
+        color: white;
+        display: block;
+}
+.header-main{
+    margin-left:5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.2); 
+    margin-top: 25vh;
+    height: 30vh;
+    width: 90%;
+    justify-content: center;
+    float: none;
+    margin-right:0px;
+    background-color: #141414;
+    backdrop-filter: blur(16px) saturate(188%);
+    -webkit-backdrop-filter: blur(16px) saturate(188%);
+    background-color: rgba(38, 39, 41, 0.75);
+   
+}
+.header-main h2{
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+   
+}
+.header-main p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+   
+}
+.social-icons{
+    margin-top: 20px;
+    
+}
+.websites{
+    height: max-content;
+}
+.websites-head h2{
+    font-size: 25px;
+}
+.project1{
+    height:max-content;
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.project1-left{
+    margin: auto;
+    width: 90%;
+    height:40vh;
+    background: url(images/designs/gtrobos.png);
+    background-position: center;
+    background-size: cover;
+}
+.project1-right{
+    display: block;
+    margin:10vh auto ;
+    width: 90%;
+    height:max-content;
+    text-align: left;
+    color: white ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+}
+
+</style>
+
+<body>
+    <section class="header">
+
+        <div class="navbar">
+            <div class="logo">
+
+                <h2>Bludek Design Studio</h2>
+           
+            </div>
+            <div class="nav-contents">
+                <ul class="nav-contents-item">
+                    <li><a href="#websites"> Websites</a></li>
+                    <li><a href="#logos"> Logos</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    
+                    
+    
+                </ul>
+            </div>
+            <div class="min">
+                <i class="material-icons" id="segment">drag_handle</i>
+                <i class="material-icons" id="segment1">close</i>
+            </div>
+        </div>
+          <!--section for navigation side bar-->
+        <section id="navigation-div">
+            <ul class="navigation-div-items">
+                <br><br>
+                <li><a style="text-decoration: none;color: white;"  href="#websites" id="close1">Website Designs</a></li><br><br>
+                <li><a style="text-decoration: none;color: white;"  href="#logos" id="close2">Logo Designs</a></li><br><br>
+                <li><a style="text-decoration: none;color: white;"  href="#cards" id="close3">Cards Designs</a></li><br><br>
+               
+            </ul>
+        </section>
+        <div class="header-main">
+            <h2>
+                <br>
+                Dive Into Our <span style="color: #ff3030;">Designs :)</span> 
+            </h2>
+            <p><br> This is What We Create!</p>
+            <br><p class="social-icons">
+                &nbsp<a href="https://wa.me/918547691061?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F"><i class="fab fa-whatsapp" aria-hidden="true" style="font-size:30px;color: #ff3030;margin-top: 10px;"></i></a>
+                &nbsp<a href="mailto:bludek.co@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size:30px;color: #ff3030;margin-top: 10px;"></i></a>
+                &nbsp<a href="https://www.instagram.com/bludek.co/"><i class="fab fa-instagram" style="font-size:30px;color: #ff3030;" ></i></a>
+               &nbsp<a href="https://www.facebook.com/bludek.co.in"><i class="fab fa-facebook" style="font-size:30px;color: #ff3030;"></i></a></p>
+        </div>
+       
+    </section>
+
+    <section class="websites" >
+        <div class="websites-head" id="websites">
+            <h2>
+              <span style="color: #ff3030;"> Website </span> Projects
+            </h2>
+            
+           
+        </div>
+        <div class="latest-web">
+            <h2>Latest Project</h2> <br>
+        </div>
+        <div class="latest-website-projects">
+          <div class="project1">
+            <div class="project1-left"></div>
+            <div class="project1-right">
+                <h2>GT Robos</h2>   
+                <br>
+                <p> GT Robos is an upcoming startup that provide Tutorials on every Devices And Products that they are up with which are about 
+               electronic gadgets,IOT Devices etc ,They Provide  hand-in-hand Experience on How the Device is made or Project is Done as included with  all those Tutorials on Arduino ,
+                other Microcontrollers and Electronic Gadgets. GTRobos are into Electronics Training Kit design and development , provided across India. </p>
+                <br>
+                <a id="link" href="https://www.gtrobos.com">Visit Site</a>
+            </div>
+
+
+          </div>
+          
+
+        </div>
+        
+
+    </section>
+  
+</body>
+<script>
+    document.getElementById("segment").onclick = function() {myFunction()};
+    document.getElementById("segment1").onclick = function() {myFunction1()};
+    document.getElementById("close1").onclick = function() {myFunction2()};
+    document.getElementById("close2").onclick = function() {myFunction2()};
+    document.getElementById("close3").onclick = function() {myFunction2()};
+
+    function myFunction() {
+     document.getElementById("navigation-div").style="width:60%";
+     document.getElementById("segment1").style = "display:block";
+     document.getElementById("segment").style = "display:none;";
+     }
+    function myFunction1() {
+     document.getElementById("navigation-div").style="width:0%";
+     document.getElementById("segment").style = "display:block;";
+     document.getElementById("segment1").style = "display:none;";
+     
+   }
+   function myFunction2() {
+     document.getElementById("navigation-div").style="width:0%";
+     document.getElementById("segment").style = "display:block;";
+     document.getElementById("segment1").style = "display:none;";
+     
+   }
+</script>
+</html>
