@@ -1,0 +1,649 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+  
+body::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+     background:  #000000;
+     border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+     background: #ffffff; 
+}
+
+.nav{top: 0;
+    height: 10vh;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;      
+    background-color: #ffffff;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.nav>div{
+    margin: 3vh auto;  
+
+}
+.logo{
+    width: 20%;
+
+}
+.logo a{
+   
+    color: #1a1a1a;
+    text-decoration: none;
+}
+.logo h2{
+    margin-left:50px;
+}   
+.nav-mid{
+    width: 70%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}   
+
+.nav-mid ul a{
+    text-decoration: none;
+    padding: 15px 35px;
+    font-size:21px;
+    color: #1a1a1a;
+}
+.nav-mid a:hover{
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+    border-bottom: 3px solid black;
+    color: black;
+}
+#active{
+    border-bottom: 3px solid rgb(97, 30, 255);
+}
+
+.nav-mob{
+    width: 0%;
+    display: none;
+}
+.navigation-div{
+    overflow: hidden;
+    width: 0%;
+    height: 80vh;
+    margin-right: -47%;
+    right: 50%;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 99;
+    transition: ease-in-out .5s;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.navigation-div-items{
+    display: none;
+    
+}
+
+  
+.header{
+    height: 90vh;
+    background:rgba(0, 0, 0, 0.5)url(../images/our-works.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: saturation;
+    margin: 10vh auto;
+    background-attachment: fixed;
+}
+.header-text{
+     width: 100%;
+     height:30vh;
+     display: flex;
+}
+.header-text >div{
+    text-align: center;
+    margin: 40vh auto;
+    font-size: 65px;
+    color: #ffffff87;
+}
+ hr{
+    height: 1px;
+    background-color: #00e091;
+    border:  #00e091;
+}
+.works{
+    min-height: 100vh;
+    height: max-content;
+   
+}
+.latest{
+    min-height: 100vh;
+    height: max-content;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.latest_head{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+.project1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5vh auto;
+    min-height: 100vh;
+    background-color: rgb(248, 248, 248);
+    justify-content: space-evenly;
+}
+
+.project1 .img{
+    width: 45%;
+    height: 60vh;
+    background: url(../images/works_img/gtrobos.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 15vh;
+}
+.project1 .text{
+    width: 45%;
+    min-height: 70vh;
+    margin-top: 30vh;
+}
+
+ 
+  
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+*/
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+
+.nav{
+    height: 12vh;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;      
+      
+}
+.nav>div{
+    margin: 4vh auto;  
+
+}
+.logo{
+    width: 20%;
+
+}
+.logo h2{
+    margin-left:50px;
+}   
+.nav-mid{
+    width: 70%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}   
+
+.nav-mid ul a{
+    text-decoration: none;
+    padding: 20px 45px;
+    
+    font-size: 25px;
+    color: #1a1a1a;
+}
+
+.nav-mob{
+    width: 0%;
+    display: none;
+}
+
+.header-text{
+     width: 100%;
+     height:30vh;
+     display: flex;
+}
+.header-text >div{
+    text-align: center;
+    margin: 40vh auto;
+    font-size: 45px;
+}
+
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+    
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+
+.nav{
+    height: 12vh;
+   
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;      
+      
+}
+.nav>div{
+    margin: 4vh auto;  
+
+}
+.logo{
+    width: 20%;
+
+}
+.logo h2{
+    margin-left:50px;
+}   
+.nav-mid{
+    width: 70%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}   
+
+.nav-mid ul a{
+    text-decoration: none;
+    padding: 20px 15px;
+    
+    font-size: 20px;
+    color: #1a1a1a;
+}
+
+.nav-mob{
+    width: 0%;
+    display: none;
+}
+.header{
+    min-height: 70vh;
+    height: max-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: saturation;
+    background-attachment: fixed;
+}
+.header-text{
+     width: 100%;
+     height:30vh;
+     display: flex;
+}
+.header-text >div{
+    text-align: center;
+    margin: 35vh auto;
+    font-size: 65px;
+}
+
+.project1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5vh auto;
+    height:50vh;
+    min-height: 50vh;
+    background-color: rgb(248, 248, 248);
+    justify-content: space-evenly;
+}
+
+.project1 .img{
+    width: 45%;
+    height: 45vh;
+    background: url(../images/works_img/gtrobos.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0vh;
+}
+.project1 .text{
+    width: 45%;
+    height:45vh;
+    margin-top: 5vh;
+}
+    
+    
+}
+/* 
+    ##Device = ipad Pro (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 1024px) and (min-height: 1366px) {
+
+.nav{
+    height: 12vh;
+   
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;      
+      
+}
+.nav>div{
+    margin: 4vh auto;  
+
+}
+.logo{
+    width: 20%;
+
+}
+.logo h2{
+    margin-left:50px;
+}   
+.nav-mid{
+    width: 70%;
+    display: inline-flex;
+    flex-direction: row-reverse;
+}   
+
+.nav-mid ul a{
+    text-decoration: none;
+    padding: 20px 15px;
+    
+    font-size: 20px;
+    color: #1a1a1a;
+}
+
+.nav-mob{
+    width: 0%;
+    display: none;
+}
+.header{
+    min-height: 60vh;
+    height: max-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: saturation;
+    margin: 12vh auto;
+}
+.header-text{
+     width: 100%;
+     height:30vh;
+     display: flex;
+}
+.header-text >div{
+    text-align: center;
+    margin: 35vh auto;
+    font-size: 65px;
+}
+.latest{
+    min-height: 65vh;
+}
+.project1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5vh auto;
+    height:50vh;
+    min-height: 50vh;
+    background-color: rgb(248, 248, 248);
+    justify-content: space-evenly;
+}
+
+.project1 .img{
+    width: 45%;
+    height: 45vh;
+    background: url(../images/works_img/gtrobos.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0vh;
+}
+.project1 .text{
+    width: 45%;
+    height:45vh;
+    margin-top: 15vh;
+}
+
+         
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+   
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    .header{
+        height:150vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: saturation;
+       
+    }
+    .nav{
+        height: 15vh;
+       
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;      
+          
+    }
+    .nav>div{
+        margin: 4vh auto;  
+    
+    }
+    .logo{
+        width: 20%;
+    
+    }
+    .logo h2{
+        margin:auto -30px;
+    }   
+    .nav-mid{
+        width:0%;
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }   
+    
+    .nav-mid ul a{
+        display: none;
+    }
+    
+    .nav-mob{
+        width: 20%;
+        display: block;
+    }
+    #segment{
+       
+        margin-right: 10px;
+        font-size: 35px;
+    }
+    #segment1{
+        display: none;
+        margin-right: 10px;
+        font-size: 35px;
+    }
+    #navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 80vh;
+        margin-right: -50%;
+        right: 50%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: fixed;
+        background-color: #ffffff;
+        backdrop-filter: blur(16px) saturate(188%);
+        -webkit-backdrop-filter: blur(16px) saturate(188%);
+        background-color: rgb(255 255 255 / 75%);
+        
+    }
+    .navigation-div-items{
+            font-family: 'Otomanopee One', sans-serif;
+            color: rgb(0, 0, 0);
+            display: block;
+    }
+    .navigation-div-items ul li {
+        text-decoration: none;
+        color: black;
+    }
+    .navigation-div-items a{
+        text-decoration: none;
+        color: black;
+    }
+    .header-text >div{
+        text-align: center;
+        margin: 25vh auto;
+        font-size: 45px;
+    }
+    
+    
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav{
+        height: 11vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;      
+         
+    }
+    .nav>div{
+        margin: 4vh auto;  
+    
+    }
+    .logo{
+        width: 60%;
+    
+    }
+    .logo h2{
+        margin-left: 10px;
+        font-size: 25px;
+    }   
+    .nav-mid{
+        width:0%;
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }   
+    
+    .nav-mid ul a{
+        display: none;
+    }
+    
+    .nav-mob{
+        width:20%;
+        display: inline-flex;
+    }
+    #segment{
+       
+        margin-right: 10px;
+        font-size: 35px;
+    }
+    #segment1{
+        display: none;
+        margin-right: 10px;
+        font-size: 35px;
+    }
+    #navigation-div{
+        overflow: hidden;
+        width: 0%;
+        height: 60vh;
+        margin-right: -50%;
+        right: 50%;
+        border-radius: 5px;
+        text-align: center;
+        z-index: 99;
+        transition: ease-in-out .5s;
+        position: fixed;
+        background-color: #ffffff;
+        backdrop-filter: blur(16px) saturate(188%);
+        -webkit-backdrop-filter: blur(16px) saturate(188%);
+        background-color: rgb(255 255 255 / 75%);
+        
+    }
+    .navigation-div-items{
+            font-family: 'Otomanopee One', sans-serif;
+            color: rgb(0, 0, 0);
+            display: block;
+    }
+    .navigation-div-items ul li {
+        text-decoration: none;
+        color: black;
+    }
+    .navigation-div-items a{
+        text-decoration: none;
+        color: black;
+    }
+    .header{
+        background-attachment: fixed;
+        margin: 11vh auto;
+    }
+    .header-text >div{
+        text-align: center;
+        margin: 45vh auto;
+        font-size: 50px;
+        background-attachment: fixed;
+    }
+    .project1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 5vh auto;
+        min-height: 100vh;
+        background-color: rgb(248, 248, 248);
+        justify-content: space-evenly;
+    }
+    
+    .project1 .img{
+        width: 95%;
+        height: 50vh;
+        background: url(../images/works_img/gtrobos.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 15vh;
+    }
+    .project1 .text{
+        width: 95%;
+        min-height: 70vh;
+        margin-top: 0vh;
+    }
+    h3{
+        font-size: 35px;
+    }
+    
+ 
+    
+}  
