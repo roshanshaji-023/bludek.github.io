@@ -138,6 +138,23 @@ body::-webkit-scrollbar {
     text-decoration: none;
     border: none;
 }
+.about{
+    min-height: 60vh;
+    height: max-content;
+    margin: auto;
+    text-align: center;
+}
+.about-head{
+    min-height: 15vh;
+    font-size:30px ;
+}
+.about-def{
+    min-height: 25vh;
+    width: 82%;
+    font-size: 25px;
+    margin: auto;
+    color: #1a1a1a;
+}
 .email_subscription{
     height: 35vh;
    
@@ -806,6 +823,18 @@ margin-top: 5vh;
         text-decoration: none;
         border: none;
         font-size: 25px;
+    }
+    .about-head{
+        min-height: 15vh;
+        font-size:25px ;
+    }
+    .about-def{
+        min-height: 25vh;
+        width: 85%;
+        font-size: 18px;
+        margin: auto;
+        
+        color: #1a1a1a;
     }
     .email_subscription{
       position: relative;  
