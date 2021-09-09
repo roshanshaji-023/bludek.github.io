@@ -139,7 +139,7 @@ body::-webkit-scrollbar {
     border: none;
 }
 .about{
-    min-height: 60vh;
+    min-height: 100vh;
     height: max-content;
     margin: auto;
     text-align: center;
@@ -150,10 +150,23 @@ body::-webkit-scrollbar {
 }
 .about-def{
     min-height: 25vh;
-    width: 82%;
+    width:100%;
     font-size: 25px;
+    text-align: left;
     margin: auto;
     color: #1a1a1a;
+    display: flex;
+}
+.about-def-text{
+    width: 45%;
+    margin: 10vh auto;
+}
+.about-def-img{
+    width: 45%;
+    height: 60vh;
+    background: url(/images/why\ us.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .email_subscription{
     height: 35vh;
@@ -436,7 +449,29 @@ margin-top: 5vh;
     padding: 10px;
     text-decoration: none;
     border: none;
-}     
+} 
+.about-def{
+    min-height: 60vh;
+    width:100%;
+    font-size: 25px;
+    text-align: left;
+    margin: auto;
+    color: #1a1a1a;
+    display: flex;
+}
+.about-def-text{
+    width: 45%;
+    margin: 10vh auto;
+    font-size: 25px;
+}
+.about-def-img{
+    width: 50%;
+    margin: 10vh auto;
+    height: 60vh;
+    background: url(/images/why\ us.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}    
     
 }
 /* 
@@ -528,7 +563,38 @@ margin-top: 5vh;
     padding: 10px;
     text-decoration: none;
     border: none;
-}          
+}
+.about{
+    min-height: 65vh;
+}
+.about-head {
+    min-height: 1vh;
+   
+}
+.about-def{
+    min-height: 50vh;
+    height:50vh;
+    width:100%;
+    font-size: 25px;
+    text-align: left;
+    margin: auto;
+    color: #1a1a1a;
+    display: flex;
+}
+.about-def-text{
+    width: 45%;
+    margin: 10vh auto;
+    font-size: 25px;
+}
+.about-def-img{
+    width: 50%;
+    margin: 10vh auto;
+    height: 60vh;
+    background: url(/images/why\ us.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+          
     
 }
   
@@ -826,21 +892,41 @@ margin-top: 5vh;
     }
     .about-head{
         min-height: 15vh;
-        font-size:25px ;
+        font-size:20px ;
     }
+   
     .about-def{
-        min-height: 25vh;
-        width: 85%;
-        font-size: 18px;
+        min-height: 100vh;
+        height: max-content;
+        width:100%;
+        font-size: 25px;
+        text-align: left;
         margin: auto;
-        
         color: #1a1a1a;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column-reverse
+    }
+    .about-def-text{
+        width:85%;
+        margin-top: 1vh;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    .about-def-img{
+        width: 85%;
+        height: 60vh;
+        margin: auto;
+        background: url(/images/why\ us.png);
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .email_subscription{
       position: relative;  
       height: max-content;
       z-index: 99;
       background-color: #ffffff;
+      min-height: 50vh;
     }
     form{
         height:max-content;
