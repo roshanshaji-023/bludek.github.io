@@ -161,6 +161,7 @@ body::-webkit-scrollbar {
     width: 45%;
     margin: 10vh auto;
 }
+
 .about-def-img{
     width: 45%;
     height: 60vh;
@@ -168,9 +169,93 @@ body::-webkit-scrollbar {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.services{
+    min-height: 100vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    background: url(/images/service.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.services-text{
+    width: 50%;
+    height: 60vh;
+    margin:20vh auto;
+    background-color: transparent;
+}
+.service-text-def{
+    margin:20vh auto;
+    text-align: center;
+}
+.service-text-def h2{
+   font-size: 40px;
+}
+.services-main{
+    width: 50%;
+    min-height:100vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+.services-main> div{
+    height:370px;
+    width: 300px;
+    margin: 20px 20px 20px 20px;
+    background-color: #ffffff;
+    text-align: centerons   ;
+
+}
+img{
+    width: 250px;
+}
+.services-div1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div1:hover{
+    background-color: rgb(112, 255, 172);
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div2:hover{
+    background-color: rgb(255, 252, 98);
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div3:hover{
+    background-color: #ff997a;
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div4:hover{
+    background-color: #1db7ff;
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
 .email_subscription{
     height: 35vh;
-   
+    margin-top: 10vh;
 }
 .email_subscription p{
     text-align: center;
@@ -310,6 +395,79 @@ margin-top: 5vh;
     padding: 10px;
     text-decoration: none;
     border: none;
+}
+.services-text{
+    width: 50%;
+    height: 60vh;
+    margin:20vh auto;
+    background-color: transparent;
+}
+.service-text-def{
+    margin:20vh auto;
+    text-align: center;
+}
+.service-text-def h2{
+   font-size: 40px;
+}
+.services-main{
+    width: 50%;
+    min-height:100vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+.services-main> div{
+    height:370px;
+    width: 300px;
+    margin: 20px 20px 20px 20px;
+    background-color: #ffffff;
+    text-align: centerons   ;
+
+}
+img{
+    width: 250px;
+}
+.services-div1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div1:hover{
+    background-color: rgb(112, 255, 172);
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div2:hover{
+    background-color: rgb(255, 252, 98);
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div3:hover{
+    background-color: #ff997a;
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div4:hover{
+    background-color: #1db7ff;
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
 }
 .email_subscription{
     height: 35vh;
@@ -471,7 +629,80 @@ margin-top: 5vh;
     background: url(/images/why\ us.png);
     background-size: contain;
     background-repeat: no-repeat;
-}    
+}  
+.services-text{
+    width: 30%;
+    height: 60vh;
+    margin:20vh auto;
+    background-color: transparent;
+}
+.service-text-def{
+    margin:20vh auto;
+    text-align: center;
+}
+.service-text-def h2{
+   font-size: 40px;
+}
+.services-main{
+    width: 70%;
+    min-height:100vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+.services-main> div{
+    height:370px;
+    width: 250px;
+    margin: 5px;
+    background-color: #ffffff;
+    text-align: centerons   ;
+
+}
+img{
+    width: 250px;
+}
+.services-div1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div1:hover{
+    background-color: rgb(112, 255, 172);
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div2:hover{
+    background-color: rgb(255, 252, 98);
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div3:hover{
+    background-color: #ff997a;
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div4:hover{
+    background-color: #1db7ff;
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}  
     
 }
 /* 
@@ -593,6 +824,82 @@ margin-top: 5vh;
     background: url(/images/why\ us.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
+.services{
+    min-height: 65vh;
+}
+.services-text{
+    width: 35%;
+    height: 40vh;
+    margin:10vh auto;
+    background-color: transparent;
+}
+.service-text-def{
+    margin:20vh auto;
+    text-align: center;
+}
+.service-text-def h2{
+   font-size: 40px;
+}
+.services-main{
+    width: 65%;
+    min-height:70vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+.services-main> div{
+    height:370px;
+    width: 300px;
+    margin: 5px 5px 5px 5px;
+    background-color: #ffffff;
+    text-align: centerons   ;
+
+}
+img{
+    width: 250px;
+}
+.services-div1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div1:hover{
+    background-color: rgb(112, 255, 172);
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div2:hover{
+    background-color: rgb(255, 252, 98);
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div3:hover{
+    background-color: #ff997a;
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.services-div4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-div4:hover{
+    background-color: #1db7ff;
+    transition: ease-in-out 1s;
+    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
 } 
           
     
@@ -611,6 +918,7 @@ margin-top: 5vh;
         background-repeat: no-repeat;
         background-size: cover;
     }
+    
     
 }
   
@@ -741,6 +1049,79 @@ margin-top: 5vh;
         text-decoration: none;
         border: none;
     } 
+    .services-text{
+        width: 30%;
+        height: 60vh;
+        margin:20vh auto;
+        background-color: transparent;
+    }
+    .service-text-def{
+        margin:20vh auto;
+        text-align: center;
+    }
+    .service-text-def h2{
+       font-size: 30px;
+    }
+    .services-main{
+        width: 65%;
+        min-height:100vh;
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: transparent;
+    }
+    .services-main> div{
+        height:250px;
+        width: 170px;
+        margin: 2px;
+        background-color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+    }
+    img{
+        width: 100px;
+    }
+    .services-div1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-div1:hover{
+        background-color: rgb(112, 255, 172);
+        transition: ease-in-out 1s;
+        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+    }
+    .services-div2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-div2:hover{
+        background-color: rgb(255, 252, 98);
+        transition: ease-in-out 1s;
+        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+    }
+    .services-div3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-div3:hover{
+        background-color: #ff997a;
+        transition: ease-in-out 1s;
+        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+    }
+    .services-div4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-div4:hover{
+        background-color: #1db7ff;
+        transition: ease-in-out 1s;
+        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+    }
     .email_subscription{
         z-index: 99;
         position: relative;
@@ -921,12 +1302,89 @@ margin-top: 5vh;
         background-size: contain;
         background-repeat: no-repeat;
     }
+    .services{margin-top: 5vh;
+        min-height: 120vh;
+    }
+    .services-text{
+        width: 90%;
+        height: 20vh;
+        margin: auto;
+        background-color: transparent;
+    }
+    .service-text-def{
+        margin:auto;
+        text-align: center;
+    }
+    .service-text-def h2{
+       font-size: 30px;
+    }
+    .services-main{
+        width: 100%;
+        min-height:100vh;
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        background-color: transparent;
+    }
+    .services-main> div{
+        height:370px;
+        width: 300px;
+        margin: auto;
+        background-color: #ffffff;
+        text-align: centerons   ;
+    
+    }
+    img{
+        width: 250px;
+    }
+    .services-div1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-div1:hover{
+        background-color: rgb(112, 255, 172);
+        transition: ease-in-out 1s;
+        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+    }
+    .services-div2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-div2:hover{
+        background-color: rgb(255, 252, 98);
+        transition: ease-in-out 1s;
+        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+    }
+    .services-div3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-div3:hover{
+        background-color: #ff997a;
+        transition: ease-in-out 1s;
+        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+    }
+    .services-div4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-div4:hover{
+        background-color: #1db7ff;
+        transition: ease-in-out 1s;
+        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+    }
     .email_subscription{
       position: relative;  
       height: max-content;
       z-index: 99;
       background-color: #ffffff;
       min-height: 50vh;
+      margin-top: 10vh;
     }
     form{
         height:max-content;
