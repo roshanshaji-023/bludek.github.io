@@ -253,6 +253,40 @@ img{
     transition: ease-in-out 1s;
     box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
 }
+.brands{
+    min-height: 50vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+.brands-head{
+    width: 100%;
+    min-height: 10vh;
+    color: #1a1a1a;
+    text-align: center;
+}
+.brands-head h2{
+    font-size: 40px;
+}
+.clients{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clients>div{
+    height: 10vh;
+    width: 250px;
+    margin: 15px ;
+    background-color: #e4e4e4;
+}
+.clients-01{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/works_img/gtrobos-logo.jpeg);
+}
 .email_subscription{
     height: 35vh;
     margin-top: 10vh;
@@ -468,6 +502,40 @@ img{
     background-color: #1db7ff;
     transition: ease-in-out 1s;
     box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+}
+.brands{
+    min-height: 50vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+.brands-head{
+    width: 100%;
+    min-height: 10vh;
+    color: #1a1a1a;
+    text-align: center;
+}
+.brands-head h2{
+    font-size: 40px;
+}
+.clients{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clients>div{
+    height: 10vh;
+    width: 250px;
+    margin: 15px ;
+    background-color: #e4e4e4;
+}
+.clients-01{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/works_img/gtrobos-logo.jpeg);
 }
 .email_subscription{
     height: 35vh;
@@ -703,6 +771,40 @@ img{
     transition: ease-in-out 1s;
     box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
 }  
+.brands{
+    min-height: 50vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+.brands-head{
+    width: 100%;
+    min-height: 10vh;
+    color: #1a1a1a;
+    text-align: center;
+}
+.brands-head h2{
+    font-size: 40px;
+}
+.clients{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clients>div{
+    height: 10vh;
+    width: 250px;
+    margin: 15px ;
+    background-color: #e4e4e4;
+}
+.clients-01{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/works_img/gtrobos-logo.jpeg);
+}
     
 }
 /* 
@@ -901,6 +1003,40 @@ img{
     transition: ease-in-out 1s;
     box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
 } 
+.brands{
+    min-height: 40vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+.brands-head{
+    width: 100%;
+    min-height: 10vh;
+    color: #1a1a1a;
+    text-align: center;
+}
+.brands-head h2{
+    font-size: 40px;
+}
+.clients{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clients>div{
+    height: 10vh;
+    width: 250px;
+    margin: 15px ;
+    background-color: #e4e4e4;
+}
+.clients-01{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/works_img/gtrobos-logo.jpeg);
+}
           
     
 }
@@ -1377,6 +1513,40 @@ img{
         background-color: #1db7ff;
         transition: ease-in-out 1s;
         box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
+    }
+    .brands{
+        min-height: 50vh;
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .brands-head{
+        width: 100%;
+        min-height: 10vh;
+        color: #1a1a1a;
+        text-align: center;
+    }
+    .brands-head h2{
+        font-size: 30px;
+    }
+    .clients{
+        width: 100%;
+        min-height: 20vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .clients>div{
+        height: 10vh;
+        width: 250px;
+        margin: 15px ;
+        background-color: #e4e4e4;
+    }
+    .clients-01{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(./images/works_img/gtrobos-logo.jpeg);
     }
     .email_subscription{
       position: relative;  
