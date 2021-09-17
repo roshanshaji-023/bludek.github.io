@@ -96,13 +96,11 @@ body::-webkit-scrollbar {
 
   
 .header{
-    height: 90vh;
-    background:rgba(0, 0, 0, 0.5)url(../images/our-works.png);
+    height: 60vh;
+    background: url(../images/our-works.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: saturation;
     margin: 10vh auto;
+    background-size: contain;
     background-attachment: fixed;
 }
 .header-text{
@@ -112,9 +110,9 @@ body::-webkit-scrollbar {
 }
 .header-text >div{
     text-align: center;
-    margin: 40vh auto;
+    margin: 20vh auto;
     font-size: 65px;
-    color: #ffffff87;
+    color: #00000087;
 }
  hr{
     height: 1px;
@@ -122,7 +120,7 @@ body::-webkit-scrollbar {
     border:  #00e091;
 }
 .works{
-    min-height: 100vh;
+    min-height: 80vh;
     height: max-content;
    
 }
@@ -144,7 +142,7 @@ body::-webkit-scrollbar {
     flex-wrap: wrap;
     width: 100%;
     margin: 5vh auto;
-    min-height: 100vh;
+    min-height: 60vh;
     background-color: rgb(248, 248, 248);
     justify-content: space-evenly;
 }
@@ -163,8 +161,46 @@ body::-webkit-scrollbar {
     min-height: 70vh;
     margin-top: 30vh;
 }
+.ui{
+    min-height: 100vh;
+    height: max-content;
+    margin: auto;
+}
+.ui-head{
+    min-height: 5vh;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+.uidesigns{
+    width: 90%;
+    margin:10vh auto;
+    min-height: 80vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.uidesigns> div{
+    height: 35vh;
+    width: 25%;
+    background-color: #fff;
+    margin: 15px;
+    border: .5px solid #1a1a1a;
+}
+.ui1{
+    background: url(../images/ui/food\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
- 
+.ui2{
+    background: url(../images/ui/robot\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
   
 /* 
     ##Device = Laptops, Desktops
@@ -221,6 +257,45 @@ body::-webkit-scrollbar {
     text-align: center;
     margin: 40vh auto;
     font-size: 45px;
+}
+.ui{
+    min-height: 100vh;
+    height: max-content;
+    margin: auto;
+}
+.ui-head{
+    min-height: 5vh;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+.uidesigns{
+    width: 90%;
+    margin:10vh auto;
+    min-height: 80vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.uidesigns> div{
+    height: 35vh;
+    width: 25%;
+    background-color: #ffffff;
+    margin: 15px;
+    border: .5px solid #1a1a1a;
+}
+.ui1{
+    background: url(../images/ui/food\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ui2{
+    background: url(../images/ui/robot\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
     
@@ -317,7 +392,45 @@ body::-webkit-scrollbar {
     height:45vh;
     margin-top: 5vh;
 }
-    
+.ui{
+    min-height: 100vh;
+    height: max-content;
+    margin: auto;
+}
+.ui-head{
+    min-height: 5vh;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+.uidesigns{
+    width: 100%;
+    margin:10vh auto;
+    min-height: 80vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.uidesigns> div{
+    height: 35vh;
+    width: 45%;
+    background-color: #fffefe;
+    margin: 5px;
+    border: .5px solid #1a1a1a;
+}
+.ui1{
+    background: url(../images/ui/food\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ui2{
+    background: url(../images/ui/robot\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
     
 }
 /* 
@@ -383,6 +496,9 @@ body::-webkit-scrollbar {
     margin: 35vh auto;
     font-size: 65px;
 }
+.works{
+    min-height: 60vh;
+}
 .latest{
     min-height: 65vh;
 }
@@ -411,6 +527,45 @@ body::-webkit-scrollbar {
     width: 45%;
     height:45vh;
     margin-top: 15vh;
+}
+.ui{
+    min-height: 100vh;
+    height: max-content;
+    margin: auto;
+}
+.ui-head{
+    min-height: 5vh;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+.uidesigns{
+    width: 90%;
+    margin:10vh auto;
+    min-height: 60vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.uidesigns> div{
+    height: 25vh;
+    width: 30%;
+    background-color: #ffffff;
+    margin:5px 5px 5px 5px;
+    border: .5px solid #1a1a1a;
+}
+.ui1{
+    background: url(../images/ui/food\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ui2{
+    background: url(../images/ui/robot\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
          
@@ -523,6 +678,45 @@ body::-webkit-scrollbar {
         font-size: 45px;
     }
     
+.ui{
+    min-height: 100vh;
+    height: max-content;
+    margin: auto;
+}
+.ui-head{
+    min-height: 5vh;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+.uidesigns{
+    width: 90%;
+    margin:10vh auto;
+    min-height: 60vh;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.uidesigns> div{
+    height: 25vh;
+    width: 30%;
+    background-color: #ffffff;
+    margin:5px 5px 5px 5px;
+    border: .5px solid #1a1a1a;
+}
+.ui1{
+    background: url(../images/ui/food\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ui2{
+    background: url(../images/ui/robot\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
     
 }
   
@@ -608,10 +802,11 @@ body::-webkit-scrollbar {
     .header{
         background-attachment: fixed;
         margin: 11vh auto;
+        background-repeat: no-repeat;
     }
     .header-text >div{
         text-align: center;
-        margin: 45vh auto;
+        margin: 25vh auto;
         font-size: 50px;
         background-attachment: fixed;
     }
@@ -643,7 +838,77 @@ body::-webkit-scrollbar {
     h3{
         font-size: 35px;
     }
-    
+        
+    .ui{
+        min-height: 100vh;
+        height: max-content;
+        margin: auto;
+    }
+    .ui-head{
+        min-height: 5vh;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    .uidesigns{
+        width: 100%;
+        margin:10vh auto;
+        min-height: 60vh;
+        height: max-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .uidesigns> div{
+        height: 35vh;
+        width: 85%;
+        background-color: #ffffff;
+        margin:5px 5px 5px 5px;
+        border: .5px solid #1a1a1a;
+    }
+    .ui1{
+        background: url(../images/ui/food\ website.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .ui2{
+        background: url(../images/ui/robot\ website.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .ui3{
+        background: url(../images/ui/robot\ website.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .ui4{
+        background: url(../images/ui/robot\ website.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .ui5{
+        background: url(../images/ui/robot\ website.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .ui6{
+        background: url(../images/ui/robot\ website.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .ui2{
+        background: url(../images/ui/robot\ website.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
  
     
 }  
