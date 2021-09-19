@@ -201,6 +201,12 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.ui3{
+    background: url(../images/ui/furniture.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
   
 /* 
     ##Device = Laptops, Desktops
@@ -297,7 +303,13 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.ui3{
+    background: url(../images/ui/furniture.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
     
 }
   
@@ -427,6 +439,12 @@ body::-webkit-scrollbar {
 }
 .ui2{
     background: url(../images/ui/robot\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.ui3{
+    background: url(../images/ui/furniture.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -563,6 +581,12 @@ body::-webkit-scrollbar {
 }
 .ui2{
     background: url(../images/ui/robot\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ui3{
+    background: url(../images/ui/furniture.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -713,6 +737,12 @@ body::-webkit-scrollbar {
 }
 .ui2{
     background: url(../images/ui/robot\ website.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ui3{
+    background: url(../images/ui/furniture.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -879,7 +909,7 @@ body::-webkit-scrollbar {
         background-repeat: no-repeat;
     }
     .ui3{
-        background: url(../images/ui/robot\ website.png);
+        background: url(../images/ui/furniture.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
