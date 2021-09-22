@@ -205,7 +205,7 @@ body::-webkit-scrollbar {
 .services-main> div{
     height:370px;
     width: 300px;
-    margin: 20px 20px 10px 10px;
+    margin: 20px 20px 20px 20px;
     background-color: #ffffff;
     text-align: centerons   ;
 
@@ -216,6 +216,7 @@ img{
 .services-div1{
     display: flex;
     flex-wrap: wrap;
+    transition: ease-in-out 1s;
     justify-content: center;
 }
 .services-div1:hover{
@@ -226,6 +227,7 @@ img{
 .services-div2{
     display: flex;
     flex-wrap: wrap;
+    transition: ease-in-out 1s;
     justify-content: center;
 }
 .services-div2:hover{
@@ -236,6 +238,7 @@ img{
 .services-div3{
     display: flex;
     flex-wrap: wrap;
+    transition: ease-in-out 1s;
     justify-content: center;
 }
 .services-div3:hover{
@@ -246,6 +249,7 @@ img{
 .services-div4{
     display: flex;
     flex-wrap: wrap;
+    transition: ease-in-out 1s;
     justify-content: center;
 }
 .services-div4:hover{
@@ -256,7 +260,7 @@ img{
 .ui{
     min-height: 80vh;
     height: max-content;
-    margin:5vh auto;
+    margin: auto;
 }
 .ui-head{
     min-height: 5vh;
@@ -510,6 +514,7 @@ img{
 }
 .services-div1{
     display: flex;
+    transition: ease-in-out 1s;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -520,16 +525,18 @@ img{
 }
 .services-div2{
     display: flex;
+    transition: ease-in-out 1s;
     flex-wrap: wrap;
     justify-content: center;
 }
 .services-div2:hover{
-    background-color: rgb(255, 252, 98);
+    
     transition: ease-in-out 1s;
     box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
 }
 .services-div3{
     display: flex;
+    transition: ease-in-out 1s;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -541,6 +548,7 @@ img{
 .services-div4{
     display: flex;
     flex-wrap: wrap;
+    transition: ease-in-out 1s;
     justify-content: center;
 }
 .services-div4:hover{
@@ -823,6 +831,7 @@ img{
 }
 .services-div1{
     display: flex;
+    transition: ease-in-out 1s;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -834,16 +843,18 @@ img{
 .services-div2{
     display: flex;
     flex-wrap: wrap;
+    transition: ease-in-out 1s;
     justify-content: center;
 }
 .services-div2:hover{
-    background-color: rgb(255, 252, 98);
+    
     transition: ease-in-out 1s;
     box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
 }
 .services-div3{
     display: flex;
     flex-wrap: wrap;
+    transition: ease-in-out 1s;
     justify-content: center;
 }
 .services-div3:hover{
@@ -853,6 +864,7 @@ img{
 }
 .services-div4{
     display: flex;
+    transition: ease-in-out 1s;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1083,6 +1095,7 @@ img{
 .services-div1{
     display: flex;
     flex-wrap: wrap;
+    transition: ease-in-out 1s;
     justify-content: center;
 }
 .services-div1:hover{
@@ -1093,15 +1106,17 @@ img{
 .services-div2{
     display: flex;
     flex-wrap: wrap;
+    transition: ease-in-out 1s;
     justify-content: center;
 }
 .services-div2:hover{
-    background-color: rgb(255, 252, 98);
+    
     transition: ease-in-out 1s;
     box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
 }
 .services-div3{
     display: flex;
+    transition: ease-in-out 1s;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1112,6 +1127,7 @@ img{
 }
 .services-div4{
     display: flex;
+    transition: ease-in-out 1s;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -1349,6 +1365,7 @@ img{
     }
     .services-div1{
         display: flex;
+        transition: ease-in-out 1s;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -1359,17 +1376,19 @@ img{
     }
     .services-div2{
         display: flex;
+        transition: ease-in-out 1s;
         flex-wrap: wrap;
         justify-content: center;
     }
     .services-div2:hover{
-        background-color: rgb(255, 252, 98);
+        
         transition: ease-in-out 1s;
         box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
     }
     .services-div3{
         display: flex;
         flex-wrap: wrap;
+        transition: ease-in-out 1s;
         justify-content: center;
     }
     .services-div3:hover{
@@ -1380,6 +1399,7 @@ img{
     .services-div4{
         display: flex;
         flex-wrap: wrap;
+        transition: ease-in-out 1s;
         justify-content: center;
     }
     .services-div4:hover{
@@ -1633,6 +1653,7 @@ img{
     .services-div1{
         display: flex;
         flex-wrap: wrap;
+        transition: ease-in-out 1s;
         justify-content: center;
     }
     .services-div1:hover{
@@ -1643,16 +1664,18 @@ img{
     .services-div2{
         display: flex;
         flex-wrap: wrap;
+        transition: ease-in-out 1s;
         justify-content: center;
     }
     .services-div2:hover{
-        background-color: rgb(255, 200, 47);
+     
         transition: ease-in-out 1s;
         box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
     }
     .services-div3{
         display: flex;
         flex-wrap: wrap;
+        transition: ease-in-out 1s;
         justify-content: center;
     }
     .services-div3:hover{
@@ -1663,6 +1686,7 @@ img{
     .services-div4{
         display: flex;
         flex-wrap: wrap;
+        transition: ease-in-out 1s;
         justify-content: center;
     }
     .services-div4:hover{
