@@ -22,6 +22,30 @@
      document.getElementById("segment1").style = "display:none;";
      
    }
+
+   /*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+  distance: '30px',
+  duration: 1800,
+  reset: true,
+});
+
+sr.reveal(`.header,.header-text,.about-head, 
+         .about-def-text,
+         .services,service-text-def,
+         .uidesigns`, {
+  origin: 'top',
+  interval: 200,
+})
+
+sr.reveal(`.about-def-text, .services-div2, .services-div1,
+.services-div3,.services-div4`, {
+  origin: 'left'
+})
+
+sr.reveal(`.about-def-img, .brands-head,.clients`, {
+  origin: 'right'
+})
    
 
    
