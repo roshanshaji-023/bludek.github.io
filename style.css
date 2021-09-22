@@ -205,7 +205,7 @@ body::-webkit-scrollbar {
 .services-main> div{
     height:370px;
     width: 300px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 10px 10px;
     background-color: #ffffff;
     text-align: centerons   ;
 
@@ -256,7 +256,7 @@ img{
 .ui{
     min-height: 80vh;
     height: max-content;
-    margin: auto;
+    margin:5vh auto;
 }
 .ui-head{
     min-height: 5vh;
