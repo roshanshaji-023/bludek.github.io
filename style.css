@@ -1646,7 +1646,7 @@ img{
         justify-content: center;
     }
     .services-div2:hover{
-        background-color: rgb(255, 252, 98);
+        background-color: rgb(255, 200, 47);
         transition: ease-in-out 1s;
         box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
     }
