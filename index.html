@@ -201,8 +201,9 @@
        </div>
     </section>
 </body>
-<script src="https://unpkg.com/scrollreveal"></script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
 <script>
  
 
@@ -216,6 +217,35 @@
         .catch(error => console.error('Error!', error.message))
        document.getElementById("success").style="color:green;"
     })
+
+       /*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+  distance: '20px',
+  duration: 1000,
+  reset: true,
+});
+
+sr.reveal(`.header-text,.about-head, 
+         .about-def-text,
+         .services,service-text-def,
+         .uidesigns,.about-def-img,.about-def-text.services-div1,
+          .services-div2, 
+        .services-div3,.services-div4,.ui,ui-head,
+        .uidesigns,.brands,
+        .clients,.form,
+        .footer,.copyright`, {
+  origin: 'top',
+  interval: 200,
+})
+sr.reveal(``, {
+  origin: 'top',
+  interval: 200,
+})
+
+
+
+   
+
   </script>
 
 
