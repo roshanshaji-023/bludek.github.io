@@ -213,6 +213,13 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.ui5{
+    background: url(../images/ui/learn.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
   
 /* 
     ##Device = Laptops, Desktops
@@ -951,7 +958,7 @@ body::-webkit-scrollbar {
         background-repeat: no-repeat;
     }
     .ui5{
-        background: url(../images/ui/robot\ website.png);
+        background: url(../images/ui/learn.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -962,12 +969,7 @@ body::-webkit-scrollbar {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .ui2{
-        background: url(../images/ui/robot\ website.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+    
 
  
     
