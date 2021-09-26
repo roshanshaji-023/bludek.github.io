@@ -219,6 +219,12 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.ui6{
+    background: url(../images/ui/paymentui.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
   
   
 /* 
@@ -964,7 +970,7 @@ body::-webkit-scrollbar {
         background-repeat: no-repeat;
     }
     .ui6{
-        background: url(../images/ui/robot\ website.png);
+        background: url(../images/ui/paymentui.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
