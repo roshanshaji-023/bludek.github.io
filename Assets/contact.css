@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
 }
 .logo a{
    
-    color: #1a1a1a;
+    color: #ffffff;
     text-decoration: none;
 }
 .logo h2{
@@ -56,21 +56,22 @@ body::-webkit-scrollbar {
     width: 70%;
     display: inline-flex;
     flex-direction: row-reverse;
+    color: #ffffff;
 }   
 
 .nav-mid ul a{
     text-decoration: none;
     padding: 15px 35px;
     font-size:21px;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 .nav-mid a:hover{
     transition:cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
-    border-bottom: 3px solid black;
-    color: black;
+    border-bottom: 3px solid rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
 }
 #active{
-    border-bottom: 3px solid rgb(214, 90, 18);
+    border-bottom: 3px solid rgb(255 204 62);
 }
 
 .nav-mob{
@@ -101,7 +102,7 @@ body::-webkit-scrollbar {
 .header{
     overflow-y: hidden;
     height: 100vh;
-    background:url(../images/contact.png);
+    background:url(../images/contact1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,30 +111,32 @@ body::-webkit-scrollbar {
     z-index: 99;
     background-attachment: fixed;
     display: flex;
+    flex-direction: row;
 }
 .contact{
     height: 65vh;
-    width: 80%;
-    margin:20vh auto;
+    width: 40%;
+    margin:20vh 100px;
     backdrop-filter: blur(16px) saturate(188%);
     -webkit-backdrop-filter: blur(16px) saturate(188%);
-    background-color: rgb(255 255 255 / 45%);
+    background-color:rgb(255 255 255 / 2%);
     box-shadow: 7px 0px 11px rgb(33 33 33 / 20%);
 }
 .contact-head{
     margin: 3vh auto;
     text-align: center;
     font-size: 30px;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 .contact-form{
     min-height: 50vh;
     margin: auto;
-    
+    color: #ffffff;
 }
 .form{
     margin: 10vh auto;
     text-align: center;
+    color: #ffffff;
 }
 #email{
     outline: none;
@@ -146,6 +149,7 @@ body::-webkit-scrollbar {
     background-color: transparent;
 }
 #email,select {
+    color: #ffffff;
     background-color:transparent ;
 }
 input:-webkit-autofill,
@@ -158,9 +162,9 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   
-  -webkit-text-fill-color: #1a1a1a;
+  -webkit-text-fill-color: #ffffff;
   -webkit-border-bottom: #1a1a1a;
-  color: #000000;
+  color: #ffffff;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -168,8 +172,8 @@ select:-webkit-autofill:focus {
     
     padding: 20px 50px;
     background-color: transparent;
-    border: .5px solid #1a1a1a;
-    color: rgb(0, 0, 0);
+    border: .5px solid #a5a5a5;
+    color: rgb(255, 255, 255);
     margin: 5vh 5px;
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
@@ -264,7 +268,7 @@ select:-webkit-autofill:focus {
     padding: 20px 15px;
     
     font-size: 20px;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .nav-mob{
@@ -279,6 +283,9 @@ select:-webkit-autofill:focus {
     background-size: cover;
     background-blend-mode: saturation;
     background-attachment: fixed;
+}
+.contact{
+   min-width: 55%;
 }
 
     
@@ -320,7 +327,7 @@ select:-webkit-autofill:focus {
     padding: 20px 15px;
     
     font-size: 20px;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .nav-mob{
@@ -328,7 +335,7 @@ select:-webkit-autofill:focus {
     display: none;
 }
 .header{
-    min-height: 60vh;
+    min-height: 100vh;
     height: max-content;
     background-position: center;
     background-repeat: no-repeat;
@@ -336,6 +343,9 @@ select:-webkit-autofill:focus {
     background-attachment: fixed;
     background-blend-mode: saturation;
     
+}
+.contact{
+    height: 50vh;
 }
 
 
@@ -488,11 +498,12 @@ select:-webkit-autofill:focus {
         display: inline-flex;
     }
     #segment{
-       
+       color: #ffffff;
         margin-right: 10px;
         font-size: 35px;
     }
     #segment1{
+        color: #ffffff;
         display: none;
         margin-right: 10px;
         font-size: 35px;
@@ -511,22 +522,22 @@ select:-webkit-autofill:focus {
         margin-top: 12vh;
         backdrop-filter: blur(16px) saturate(188%);
         -webkit-backdrop-filter: blur(16px) saturate(188%);
-        background-color: rgb(255 255 255 / 45%);
+        background-color: rgb(33 33 33 / 20%);
         box-shadow: 7px 0px 11px rgb(33 33 33 / 20%);
         
     }
     .navigation-div-items{
             font-family: 'Otomanopee One', sans-serif;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             display: block;
     }
     .navigation-div-items ul li {
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
     }
     .navigation-div-items a{
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
     }
     .header{
         background-attachment: fixed;
@@ -538,14 +549,14 @@ select:-webkit-autofill:focus {
         margin:20vh auto;
         backdrop-filter: blur(16px) saturate(188%);
         -webkit-backdrop-filter: blur(16px) saturate(188%);
-        background-color: rgb(255 255 255 / 45%);
+       
         box-shadow: 7px 0px 11px rgb(33 33 33 / 20%);
     }
     .contact-head{
         margin: 3vh auto;
         text-align: center;
         font-size: 20px;
-        color: #1a1a1a;
+        color: #ffffff;
     }
     .contact-form{
         min-height: 50vh;
@@ -579,9 +590,9 @@ select:-webkit-autofill:focus {
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
       
-      -webkit-text-fill-color: #1a1a1a;
+      -webkit-text-fill-color: #ffffff;
       -webkit-border-bottom: #1a1a1a;
-      color: #000000;
+      color: #ffffff;
       transition: background-color 5000s ease-in-out 0s;
     }
     
@@ -589,8 +600,8 @@ select:-webkit-autofill:focus {
         
         padding: 20px 50px;
         background-color: transparent;
-        border: .5px solid #1a1a1a;
-        color: rgb(0, 0, 0);
+        border: .5px solid #dadada;
+        color: rgb(255, 255, 255);
         margin: 5vh 5px;
         box-shadow: 0 0 11px rgba(33,33,33,.2); 
     }
