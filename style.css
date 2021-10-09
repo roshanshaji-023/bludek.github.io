@@ -278,26 +278,31 @@ img{
     justify-content: center;
 }
 .uidesigns> div{
-    height: 35vh;
+    min-height: 35vh;
+    height: min-content;
     width: 30%;
     background-color: #ffffff;
     margin:5px 5px 5px 5px;
-    border: .5px solid #1a1a1a;
+   
 }
 .ui1{
-    background: url(../images/ui/portfolio1.png);
+ 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.ui img{
+    
+    width: 100%;
+}
 .ui2{
-    background: url(../images/ui/robot\ website.png);
+   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .ui3{
-    background: url(../images/ui/furniture.png);
+   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -581,22 +586,22 @@ img{
     width: 30%;
     background-color: #ffffff;
     margin:5px 5px 5px 5px;
-    border: .5px solid #1a1a1a;
+    
 }
 .ui1{
-    background: url(../images/ui/portfolio1.png);
+  
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .ui2{
-    background: url(../images/ui/robot\ website.png);
+   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .ui3{
-    background: url(../images/ui/furniture.png);
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -894,11 +899,12 @@ img{
     justify-content: center;
 }
 .uidesigns> div{
-    height: 25vh;
+    min-height: 20vh;
+    height:min-content;
     width: 30%;
     background-color: #fffefe;
     margin: 5px;
-    border: .5px solid #1a1a1a;
+    
 }
 .brands{
     min-height: 50vh;
@@ -1193,11 +1199,11 @@ img{
         margin:5vh auto;
     }
     .uidesigns> div{
-        height: 35vh;
+        min-height: 35vh;
         width: 30%;
         background-color: #fffefe;
         margin: 5px;
-        border: .5px solid #1a1a1a;
+       
     }
     
     
@@ -1428,11 +1434,11 @@ img{
         justify-content: center;
     }
     .uidesigns> div{
-        height: 40vh;
+        min-height: 40vh;
         width: 40%;
         background-color: #fffefe;
         margin: 5px;
-        border: .5px solid #1a1a1a;
+        
     }
     .email_subscription{
         z-index: 99;
@@ -1715,11 +1721,12 @@ img{
         justify-content: center;
     }
     .uidesigns> div{
-        height: 35vh;
+        min-height: 35vh;
+        height: auto;
         width: 85%;
         background-color: #ffffff;
         margin:5px 5px 5px 5px;
-        border: .5px solid #1a1a1a;
+        
     }
     .brands{
         min-height: 50vh;
@@ -1758,7 +1765,7 @@ img{
     .email_subscription{
       position: relative;  
       height: max-content;
-      z-index: 99;
+      
       background-color: #ffffff;
       min-height: 50vh;
       margin-top: 10vh;
