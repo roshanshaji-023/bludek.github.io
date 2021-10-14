@@ -202,7 +202,7 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
 }
 .ui3{
-    background: url(../images/ui/furniture.png);
+    background: url(../images/ui/resourcesui.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -952,7 +952,7 @@ body::-webkit-scrollbar {
         background-repeat: no-repeat;
     }
     .ui3{
-        background: url(../images/ui/furniture.png);
+        background: url(../images/ui/resourcesui.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
