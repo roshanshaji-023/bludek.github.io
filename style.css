@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
 .header{
     min-height: 100vh;
     height: max-content;
-    background:url(images/cover.png);
+    background:url(images/cover2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1538,7 +1538,7 @@ img{
     .header{
         min-height: 100vh;
         height: max-content;
-        background:url(images/mobile.png);
+        background:url(images/mobile2.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
