@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
     width: 7px;
 }
 ::-webkit-scrollbar-thumb {
-     background:  #000000;
+     background:  rgb(255 204 62);;
      border-radius: 50px;
 }
 ::-webkit-scrollbar-track {
@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
 }
 .nav-mid a:hover{
     transition:cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(255 204 62);
     color: black;
 }
 
