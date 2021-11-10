@@ -378,11 +378,13 @@ margin-top: 5vh;
    color: white;
 }
 .footer{
-    height: 5vh;
+    height: 15vh;
     display: flex;
+    background-color: #fffcb7;
     
 }
 .copyright{
+    margin: 10vh auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -672,10 +674,12 @@ margin-top: 5vh;
    color: white;
 }
 .footer{
-    height: 5vh;
+    height: 35vh;
     display: flex;
+    background-color: #fffcb7;
     bottom: 0;
 }
+
 .copyright{
     width: 100%;
     display: flex;
@@ -1205,6 +1209,12 @@ img{
         margin: 5px;
        
     }
+    .footer{
+        height: 15vh;
+        display: flex;
+        background-color: #fffcb7;
+        bottom: 0;
+    }
     
     
 }
@@ -1449,6 +1459,12 @@ img{
     }  
     .footer{
         height: max-content;
+        min-height: 15vh;
+        display: flex;
+        background-color: #fffcb7;
+        bottom: 0;
+           
+        
     }
 }
   
@@ -1508,7 +1524,7 @@ img{
         overflow: hidden;
         width: 0%;
         height: 60vh;
-        margin-top: 12vh;
+        margin-top:11.1vh;
         margin-right: -50%;
         right: 50%;
         border-radius: 5px;
@@ -1789,8 +1805,10 @@ img{
         box-shadow: 0 0 11px rgba(33,33,33,.2); 
     }
     .footer{
-        height: 5vh;
+        min-height: 20vh;
         display: flex;
+        background-color: #fffcb7;
+        bottom: 0;
        
     }
     .copyright{
