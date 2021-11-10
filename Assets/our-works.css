@@ -196,7 +196,7 @@ body::-webkit-scrollbar {
 }
 
 .ui2{
-    background: url(../images/ui/robot\ website.png);
+    background: url(../images/ui/specsui.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -221,6 +221,18 @@ body::-webkit-scrollbar {
 }
 .ui6{
     background: url(../images/ui/paymentui.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ui7{
+    background: url(../images/ui/watchui.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ui8{
+    background: url(../images/ui/food.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -328,12 +340,7 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.ui1{
-    background: url(../images/ui/food\ website.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
   
     
 }
@@ -480,6 +487,7 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-repeat: no-repeat;
 }  
+
     
 }
 /* 
@@ -946,7 +954,7 @@ body::-webkit-scrollbar {
         background-repeat: no-repeat;
     }
     .ui2{
-        background: url(../images/ui/robot\ website.png);
+        background: url(../images/ui/specsui.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -976,7 +984,18 @@ body::-webkit-scrollbar {
         background-repeat: no-repeat;
     }
     
-
+    .ui7{
+        background: url(../images/ui/watchui.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .ui8{
+        background: url(../images/ui/food.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
  
     
 }  
