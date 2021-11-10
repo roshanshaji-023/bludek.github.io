@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bludek -The Branding Buddy</title>
-    <meta name="description" content="Bludek Studio is one of the Best Professional Web Designing, Web Development , Advertising & Digital Marketing firm in India. We offer Website Development, Branding and Digital Marketing Services  All over South India -> Bengaluru,Mumbai, Hyderabad And Kochi.| https://bludek.co.in">
-    <meta name="keywords" content="web design and development , digital marketing ,Branding  Hyderabad, web-design  kochi, software development , web-design company bangalore, web-design company chennai, software company bangalore, software company chennai, web-design company ">
+    <title>Contact Bludek -The Branding Buddy</title>
+    <meta name="description" content="Bludek Studio is one of the Best Professional Web Designing, Web Development , Advertising & Digital Marketing firm in India. We offer Website Development, Branding and Digital Marketing Services  All over South India -> Bengaluru,Mumbai, Hyderabad | https://bludek.co.in">
+    <meta name="keywords" content="web design and development , digital marketing ,Branding  Hyderabad, web-design , software development , web-design company bangalore, web-design company chennai, software company bangalore, software company chennai, web-design company ">
     <meta name="google-site-verification" content="yO5pEbleQ7yR-xUsBoqMl6S2BVBAHao0-DjHjDWR0yA">
     <meta name="language" content="English">
     <meta name="doc-type" content="Public">
@@ -15,7 +15,7 @@
     <meta data-react-helmet="true" property="og:url" content="https://www.bludek.co.in">
     <meta data-react-helmet="true" property="og:site_name" content="Bludek Studio">
     <meta data-react-helmet="true" name="twitter:title" content="Bludek Innovations - The Branding Buddy">
-    <link rel="stylesheet" href="our-works.css">
+    <link rel="stylesheet" href="/Assets/contact.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
@@ -34,8 +34,8 @@
             <ul>
                 <a href="/Assets/services.html" >Services</a>
                 <a href="#">About Us</a>
-                <a href="#" id="active">Portfolio</a>
-                <a href="./contact.html">Contact Us</a>
+                <a href="./our-works.html" >Portfolio</a>
+                <a href="#"id="active">Contact Us</a>
             </ul>
         </div>
         <div class="nav-mob">
@@ -49,59 +49,49 @@
             <br><br>
             <li><a  href="/Assets/services.html" id="close1">Services</a></li><br><br>
             <li><a  href="#" id="close2">About Us</a></li><br><br>
-            <li><a  href="#" id="close3">Portfolio</a></li><br><br>
-            <li><a  href="./contact.html" id="close4">Contact Us</a></li><br><br>
+            <li><a  href="./our-works.html" id="close3">Portfolio</a></li><br><br>
+            <li><a  href="#" id="close4">Contact Us</a></li><br><br>
            
         </ul>
     </div>
     <section class="header">
-       
-        <div class="header-text">
-            <div>
-                <h3>Portfolio</h3>
-                <hr>
+        <!--section for contact-->
+        <div class="contact">
+            <div class="contact-head">
+              <h3>Connect With Us <span style="color: rgb(255 204 62);">:)</span></h3>
+              
             </div>
-          
+           <div class="contact-form">
+            <div class="form">
+                <form name="submit-to-google-sheet">
+                 <label for="name"> Name</label>&nbsp;  <input id="email" name="name" type="text" placeholder=" Your Name . . ." required id="email"><br>
+                 <label for="email">Mail</label> &nbsp;&nbsp;   <input id="email" name="email" type="email" placeholder=" Your Email here . . ." required id="email"><br>
+                 <label for="phone">Phone</label>   <input id="email" name="phone" type="tel" placeholder=" Your mobile . . ." required id="email">
+
+                 <br>  <button id="subscribe" type="submit">Submit</button>
+                  </form>
+                 
+            </div>
+           </div>
         </div>
 
     </section>
-    <!--section for ui-->
    
-    <section class="ui">
-        <div class="ui-head">
-            <h2>Recent UI Designs</h2>
-        </div>
-        <section class="uidesigns" title="UI Designs by Bludek">
-            <div class="ui1">
-                
-            </div>
-            <div class="ui2"></div>
-            <div class="ui3"></div>
-            <div class="ui4"></div>
-            <div class="ui5"></div>
-            <div class="ui6"></div>
-        </section>
-    </section>
-     <!--section for works-->
-    <section class="works">
-        <section class="latest">
-            <div class="latest_head">
-                <h3>Latest Web Projects</h3>
-            </div>
-            <div class="project1">
-                <div class="img"></div>
-                <div class="text">
-                    <h2>GT Robos</h2>
-                    <br>
-                    <p>GT Robos is an upcoming startup that provide Tutorials on every Devices And Products that they are up with which are about electronic gadgets,IOT Devices etc ,They Provide hand-in-hand Experience on How the Device is made or Project is Done as included with all those Tutorials on Arduino , other Microcontrollers and Electronic Gadgets. GTRobos are into Electronics Training Kit design and development , provided across India.</p>
-                    <br>
-                    <a href="https://www.gtrobos.com">Visit Site</a>
-                </div>
-            </div>
-        </section>
-        
-    </section>
+    
+    <script>
+ 
 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxXDwR00Rvm8UhNwC_ndVuh8JcRIJNTeuoDcUxwhaCl3IpkIhJRWttOLgLx0XixD4f5SQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+           document.getElementById("success").style="color:green;"
+        })
+      </script>
     <script src="../script.js"></script>
 </body>
 </html>
