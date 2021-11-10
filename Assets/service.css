@@ -64,11 +64,11 @@ body::-webkit-scrollbar {
 }
 .nav-mid a:hover{
     transition:cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(255, 204, 62);
     color: black;
 }
 #active{
-    border-bottom: 3px solid rgb(97, 30, 255);
+    border-bottom: 3px solid #00e091;
 }
 
 .nav-mob{
