@@ -10,7 +10,7 @@
     margin: 0%;
     font-family: 'Atkinson Hyperlegible', sans-serif;
     scroll-behavior: smooth;
-    
+    color: black;
 }
   
 body::-webkit-scrollbar {
