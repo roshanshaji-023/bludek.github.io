@@ -12,7 +12,9 @@
     scroll-behavior: smooth;
     color: #000;
 }
-  
+body{
+    background-color: #eff6e0;
+}
 body::-webkit-scrollbar {
     width: 7px;
 
@@ -97,7 +99,8 @@ body::-webkit-scrollbar {
 .main{
     min-height: 100vh;
     height: max-content;
-    background-image: url(../images/aboutbg.png);
+    /*background-image: url(../images/aboutbg.png);*/
+    background-color: #eff6e0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
