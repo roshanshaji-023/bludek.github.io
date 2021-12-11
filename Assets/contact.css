@@ -189,7 +189,7 @@ select:-webkit-autofill:focus {
 
 .nav{
     height: 12vh;
-  
+    
     width: 100%;
     display: flex;
     flex-wrap: wrap;      
@@ -217,7 +217,7 @@ select:-webkit-autofill:focus {
     padding: 20px 45px;
     
     font-size: 25px;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .nav-mob{
