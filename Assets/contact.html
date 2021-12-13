@@ -68,7 +68,7 @@
                  <label for="email">Mail</label> &nbsp;&nbsp;   <input id="email" name="email" type="email" placeholder=" Your Email here . . ." required id="email"><br>
                  <label for="phone">Phone</label>   <input id="email" name="phone" type="tel" placeholder=" Your mobile . . ." required id="email">
 
-                 <br>  <button id="subscribe" type="submit">Submit</button>
+                 <br>  <button id="subscribe" type="submit" onclick="send()">Submit</button>
                   </form>
                  
             </div>
@@ -93,5 +93,10 @@
         })
       </script>
     <script src="../script.js"></script>
+    <script>
+       function send(){
+           alert("Thankyou For Connecting With Bludek! Do Wait for a Mail Back.");
+       }
+    </script>
 </body>
 </html>
