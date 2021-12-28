@@ -403,7 +403,9 @@ margin-top: 5vh;
         font-family: 'Atkinson Hyperlegible', sans-serif;
         scroll-behavior: smooth;
         color: #000;
+        zoom: 90%;
     }
+  
       
     body::-webkit-scrollbar {
         width: 7px;
