@@ -3,7 +3,7 @@
   ##Screen = 1281px to higher resolution desktops
 */
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
-@media  screen and (min-width: 1281px) {
+
 
 
 *{
@@ -395,7 +395,7 @@ margin-top: 5vh;
     text-decoration: none;
     color: #1a1a1a;
 }
-}
+
 /* (1920x1080) Full HD Display */
 @media  screen and (max-width: 1920px) and (min-height:1080) {
     *{
