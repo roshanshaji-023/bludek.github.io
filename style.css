@@ -397,7 +397,7 @@ margin-top: 5vh;
 }
 }
 /* (1920x1080) Full HD Display */
-@media  screen and (max-width: 1920px) and (max-height:1080) {
+@media  screen and (max-width: 1920px) and (min-height:1080) {
     *{
         padding: 0%;
         margin: 0%;
