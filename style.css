@@ -2,10 +2,9 @@
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
-
-
-
 *{
     padding: 0%;
     margin: 0%;
@@ -397,16 +396,14 @@ margin-top: 5vh;
 }
 
 /* (1920x1080) Full HD Display */
-@media  screen and (max-width: 1920px) and (min-height:1080) {
+@media  (min-width: 1920px) and (max-width: 2560px) {
     *{
         padding: 0%;
         margin: 0%;
         font-family: 'Atkinson Hyperlegible', sans-serif;
         scroll-behavior: smooth;
         color: #000;
-        
     }
-  
       
     body::-webkit-scrollbar {
         width: 7px;
@@ -421,7 +418,7 @@ margin-top: 5vh;
     
       
     .header{
-        min-height: 100vh;
+        min-height: 90vh;
         height: max-content;
         background:url(images/cover2.png);
         background-position: center;
@@ -431,7 +428,7 @@ margin-top: 5vh;
     }
     
     .nav{
-        height: 8vh;
+        height: 10vh;
         z-index: 99;
         width: 100%;
         display: flex;
@@ -442,7 +439,7 @@ margin-top: 5vh;
         box-shadow: 0 0 11px rgba(33,33,33,.2);
     }
     .nav>div{
-        margin: 2vh auto;  
+        margin: 3vh auto;  
     
     }
     .logo{
@@ -451,7 +448,7 @@ margin-top: 5vh;
     }
     .logo h2{
         margin-left:50px;
-        font-size: 20px;
+        font-size: 25px;
     }   
     .nav-mid{
         width: 70%;
@@ -461,8 +458,8 @@ margin-top: 5vh;
     
     .nav-mid ul a{
         text-decoration: none;
-        padding: 10px 30px;
-        font-size:18px;
+        padding: 15px 35px;
+        font-size:21px;
         color: #1a1a1a;
     }
     .nav-mid a:hover{
