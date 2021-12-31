@@ -395,406 +395,14 @@ margin-top: 5vh;
     color: #1a1a1a;
 }
 
-/* (1920x1080) Full HD Display */
-@media  (min-width: 1920px) and (max-width: 2560px) {
-    *{
-        padding: 0%;
-        margin: 0%;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
-        scroll-behavior: smooth;
-        color: #000;
-    }
-      
-    body::-webkit-scrollbar {
-        width: 7px;
-    }
-    ::-webkit-scrollbar-thumb {
-         background:  rgb(255 204 62);;
-         border-radius: 50px;
-    }
-    ::-webkit-scrollbar-track {
-         background: #ffffff; 
-    }
-    
-      
-    .header{
-        min-height: 90vh;
-        height: max-content;
-        background:url(images/cover2.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-    }
-    
-    .nav{
-        height: 10vh;
-        z-index: 99;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;      
-        top: 0%;
-        position: fixed;
-        background-color: #fff;
-        box-shadow: 0 0 11px rgba(33,33,33,.2);
-    }
-    .nav>div{
-        margin: 3vh auto;  
-    
-    }
-    .logo{
-        width: 20%;
-    
-    }
-    .logo h2{
-        margin-left:50px;
-        font-size: 25px;
-    }   
-    .nav-mid{
-        width: 70%;
-        display: inline-flex;
-        flex-direction: row-reverse;
-    }   
-    
-    .nav-mid ul a{
-        text-decoration: none;
-        padding: 15px 35px;
-        font-size:21px;
-        color: #1a1a1a;
-    }
-    .nav-mid a:hover{
-        transition:cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
-        border-bottom: 3px solid rgb(255 204 62);
-        color: black;
-    }
-    
-    .nav-mob{
-        width: 0%;
-        display: none;
-    }
-    .navigation-div{
-        overflow: hidden;
-        width: 0%;
-        height: 80vh;
-        margin-right: -47%;
-        right: 50%;
-        border-radius: 5px;
-        text-align: center;
-        z-index: 99;
-        transition: ease-in-out .5s;
-        position: absolute;
-        background-color: white;
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    }
-    .navigation-div-items{
-        display: none;
-        
-    }
-    
-    .header-text{
-         width: 45%;
-         height: max-content;
-         margin-top:25vh;
-         margin-left:100px;
-    }  
-    .header-text h2{
-        font-size: 42px;
-    }
-    .header-text p{
-        font-size: 15px;
-        font-weight: 300;
-    }
-    .header-text a{
-      
-        padding: 10px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #1a1a1a;
-        border: 1px solid black;
-        
-    }
-    .header-text a:hover{
-        transition: ease-in-out .5s;
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    } 
-    .header-text h3{
-        margin-top:auto;
-    } 
-    .social{
-        height: 15vh;
-        margin: 5vh auto;
-        
-    }
-    .social a{
-        padding: 10px;
-        text-decoration: none;
-        border: none;
-    }
-    .about{
-        min-height: 100vh;
-        height: max-content;
-        margin: auto;
-        text-align: center;
-    }
-    .about-head{
-        min-height: 15vh;
-        font-size:30px ;
-    }
-    .about-def{
-        min-height: 25vh;
-        width:100%;
-        font-size: 25px;
-        text-align: left;
-        margin: auto;
-        color: #1a1a1a;
-        display: flex;
-    }
-    .about-def-text{
-        width: 45%;
-        margin: 10vh auto;
-    }
-    
-    .about-def-img{
-        width: 45%;
-        height: 60vh;
-        background: url(/images/why\ us.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .services{
-        min-height: 100vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: auto;
-        background: url(/images/service.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .services-text{
-        width: 50%;
-        height: 60vh;
-        margin:20vh auto;
-        background-color: transparent;
-    }
-    .service-text-def{
-        margin:20vh auto;
-        text-align: center;
-    }
-    .service-text-def h2{
-       font-size: 40px;
-    }
-    .services-main{
-        width: 50%;
-        min-height:100vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        background-color: transparent;
-    }
-    .services-main> div{
-        height:370px;
-        width: 300px;
-        margin: 20px 20px 20px 20px;
-        background-color: #ffffff;
-        text-align: centerons   ;
-    
-    }
-    img{
-        width: 250px;
-    }
-    .services-div1{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div1:hover{
-        background-color: rgb(112, 255, 172);
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div2{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div2:hover{
-        background-color: rgb(255, 200, 47);
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div3{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div3:hover{
-        background-color: #ff997a;
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div4{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div4:hover{
-        background-color: #1db7ff;
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .ui{
-        min-height: 80vh;
-        height: max-content;
-        margin: auto;
-    }
-    .ui-head{
-        min-height: 5vh;
-        margin: auto;
-        text-align: center;
-        font-size: 30px;
-    }
-    .uidesigns{
-        width: 90%;
-        margin:10vh auto;
-        min-height: 60vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .uidesigns> div{
-        min-height: 35vh;
-        height: min-content;
-        width: 30%;
-        background-color: #ffffff;
-        margin:5px 5px 5px 5px;
-       
-    }
-    .ui1{
-     
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .ui img{
-        
-        width: 100%;
-    }
-    .ui2{
-       
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .ui3{
-       
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .brands{
-        min-height: 50vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .brands-head{
-        width: 100%;
-        min-height: 10vh;
-        color: #1a1a1a;
-        text-align: center;
-    }
-    .brands-head h2{
-        font-size: 40px;
-    }
-    .clients{
-        width: 100%;
-        min-height: 20vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .clients>div{
-        height: 10vh;
-        width: 250px;
-        margin: 15px ;
-        background-color: #e4e4e4;
-    }
-    .clients-01{
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./images/works_img/gtrobos-logo.jpeg);
-    }
-    .email_subscription{
-        height: 35vh;
-        margin-top: 10vh;
-    }
-    .email_subscription p{
-        text-align: center;
-        font-size: 30px;
-    }
-    .form{
-    text-align: center;
-    height: max-content;
-    margin-top: 5vh;
-    
-    }
-    #email{
-        outline: none;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        width: 300px;
-        height: 55px;
-        margin-left: 10px;
-    }
-    #subscribe{
-        
-        padding: 20px 50px;
-        background-color: rgb(255, 255, 255);
-        border: .5px solid #1a1a1a;
-        color: rgb(0, 0, 0);
-        margin: 0% 5px;
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    }
-    
-    #success{
-       color: white;
-    }
-    .footer{
-        height: 15vh;
-        display: flex;
-        background-color: #fffcb7;
-        
-    }
-    .copyright{
-        margin: 10vh auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-    }
-    .copyright a{
-        text-decoration: none;
-        color: #1a1a1a;
-    }
-}
- 
+
   
 /* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
 */
   
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1080px) and (max-width: 1280px) {
     
 .header{
     height: max-content;
@@ -804,7 +412,7 @@ margin-top: 5vh;
     background-size: cover;
 }
 .nav{
-    height: 12vh;
+    height: 10vh;
     background-color: #fff;
     width: 100%;
     display: flex;
@@ -812,7 +420,7 @@ margin-top: 5vh;
       
 }
 .nav>div{
-    margin: 4vh auto;  
+    margin: 3vh auto;  
 
 }
 .logo{
@@ -830,9 +438,9 @@ margin-top: 5vh;
 
 .nav-mid ul a{
     text-decoration: none;
-    padding: 20px 45px;
+    padding: 18px 35px;
     
-    font-size: 25px;
+    font-size: 20px;
     color: #1a1a1a;
 }
 
@@ -843,7 +451,7 @@ margin-top: 5vh;
 .header-text{
      width: 40%;
      height: max-content;
-     margin-top:25vh;
+     margin-top:20vh;
      margin-left: 75px;
 }  
 .header-text h2{
@@ -866,11 +474,11 @@ margin-top: 5vh;
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 } 
 .header-text h3{
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 .social{
     height: 15vh;
-    margin: 5vh auto;
+    margin: 4vh auto;
    
 }
 .social a{
@@ -878,10 +486,13 @@ margin-top: 5vh;
     text-decoration: none;
     border: none;
 }
+.social i{
+    color: rgb(255 204 62);
+}
 .services-text{
     width: 50%;
     height: 60vh;
-    margin:20vh auto;
+    margin:12vh auto;
     background-color: transparent;
 }
 .service-text-def{
@@ -902,7 +513,7 @@ margin-top: 5vh;
 }
 .services-main> div{
     height:370px;
-    width: 300px;
+    width: 270px;
     margin: 20px 20px 20px 20px;
     background-color: #ffffff;
     text-align: centerons   ;
@@ -1066,7 +677,7 @@ margin-top: 5vh;
    color: white;
 }
 .footer{
-    height: 35vh;
+    height: 25vh;
     display: flex;
     background-color: #fffcb7;
     bottom: 0;
