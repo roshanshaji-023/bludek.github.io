@@ -1,2218 +1,256 @@
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
-*{
-    padding: 0%;
-    margin: 0%;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
-    scroll-behavior: smooth;
-    color: #000;
-}
-  
-body::-webkit-scrollbar {
-    width: 7px;
-}
-::-webkit-scrollbar-thumb {
-     background:  rgb(255 204 62);;
-     border-radius: 50px;
-}
-::-webkit-scrollbar-track {
-     background: #ffffff; 
-}
-
-  
-.header{
-    min-height: 100vh;
-    height: max-content;
-    background:url(images/cover2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-}
-
-.nav{
-    height: 10vh;
-    z-index: 99;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;      
-    top: 0%;
-    position: fixed;
-    background-color: #fff;
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
-}
-.nav>div{
-    margin: 3vh auto;  
-
-}
-.logo{
-    width: 20%;
-
-}
-.logo h2{
-    margin-left:50px;
-    font-size: 25px;
-}   
-.nav-mid{
-    width: 70%;
-    display: inline-flex;
-    flex-direction: row-reverse;
-}   
-
-.nav-mid ul a{
-    text-decoration: none;
-    padding: 15px 35px;
-    font-size:21px;
-    color: #1a1a1a;
-}
-.nav-mid a:hover{
-    transition:cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
-    border-bottom: 3px solid rgb(255 204 62);
-    color: black;
-}
-
-.nav-mob{
-    width: 0%;
-    display: none;
-}
-.navigation-div{
-    overflow: hidden;
-    width: 0%;
-    height: 80vh;
-    margin-right: -47%;
-    right: 50%;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 99;
-    transition: ease-in-out .5s;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
-.navigation-div-items{
-    display: none;
-    
-}
-
-.header-text{
-     width: 45%;
-     height: max-content;
-     margin-top:25vh;
-     margin-left:100px;
-}  
-.header-text h2{
-    font-size: 42px;
-}
-.header-text p{
-    font-size: 15px;
-    font-weight: 300;
-}
-.header-text a{
-  
-    padding: 10px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #1a1a1a;
-    border: 1px solid black;
-    
-}
-.header-text a:hover{
-    transition: ease-in-out .5s;
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-} 
-.header-text h3{
-    margin-top:auto;
-} 
-.social{
-    height: 15vh;
-    margin: 5vh auto;
-    
-}
-.social a{
-    padding: 10px;
-    text-decoration: none;
-    border: none;
-}
-.about{
-    min-height: 100vh;
-    height: max-content;
-    margin: auto;
-    text-align: center;
-}
-.about-head{
-    min-height: 15vh;
-    font-size:30px ;
-}
-.about-def{
-    min-height: 25vh;
-    width:100%;
-    font-size: 25px;
-    text-align: left;
-    margin: auto;
-    color: #1a1a1a;
-    display: flex;
-}
-.about-def-text{
-    width: 45%;
-    margin: 10vh auto;
-}
-
-.about-def-img{
-    width: 45%;
-    height: 60vh;
-    background: url(/images/why\ us.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.services{
-    min-height: 100vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: auto;
-    background: url(/images/service.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.services-text{
-    width: 50%;
-    height: 60vh;
-    margin:20vh auto;
-    background-color: transparent;
-}
-.service-text-def{
-    margin:20vh auto;
-    text-align: center;
-}
-.service-text-def h2{
-   font-size: 40px;
-}
-.services-main{
-    width: 50%;
-    min-height:100vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: transparent;
-}
-.services-main> div{
-    height:370px;
-    width: 300px;
-    margin: 20px 20px 20px 20px;
-    background-color: #ffffff;
-    text-align: centerons   ;
-
-}
-img{
-    width: 250px;
-}
-.services-div1{
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in-out 1s;
-    justify-content: center;
-}
-.services-div1:hover{
-    background-color: rgb(112, 255, 172);
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div2{
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in-out 1s;
-    justify-content: center;
-}
-.services-div2:hover{
-    background-color: rgb(255, 200, 47);
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div3{
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in-out 1s;
-    justify-content: center;
-}
-.services-div3:hover{
-    background-color: #ff997a;
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div4{
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in-out 1s;
-    justify-content: center;
-}
-.services-div4:hover{
-    background-color: #1db7ff;
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.ui{
-    min-height: 80vh;
-    height: max-content;
-    margin: auto;
-}
-.ui-head{
-    min-height: 5vh;
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-}
-.uidesigns{
-    width: 90%;
-    margin:10vh auto;
-    min-height: 60vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.uidesigns> div{
-    min-height: 35vh;
-    height: min-content;
-    width: 30%;
-    background-color: #ffffff;
-    margin:5px 5px 5px 5px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bludek - The Branding Buddy </title>
+    <meta name="description" content="Bludek focus on Website Development , Digital Marketing , UI-UX , Product Design And Package Designing . Get Your First Website Done With Us ! We Design and Develop Responsive Mobile First Websites For your Brand! | https://bludek.co.in">
+    <meta name="keywords" content="Bludek , Website design and development,digital marketing,Branding,uiux,product design,package Design, Hyderabad,software development">
+    <meta name="google-site-verification" content="yO5pEbleQ7yR-xUsBoqMl6S2BVBAHao0-DjHjDWR0yA">
+    <meta name="language" content="English">
+    <meta name="doc-type" content="Public">
+    <meta name="author" content="Bludek ">
+    <meta data-react-helmet="true" property="og:title" content="Bludek - The Branding Buddy">
+    <meta data-react-helmet="true" property="og:url" content="https://www.bludek.co.in">
+    <meta data-react-helmet="true" property="og:site_name" content="Bludek ">
+    <meta data-react-helmet="true" name="twitter:title" content="Bludek - The Branding Buddy">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+    <meta data-react-helmet="true" property="og:title" content="Bludek - The Branding Buddy">
+    <meta data-react-helmet="true" property="og:description" content="Bludek focus on Website Development , Digital Marketing , UI-UX ,Product Design And Package Designing . Get Your First Website Done With US!| https://bludek.co.in">
+    <meta data-react-helmet="true" property="og:site_name" content="Bludek - The Branding Buddy">
+    <meta data-react-helmet="true" name="twitter:description" content="Bludek focus on Website Development , Digital Marketing , UI-UX ,Product Design And Package Designing . Get Your First Website Done With US!| https://bludek.co.in">
+    <meta data-react-helmet="true" name="twitter:title" content="Bludek - The Branding Buddy">
+    <meta property="twitter:description" content="Bludek focus on Website Development , Digital Marketing , UI-UX ,Product Design And Package Designing . Get Your First Website Done With US!| https://bludek.co.in">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/android-chrome-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
    
-}
-.ui1{
- 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.ui img{
-    
-    width: 100%;
-}
-.ui2{
-   
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.ui3{
-   
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.brands{
-    min-height: 50vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-}
-.brands-head{
-    width: 100%;
-    min-height: 10vh;
-    color: #1a1a1a;
-    text-align: center;
-}
-.brands-head h2{
-    font-size: 40px;
-}
-.clients{
-    width: 100%;
-    min-height: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.clients>div{
-    height: 10vh;
-    width: 250px;
-    margin: 15px ;
-    background-color: #e4e4e4;
-}
-.clients-01{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(./images/works_img/gtrobos-logo.jpeg);
-}
-.email_subscription{
-    height: 35vh;
-    margin-top: 10vh;
-}
-.email_subscription p{
-    text-align: center;
-    font-size: 30px;
-}
-.form{
-text-align: center;
-height: max-content;
-margin-top: 5vh;
-
-}
-#email{
-    outline: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 300px;
-    height: 55px;
-    margin-left: 10px;
-}
-#subscribe{
-    
-    padding: 20px 50px;
-    background-color: rgb(255, 255, 255);
-    border: .5px solid #1a1a1a;
-    color: rgb(0, 0, 0);
-    margin: 0% 5px;
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
-
-#success{
-   color: white;
-}
-.footer{
-    height: 15vh;
-    display: flex;
-    background-color: #fffcb7;
-    
-}
-.copyright{
-    margin: 10vh auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-}
-.copyright a{
-    text-decoration: none;
-    color: #1a1a1a;
-}
-
-/* (1920x1080) Full HD Display */
-@media  (min-width: 1920px) and (max-width: 2560px) {
-    *{
-        padding: 0%;
-        margin: 0%;
-        font-family: 'Atkinson Hyperlegible', sans-serif;
-        scroll-behavior: smooth;
-        color: #000;
-    }
-      
-    body::-webkit-scrollbar {
-        width: 7px;
-    }
-    ::-webkit-scrollbar-thumb {
-         background:  rgb(255 204 62);;
-         border-radius: 50px;
-    }
-    ::-webkit-scrollbar-track {
-         background: #ffffff; 
-    }
-    
-      
-    .header{
-        min-height: 90vh;
-        height: max-content;
-        background:url(images/cover2.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-    }
-    
-    .nav{
-        height: 10vh;
-        z-index: 99;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;      
-        top: 0%;
-        position: fixed;
-        background-color: #fff;
-        box-shadow: 0 0 11px rgba(33,33,33,.2);
-    }
-    .nav>div{
-        margin: 3vh auto;  
-    
-    }
-    .logo{
-        width: 20%;
-    
-    }
-    .logo h2{
-        margin-left:50px;
-        font-size: 25px;
-    }   
-    .nav-mid{
-        width: 70%;
-        display: inline-flex;
-        flex-direction: row-reverse;
-    }   
-    
-    .nav-mid ul a{
-        text-decoration: none;
-        padding: 15px 35px;
-        font-size:21px;
-        color: #1a1a1a;
-    }
-    .nav-mid a:hover{
-        transition:cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
-        border-bottom: 3px solid rgb(255 204 62);
-        color: black;
-    }
-    
-    .nav-mob{
-        width: 0%;
-        display: none;
-    }
-    .navigation-div{
-        overflow: hidden;
-        width: 0%;
-        height: 80vh;
-        margin-right: -47%;
-        right: 50%;
-        border-radius: 5px;
-        text-align: center;
-        z-index: 99;
-        transition: ease-in-out .5s;
-        position: absolute;
-        background-color: white;
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    }
-    .navigation-div-items{
-        display: none;
-        
-    }
-    
-    .header-text{
-         width: 45%;
-         height: max-content;
-         margin-top:25vh;
-         margin-left:100px;
-    }  
-    .header-text h2{
-        font-size: 42px;
-    }
-    .header-text p{
-        font-size: 15px;
-        font-weight: 300;
-    }
-    .header-text a{
-      
-        padding: 10px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #1a1a1a;
-        border: 1px solid black;
-        
-    }
-    .header-text a:hover{
-        transition: ease-in-out .5s;
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    } 
-    .header-text h3{
-        margin-top:auto;
-    } 
-    .social{
-        height: 15vh;
-        margin: 5vh auto;
-        
-    }
-    .social a{
-        padding: 10px;
-        text-decoration: none;
-        border: none;
-    }
-    .about{
-        min-height: 100vh;
-        height: max-content;
-        margin: auto;
-        text-align: center;
-    }
-    .about-head{
-        min-height: 15vh;
-        font-size:30px ;
-    }
-    .about-def{
-        min-height: 25vh;
-        width:100%;
-        font-size: 25px;
-        text-align: left;
-        margin: auto;
-        color: #1a1a1a;
-        display: flex;
-    }
-    .about-def-text{
-        width: 45%;
-        margin: 10vh auto;
-    }
-    
-    .about-def-img{
-        width: 45%;
-        height: 60vh;
-        background: url(/images/why\ us.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .services{
-        min-height: 100vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: auto;
-        background: url(/images/service.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .services-text{
-        width: 50%;
-        height: 60vh;
-        margin:20vh auto;
-        background-color: transparent;
-    }
-    .service-text-def{
-        margin:20vh auto;
-        text-align: center;
-    }
-    .service-text-def h2{
-       font-size: 40px;
-    }
-    .services-main{
-        width: 50%;
-        min-height:100vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        background-color: transparent;
-    }
-    .services-main> div{
-        height:370px;
-        width: 300px;
-        margin: 20px 20px 20px 20px;
-        background-color: #ffffff;
-        text-align: centerons   ;
-    
-    }
-    img{
-        width: 250px;
-    }
-    .services-div1{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div1:hover{
-        background-color: rgb(112, 255, 172);
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div2{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div2:hover{
-        background-color: rgb(255, 200, 47);
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div3{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div3:hover{
-        background-color: #ff997a;
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div4{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div4:hover{
-        background-color: #1db7ff;
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .ui{
-        min-height: 80vh;
-        height: max-content;
-        margin: auto;
-    }
-    .ui-head{
-        min-height: 5vh;
-        margin: auto;
-        text-align: center;
-        font-size: 30px;
-    }
-    .uidesigns{
-        width: 90%;
-        margin:10vh auto;
-        min-height: 60vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .uidesigns> div{
-        min-height: 35vh;
-        height: min-content;
-        width: 30%;
-        background-color: #ffffff;
-        margin:5px 5px 5px 5px;
-       
-    }
-    .ui1{
-     
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .ui img{
-        
-        width: 100%;
-    }
-    .ui2{
-       
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .ui3{
-       
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .brands{
-        min-height: 50vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .brands-head{
-        width: 100%;
-        min-height: 10vh;
-        color: #1a1a1a;
-        text-align: center;
-    }
-    .brands-head h2{
-        font-size: 40px;
-    }
-    .clients{
-        width: 100%;
-        min-height: 20vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .clients>div{
-        height: 10vh;
-        width: 250px;
-        margin: 15px ;
-        background-color: #e4e4e4;
-    }
-    .clients-01{
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./images/works_img/gtrobos-logo.jpeg);
-    }
-    .email_subscription{
-        height: 35vh;
-        margin-top: 10vh;
-    }
-    .email_subscription p{
-        text-align: center;
-        font-size: 30px;
-    }
-    .form{
-    text-align: center;
-    height: max-content;
-    margin-top: 5vh;
-    
-    }
-    #email{
-        outline: none;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        width: 300px;
-        height: 55px;
-        margin-left: 10px;
-    }
-    #subscribe{
-        
-        padding: 20px 50px;
-        background-color: rgb(255, 255, 255);
-        border: .5px solid #1a1a1a;
-        color: rgb(0, 0, 0);
-        margin: 0% 5px;
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    }
-    
-    #success{
-       color: white;
-    }
-    .footer{
-        height: 15vh;
-        display: flex;
-        background-color: #fffcb7;
-        
-    }
-    .copyright{
-        margin: 10vh auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-    }
-    .copyright a{
-        text-decoration: none;
-        color: #1a1a1a;
-    }
-}
- 
-  
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-*/
-  
-@media (min-width: 1025px) and (max-width: 1280px) {
-    
-.header{
-    height: max-content;
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.nav{
-    height: 12vh;
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;      
-      
-}
-.nav>div{
-    margin: 4vh auto;  
-
-}
-.logo{
-    width: 20%;
-
-}
-.logo h2{
-    margin-left:50px;
-}   
-.nav-mid{
-    width: 70%;
-    display: inline-flex;
-    flex-direction: row-reverse;
-}   
-
-.nav-mid ul a{
-    text-decoration: none;
-    padding: 20px 45px;
-    
-    font-size: 25px;
-    color: #1a1a1a;
-}
-
-.nav-mob{
-    width: 0%;
-    display: none;
-}
-.header-text{
-     width: 40%;
-     height: max-content;
-     margin-top:25vh;
-     margin-left: 75px;
-}  
-.header-text h2{
-    font-size: 42px;
-}
-.header-text p{
-    font-size: 15px;
-    font-weight: 300;
-}
-.header-text a{
-  
-    padding: 10px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #1a1a1a;
-    border: 1px solid black;
-} 
-.header-text a:hover{
-    transition: ease-in-out .5s;
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-} 
-.header-text h3{
-    margin-top: 7vh;
-}
-.social{
-    height: 15vh;
-    margin: 5vh auto;
-   
-}
-.social a{
-    padding: 10px;
-    text-decoration: none;
-    border: none;
-}
-.services-text{
-    width: 50%;
-    height: 60vh;
-    margin:20vh auto;
-    background-color: transparent;
-}
-.service-text-def{
-    margin:20vh auto;
-    text-align: center;
-}
-.service-text-def h2{
-   font-size: 40px;
-}
-.services-main{
-    width: 50%;
-    min-height:100vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: transparent;
-}
-.services-main> div{
-    height:370px;
-    width: 300px;
-    margin: 20px 20px 20px 20px;
-    background-color: #ffffff;
-    text-align: centerons   ;
-
-}
-img{
-    width: 250px;
-}
-.services-div1{
-    display: flex;
-    transition: ease-in-out 1s;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.services-div1:hover{
-    background-color: rgb(112, 255, 172);
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div2{
-    display: flex;
-    transition: ease-in-out 1s;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.services-div2:hover{
-    
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div3{
-    display: flex;
-    transition: ease-in-out 1s;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.services-div3:hover{
-    background-color: #ff997a;
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div4{
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in-out 1s;
-    justify-content: center;
-}
-.services-div4:hover{
-    background-color: #1db7ff;
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.ui{
-    min-height: 80vh;
-    height: max-content;
-    margin: auto;
-}
-.ui-head{
-    min-height: 5vh;
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-}
-.uidesigns{
-    width: 90%;
-    margin:10vh auto;
-    min-height: 60vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.uidesigns> div{
-    height: 35vh;
-    width: 30%;
-    background-color: #ffffff;
-    margin:5px 5px 5px 5px;
-    
-}
-.ui1{
-  
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.ui2{
-   
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.ui3{
-    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.brands{
-    min-height: 50vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-}
-.brands-head{
-    width: 100%;
-    min-height: 10vh;
-    color: #1a1a1a;
-    text-align: center;
-}
-.brands-head h2{
-    font-size: 40px;
-}
-.clients{
-    width: 100%;
-    min-height: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.clients>div{
-    height: 10vh;
-    width: 250px;
-    margin: 15px ;
-    background-color: #e4e4e4;
-}
-.clients-01{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(./images/works_img/gtrobos-logo.jpeg);
-}
-.email_subscription{
-    height: 35vh;
-}
-.email_subscription p{
-    text-align: center;
-    font-size: 30px;
-}
-.form{
-text-align: center;
-height: max-content;
-margin-top: 5vh;
-}
-#email{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 300px;
-    height: 55px;
-    margin-left: 10px;
-}
-#subscribe{
-    padding: 20px 50px;
-    background-color: rgb(255, 255, 255);
-    border: .5px solid #1a1a1a;
-    color: rgb(0, 0, 0);
-    margin: 0% 5px;
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
-#success{
-   color: white;
-}
-.footer{
-    height: 35vh;
-    display: flex;
-    background-color: #fffcb7;
-    bottom: 0;
-}
-
-.copyright{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-}
-.copyright a{
-    text-decoration: none;
-    color: #1a1a1a;
-}   
-    
-}
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-    
-@media (min-width: 768px) and (max-width: 1024px) {
-    
-.header{
-    height: max-content;
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.nav{
-    height: 10vh;
-    background-color:#ffffff;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;      
-      
-}
-.nav>div{
-    margin: 3vh auto;  
-
-}
-.logo{
-    width: 20%;
-
-}
-.logo h2{
-    margin-left:50px;
-}   
-.nav-mid{
-    width: 70%;
-    display: inline-flex;
-    flex-direction: row-reverse;
-}   
-
-.nav-mid ul a{
-    text-decoration: none;
-    padding: 20px 15px;
-    
-    font-size: 20px;
-    color: #1a1a1a;
-}
-
-.nav-mob{
-    width: 0%;
-    display: none;
-}
-.header-text{
-     width: 65%;
-     height:max-content;
-     margin-top:25vh;
-     margin-left: 75px;
-}  
-.header-text h2{
-    font-size: 42px;
-}
-.header-text p{
-    font-size: 15px;
-    font-weight: 300;
-}
-.header-text a{
-  
-    padding: 10px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #1a1a1a;
-    border: 1px solid black;
-}
-.header-text a:hover{
-    transition: ease-in-out .5s;
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}  
-.header-text h3{
-    margin-top: 7vh;
-}
-.social{
-    height: 15vh;
-    width:max-content;
-    margin: 5vh auto;
-    background-color: transparent;
-}
-.social a{
-    padding: 10px;
-    text-decoration: none;
-    border: none;
-} 
-.about-def{
-    min-height: 60vh;
-    width:100%;
-    font-size: 25px;
-    text-align: left;
-    margin: auto;
-    color: #1a1a1a;
-    display: flex;
-}
-.about-def-text{
-    width: 45%;
-    margin: 10vh auto;
-    font-size: 25px;
-}
-.about-def-img{
-    width: 50%;
-    margin: 10vh auto;
-    height: 60vh;
-    background: url(/images/why\ us.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}  
-.services-text{
-    width: 30%;
-    height: 60vh;
-    margin:20vh auto;
-    background-color: transparent;
-}
-.service-text-def{
-    margin:20vh auto;
-    text-align: center;
-}
-.service-text-def h2{
-   font-size: 40px;
-}
-.services-main{
-    width: 70%;
-    min-height:100vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: transparent;
-}
-.services-main> div{
-    height:370px;
-    width: 250px;
-    margin: 5px;
-    background-color: #ffffff;
-    text-align: centerons   ;
-
-}
-img{
-    width: 250px;
-}
-.services-div1{
-    display: flex;
-    transition: ease-in-out 1s;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.services-div1:hover{
-    background-color: rgb(112, 255, 172);
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div2{
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in-out 1s;
-    justify-content: center;
-}
-.services-div2:hover{
-    
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div3{
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in-out 1s;
-    justify-content: center;
-}
-.services-div3:hover{
-    background-color: #ff997a;
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div4{
-    display: flex;
-    transition: ease-in-out 1s;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.services-div4:hover{
-    background-color: #1db7ff;
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}  
-.ui{
-    min-height:50vh;
-    height: max-content;
-    margin: auto;
-}
-.ui-head{
-    min-height: 5vh;
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-}
-.uidesigns{
-    width: 100%;
-    margin:10vh auto;
-    min-height: 45vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.uidesigns> div{
-    min-height: 20vh;
-    height:min-content;
-    width: 30%;
-    background-color: #fffefe;
-    margin: 5px;
-    
-}
-.brands{
-    min-height: 50vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-}
-.brands-head{
-    width: 100%;
-    min-height: 10vh;
-    color: #1a1a1a;
-    text-align: center;
-}
-.brands-head h2{
-    font-size: 40px;
-}
-.clients{
-    width: 100%;
-    min-height: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.clients>div{
-    height: 10vh;
-    width: 250px;
-    margin: 15px ;
-    background-color: #e4e4e4;
-}
-.clients-01{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(./images/works_img/gtrobos-logo.jpeg);
-}
-    
-}
-/* 
-    ##Device = ipad Pro (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-@media (min-width: 1024px) and (min-height: 1366px) {
-    
-.header{
-    min-height: 60vh;
-    height: 80vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.nav{
-    height: 10vh;
-    background-color: #ffffff;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;      
-      
-}
-.nav>div{
-    margin: 4vh auto;  
-
-}
-.logo{
-    width: 20%;
-
-}
-.logo h2{
-    margin-left:50px;
-}   
-.nav-mid{
-    width: 70%;
-    display: inline-flex;
-    flex-direction: row-reverse;
-}   
-
-.nav-mid ul a{
-    text-decoration: none;
-    padding: 20px 15px;
-    
-    font-size: 20px;
-    color: #1a1a1a;
-}
-
-.nav-mob{
-    width: 0%;
-    display: none;
-}
-.header-text{
-     width: 65%;
-     height:max-content;
-     margin-top:25vh;
-     margin-left: 75px;
-} 
- 
-.header-text h2{
-    font-size: 42px;
-}
-.header-text p{
-    font-size: 15px;
-    font-weight: 300;
-}
-.header-text a{
-  
-    padding: 10px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #1a1a1a;
-    border: 1px solid black;
-} 
-.header-text a:hover{
-    transition: ease-in-out .5s;
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-} 
-.header-text h3{
-    margin-top: 7vh;
-}
-.social{
-    height: 15vh;
-    width: max-content;
-    margin: 5vh auto;
-    background-color: transparent;
-}
-.social a{
-    padding: 10px;
-    text-decoration: none;
-    border: none;
-}
-.about{
-    min-height: 65vh;
-}
-.about-head {
-    min-height: 1vh;
-   
-}
-.about-def{
-    min-height: 50vh;
-    height:50vh;
-    width:100%;
-    font-size: 25px;
-    text-align: left;
-    margin: auto;
-    color: #1a1a1a;
-    display: flex;
-}
-.about-def-text{
-    width: 45%;
-    margin: 10vh auto;
-    font-size: 25px;
-}
-.about-def-img{
-    width: 50%;
-    margin: 10vh auto;
-    height: 60vh;
-    background: url(/images/why\ us.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.services{
-    min-height: 65vh;
-}
-.services-text{
-    width: 35%;
-    height: 40vh;
-    margin:10vh auto;
-    background-color: transparent;
-}
-.service-text-def{
-    margin:20vh auto;
-    text-align: center;
-}
-.service-text-def h2{
-   font-size: 40px;
-}
-.services-main{
-    width: 65%;
-    min-height:70vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: transparent;
-}
-.services-main> div{
-    height:370px;
-    width: 300px;
-    margin: 5px 5px 5px 5px;
-    background-color: #ffffff;
-    text-align: centerons   ;
-
-}
-img{
-    width: 250px;
-}
-.services-div1{
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in-out 1s;
-    justify-content: center;
-}
-.services-div1:hover{
-    background-color: rgb(112, 255, 172);
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div2{
-    display: flex;
-    flex-wrap: wrap;
-    transition: ease-in-out 1s;
-    justify-content: center;
-}
-.services-div2:hover{
-    
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div3{
-    display: flex;
-    transition: ease-in-out 1s;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.services-div3:hover{
-    background-color: #ff997a;
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-}
-.services-div4{
-    display: flex;
-    transition: ease-in-out 1s;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.services-div4:hover{
-    background-color: #1db7ff;
-    transition: ease-in-out 1s;
-    box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-} 
-.brands{
-    min-height: 40vh;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-}
-.brands-head{
-    width: 100%;
-    min-height: 10vh;
-    color: #1a1a1a;
-    text-align: center;
-}
-.brands-head h2{
-    font-size: 40px;
-}
-.clients{
-    width: 100%;
-    min-height: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.clients>div{
-    height: 10vh;
-    width: 250px;
-    margin: 15px ;
-    background-color: #e4e4e4;
-}
-.clients-01{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(./images/works_img/gtrobos-logo.jpeg);
-}
-          
-    
-}
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-   
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    .header{
-       
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .ui{
-        height:65vh;
-        min-height: 55vh;
-        margin:5vh auto;
-    }
-    .uidesigns> div{
-        min-height: 35vh;
-        width: 30%;
-        background-color: #fffefe;
-        margin: 5px;
-       
-    }
-    .footer{
-        height: 15vh;
-        display: flex;
-        background-color: #fffcb7;
-        bottom: 0;
-    }
-    
-    
-}
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-@media (min-width: 481px) and (max-width: 767px) {
-    
-    .header{
-        height:150vh;
-        background:url(images/mobile2.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-       
-    }
-    .nav{
-        height: 12vh;
-        background-color: #ffffff;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;      
-        background-color: #fff !important;
-        transition: background-color 200ms linear;  
-    }
-    
-    .nav>div{
-        margin: 4vh auto;  
-    
-    }
-    .logo{
-        width: 20%;
-    
-    }
-    .logo h2{
-        margin:auto -30px;
-    }   
-    .nav-mid{
-        width:0%;
-        display: inline-flex;
-        flex-direction: row-reverse;
-    }   
-    
-    .nav-mid ul a{
-        display: none;
-    }
-    
-    .nav-mob{
-        width: 20%;
-        display: block;
-    }
-    #segment{
-       
-        margin-right: 10px;
-        font-size: 35px;
-    }
-    #segment1{
-        display: none;
-        margin-right: 10px;
-        font-size: 35px;
-    }
-    #navigation-div{
-        overflow: hidden;
-        width: 0%;
-        height: 80vh;
-        margin-right: -50%;
-        margin-top: 12vh;
-        right: 50%;
-        border-radius: 5px;
-        text-align: center;
-        z-index: 99;
-        transition: ease-in-out .5s;
-        position: fixed;
-        background-color: #ffffff;
-        backdrop-filter: blur(16px) saturate(188%);
-        -webkit-backdrop-filter: blur(16px) saturate(188%);
-        background-color: rgb(255 255 255 / 75%);
-        
-    }
-    .navigation-div-items{
-            font-family: 'Otomanopee One', sans-serif;
-            color: rgb(0, 0, 0);
-            display: block;
-    }
-    .navigation-div-items ul li {
-        text-decoration: none;
-        color: black;
-    }
-    .navigation-div-items a{
-        text-decoration: none;
-        color: black;
-    }
-    .header-text{
-         width: 60%;
-         height: max-content;
-         margin:17vh 30px;
-         
-    }  
-    .header-text h2{
-        font-size: 30px;
-        text-align: left;
-    }
-    .header-text p{
-        font-size: 18px;
-        font-weight: 300;
-    }
-    .header-text a{
-      
-        padding: 10px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #1a1a1a;
-        border: 1px solid black;
-    } 
-    .header-text h3{
-        margin-top: 4vh;
-    }
-    .social{
-        height: 15vh;
-        width:max-content;
-        margin: 5vh auto;
-        background-color: transparent;
-    }
-    .social a{
-        padding: 10px;
-        text-decoration: none;
-        border: none;
-    } 
-    .services-text{
-        width: 30%;
-        height: 60vh;
-        margin:20vh auto;
-        background-color: transparent;
-    }
-    .service-text-def{
-        margin:20vh auto;
-        text-align: center;
-    }
-    .service-text-def h2{
-       font-size: 30px;
-    }
-    .services-main{
-        width: 65%;
-        min-height:100vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        background-color: transparent;
-    }
-    .services-main> div{
-        height:250px;
-        width: 170px;
-        margin: 2px;
-        background-color: #ffffff;
-        text-align: center;
-        font-size: 15px;
-    }
-    img{
-        width: 100px;
-    }
-    .services-div1{
-        display: flex;
-        transition: ease-in-out 1s;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .services-div1:hover{
-        background-color: rgb(112, 255, 172);
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div2{
-        display: flex;
-        transition: ease-in-out 1s;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .services-div2:hover{
-        
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div3{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div3:hover{
-        background-color: #ff997a;
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div4{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div4:hover{
-        background-color: #1db7ff;
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .ui{
-        min-height: 100vh;
-        height: max-content;
-        margin: auto;
-    }
-    .ui-head{
-        min-height: 5vh;
-        margin: auto;
-        text-align: center;
-        font-size: 30px;
-    }
-    .uidesigns{
-        width: 100%;
-        margin:10vh auto;
-        min-height: 80vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .uidesigns> div{
-        min-height: 40vh;
-        width: 40%;
-        background-color: #fffefe;
-        margin: 5px;
-        
-    }
-    .email_subscription{
-        z-index: 99;
-        position: relative;
-       
-        height: max-content;
-        background-color: white;
-    }  
-    .footer{
-        height: max-content;
-        min-height: 15vh;
-        display: flex;
-        background-color: #fffcb7;
-        bottom: 0;
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h2>BLUDEK</h2>
+        </div>
+        <div class="nav-mid">
+            <ul>
+                <a href="Assets/services.html">Services</a>
+                <a href="Assets/about.html">About Us</a>
+                <a href="Assets/our-works.html">Portfolio</a>
+                <a href="./Assets/contact.html">Contact Us</a>
+            </ul>
+        </div>
+        <div class="nav-mob">
+            <i class="material-icons" id="segment">drag_handle</i>
+            <i class="material-icons" id="segment1">close</i>
+        </div>
+    </div>
+    <!--section for mobile-navigation-->
+    <div class="navigation-div" id="navigation-div">
+        <ul class="navigation-div-items">
+            <br><br>
+            <li><a  href="Assets/services.html" id="close1">Services</a></li><br><br>
+            <li><a  href="Assets/about.html" id="close2">About Us</a></li><br><br>
+            <li><a  href="Assets/our-works.html" id="close3">Portfolio</a></li><br><br>
+            <li><a  href="./Assets/contact.html" id="close4">Contact Us</a></li><br><br>
            
+        </ul>
+    </div>
+    <section class="header">
         
-    }
-}
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-@media (min-width: 320px) and (max-width: 480px) {
-    
-   
-    .nav{
-        height: 11vh;
-        background-color: #ffffff;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;      
-        z-index: 99;
-    }
-    .nav>div{
-        margin: 4vh auto;  
-    
-    }
-    .logo{
-        width: 60%;
-    
-    }
-    .logo h2{
-        margin-left: 10px;
-        font-size: 25px;
-    }   
-    .nav-mid{
-        width:0%;
-        display: inline-flex;
-        flex-direction: row-reverse;
-    }   
-    
-    .nav-mid ul a{
-        display: none;
-    }
-    
-    .nav-mob{
-        width:20%;
-        display: inline-flex;
-    }
-    #segment{
+        <div class="header-text">
+            <h2>
+                We Develop The Best & The Most
+                <span style="color: #1a1a1a;"> CREATIVE</span> Content To Promote Your Brand.
+            </h2>
+            <br>
+            <br>
+            <p>
+                By appreciating out clients Brand and talking to them
+                we know exatly what kind and mode of transformation
+                needed to promote the Brand</p>
+            <br><br>
+            <a href="./Assets/contact.html" id="connect">Connect With Us</a>
+            <br><br><br>
+            <h3>
+               
+                Web Design & Development &nbsp;| Branding &nbsp;| Digital Marketing
+            </h3>
+            <div class="social">
+                <a href="https://www.facebook.com/bludek.co.in"><i class="fab fa-facebook"></i></a> &nbsp   <a href="https://www.instagram.com/bludek.co"><i class="fab fa-instagram"></i></a> &nbsp   <a href="https://www.youtube.com/c/bludek"><i class="fab fa-youtube"></i></a> &nbsp
+            </div>
+        </div>
+
+    </section>
+    <!--section for about-->
+    <section class="about">
+        <div class="about-head">
+            <h2>Why Choose Us!</h2>
+        </div>
+        <div class="about-def">
+           <div class="about-def-text">
+            <h4>
+                Because we know Digital. With working knowledge of Online, SEO and Social Media, we can take your Brand / Product wherever it needs to go.
+               <br><br> We take the work seriously, we give our 100% into the work! <br><br>  We’re not prickly, precious or pretentious. <br>
+               <br> For us, it’s all about what adds value for you and your business. Above all, we want our skills to work for you!
+            </h4>
+         
+           </div>
+           <div class="about-def-img">
+
+           </div>
+          
+        </div>
+    </section>
+    <!--section for services-->
+    <section class="services">
+        <div class="services-text">
+            <div class="service-text-def">
+                <h2>Our Key Services</h2>
+            <p>We focus on these four as of primary concern. </p>
+            </div>
+            
+        </div>
+        <div class="services-main">
+            <div class="services-div1" id="services-div1">
+                <div>
+                 <img src="./images/icons/Code Version Control.svg" alt="" srcset="">
+                </div>
+                <div>
+                    <h2>Web-Design  &<br> Development</h2>
+                </div>
+               
+            </div>
+            <div class="services-div2" id="services-div2">
+                <div>
+                    <img src="./images/icons/Socialmedia Marketing.svg" alt="" srcset="">
+                   </div>
+                <div>
+                    <h2>Digital Marketing</h2>
+                </div>
+                
+            </div>
+            <div class="services-div3" id="services-div3">
+                <div>
+                    <img src="./images/icons/Get personalised product recommendations.svg" alt="" srcset="">
+                   </div>
+                <div>
+                    <h2>Branding</h2>
+                </div>
+                
+            </div>
+            <div class="services-div4" id="services-div4">
+                <div>
+                    <img src="./images/icons/Designing.svg" alt="" srcset="">
+                   </div>
+                <div>
+                    <h2>Product Design</h2>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+     <!--!section for services-->
+     <!--section for latest-->
+     <section class="ui">
+        <div class="ui-head">
+            <h2>Portfolio</h2>
+        </div>
+        <section class="uidesigns" title="UI Designs by Bludek">
+            <div class="ui1">
+                <img src="./images/ui/specsui.png" alt="specs store ui design">
+            </div>
+            <div class="ui2">
+                <img src="./images/ui/portfolio1.png" alt="portfolio website ui">
+            </div>
+            <div class="ui3">
+                <img src="./images/ui/food.png" alt="e-learning ui">
+            </div>
+            
+            
+        </section>
+     </section>
+       <!--!section for latest-->
+    <!--section for trusted Brands-->
+    <section class="brands">
+        <div class="brands-head">
+            <h2>Our Happy Clients</h2>
+        </div>
+        <div class="clients">
+            <div class="clients-01"></div>
+            <div class="clients-02"></div>
+            <div class="clients-03"></div>
+        </div>
+    </section>
+    <section class="email_subscription">
+       <p>Subscribe for a Mail Back!</p>
+        <div class="form">
+            <form name="submit-to-google-sheet">
+                <input id="email" name="email" type="email" placeholder=" Your Email here . . ." required id="email">
+                <button id="subscribe" type="submit">Subscribe</button>
+              </form>
+              
+        </div>
        
-        margin-right: 10px;
-        font-size: 35px;
-    }
-    #segment1{
-        display: none;
-        margin-right: 10px;
-        font-size: 35px;
-    }
-    #navigation-div{
-        overflow: hidden;
-        width: 0%;
-        height: 60vh;
-        margin-top:11.1vh;
-        margin-right: -50%;
-        right: 50%;
-        border-radius: 5px;
-        text-align: center;
-        z-index: 99;
-        transition: ease-in-out .5s;
-        position: fixed;
-        background-color: #ffffff;
-        backdrop-filter: blur(16px) saturate(188%);
-        -webkit-backdrop-filter: blur(16px) saturate(188%);
-        background-color: rgb(255 255 255 / 75%);
-        
-    }
-    .navigation-div-items{
-            font-family: 'Otomanopee One', sans-serif;
-            color: rgb(0, 0, 0);
-            display: block;
-    }
-    .navigation-div-items ul li {
-        text-decoration: none;
-        color: black;
-    }
-    .navigation-div-items a{
-        text-decoration: none;
-        color: black;
-    }
-    .header{
-        min-height: 100vh;
-        height: max-content;
-        background:url(images/mobile2.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        display: flex;
-    }
-    .header-text{
-         width: 90%;
-         height: max-content;
-         margin:17vh auto;
-         z-index: 0;
-    }  
-    .header-text h2{
-        font-size: 30px;
-        text-align: left;
-    }
-    .header-text p{
-        font-size: 18px;
-        font-weight: 300;
-    }
-    #connect{
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    }
-    .header-text a{
-       
-        padding: 10px;
-        text-decoration: none;
-        font-size: 15px;
-        color: #1a1a1a;
-        border: 1px solid black;
-    } 
-    .header-text a:hover{
-        transition: ease-in-out .5s;
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    } 
-    .header-text h3{
-        margin-top: 7vh;
-    }
-    .social{
-        height: 15vh;
-        
-        margin: 5vh auto;
-        background-color: transparent;
-    }
-    .social a{
-        padding: 10px;
-        text-decoration: none;
-        border: none;
-        font-size: 25px;
-    }
-    .about-head{
-        min-height: 15vh;
-        font-size:20px ;
-    }
-   
-    .about-def{
-        min-height: 100vh;
-        height: max-content;
-        width:100%;
-        font-size: 25px;
-        text-align: left;
-        margin: auto;
-        color: #1a1a1a;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction:column-reverse
-    }
-    .about-def-text{
-        width:85%;
-        margin-top: -5vh;
-        font-size: 18px;
-        margin-bottom: 50px;
-    }
-    .about-def-img{
-        width: 85%;
-        height: 60vh;
-        margin: auto;
-        background: url(/images/why\ us.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .services{margin-top: 5vh;
-        min-height: 120vh;
-    }
-    .services-text{
-        width: 90%;
-        height: 20vh;
-        margin: auto;
-        background-color: transparent;
-    }
-    .service-text-def{
-        margin:auto;
-        text-align: center;
-    }
-    .service-text-def h2{
-       font-size: 30px;
-    }
-    .services-main{
-        width: 100%;
-        min-height:100vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:center;
-        background-color: transparent;
-    }
-    .services-main> div{
-        height:370px;
-        width: 300px;
-        margin:25px auto;
-        background-color: #ffffff;
-        text-align: centerons   ;
-    
-    }
-    img{
-        width: 250px;
-    }
-    .services-div1{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div1:hover{
-        background-color: rgb(112, 255, 172);
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div2{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div2:hover{
-     
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div3{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div3:hover{
-        background-color: #ff997a;
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .services-div4{
-        display: flex;
-        flex-wrap: wrap;
-        transition: ease-in-out 1s;
-        justify-content: center;
-    }
-    .services-div4:hover{
-        background-color: #1db7ff;
-        transition: ease-in-out 1s;
-        box-shadow: 8px 9px 17px rgb(33 33 33 / 20%);
-    }
-    .ui{
-        min-height: 100vh;
-        height: max-content;
-        margin: auto;
-    }
-    .ui-head{
-        min-height: 5vh;
-        margin: auto;
-        text-align: center;
-        font-size: 20px;
-    }
-    .uidesigns{
-        width: 100%;
-        margin:10vh auto;
-        min-height: 60vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .uidesigns> div{
-        min-height: 35vh;
-        height: auto;
-        width: 85%;
-        background-color: #ffffff;
-        margin:5px 5px 5px 5px;
-        
-    }
-    .brands{
-        min-height: 50vh;
-        height: max-content;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .brands-head{
-        width: 100%;
-        min-height: 10vh;
-        color: #1a1a1a;
-        text-align: center;
-    }
-    .brands-head h2{
-        font-size: 30px;
-    }
-    .clients{
-        width: 100%;
-        min-height: 20vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .clients>div{
-        height: 10vh;
-        width: 250px;
-        margin: 15px ;
-        background-color: #e4e4e4;
-    }
-    .clients-01{
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(./images/works_img/gtrobos-logo.jpeg);
-    }
-    .email_subscription{
-      position: relative;  
-      height: max-content;
-      
-      background-color: #ffffff;
-      min-height: 50vh;
-      margin-top: 10vh;
-    }
-    form{
-        height:max-content;
-        margin-top: 0vh;
-       
-    }
-    .email_subscription p {
-        text-align: center;
-        font-size: 25px;
-        
-    }
-    #subscribe{
-        padding: 20px 50px;
-        background-color: rgb(255, 255, 255);
-        border: .5px solid #1a1a1a;
-        color: rgb(0, 0, 0);
-        margin: 15px 5px;
-        box-shadow: 0 0 11px rgba(33,33,33,.2); 
-    }
-    .footer{
-        min-height: 20vh;
-        display: flex;
-        background-color: #fffcb7;
-        bottom: 0;
-       
-    }
-    .copyright{
-        width:100%;
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-    }
-    .copyright a{
-        text-decoration: none;
-        color: #1a1a1a;
-    }
+    </section>
+    <section class="footer">
+       <div class="copyright">
+        Copyright © 2021  • &nbsp <a href="./Assets/terms-of-use.html">Bludek Studio</a>&nbsp • &nbsp Christ kid
+       </div>
+    </section>
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
  
-    
-}  
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXDwR00Rvm8UhNwC_ndVuh8JcRIJNTeuoDcUxwhaCl3IpkIhJRWttOLgLx0XixD4f5SQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+       document.getElementById("success").style="color:green;"
+    })
+
+       /*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+  distance: '20px',
+  duration: 1000,
+  reset: true,
+});
+
+sr.reveal(`.header-text,.about-head, 
+         .about-def-text,
+         .services,service-text-def,
+         .uidesigns,.about-def-img,.about-def-text.services-div1,
+          .services-div2, 
+        .services-div3,.services-div4,.ui,ui-head,
+        .uidesigns,.brands,
+        .clients,.form,
+        .footer`, {
+  origin: 'top',
+  interval: 200,
+})
+sr.reveal(``, {
+  origin: 'top',
+  interval: 200,
+})
+
+
+
+   
+
+  </script>
+
+
+</html>
