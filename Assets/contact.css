@@ -184,11 +184,11 @@ select:-webkit-autofill:focus {
     ##Screen = B/w 1025px to 1280px
 */
   
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1080px) and (max-width: 1280px) {
     
 
 .nav{
-    height: 12vh;
+    height: 10vh;
     
     width: 100%;
     display: flex;
@@ -196,7 +196,7 @@ select:-webkit-autofill:focus {
       
 }
 .nav>div{
-    margin: 4vh auto;  
+    margin: 3vh auto;  
 
 }
 .logo{
@@ -214,9 +214,9 @@ select:-webkit-autofill:focus {
 
 .nav-mid ul a{
     text-decoration: none;
-    padding: 20px 45px;
+    padding: 18px 35px;
     
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff;
 }
 
